@@ -1,32 +1,35 @@
 .hero {
     background-image: url('/public/img/hero.png'); /* Asegúrate de que la ruta esté correcta */
     background-size: cover;
-    background-position: center bottom;
-    height: 400px; /* Ajusta la altura según lo necesites */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px); /* Ajusta según la altura del header */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* Color de texto */
+    color: #ffffff;
   }
 
   .hero-content {
-    text-align: center; /* Alinea el texto al centro */
+    text-align: center;
+    padding: 20px;
   }
 
+  
   .hero-content img {
     max-width: 100px; /* Ajusta esto según el tamaño deseado del logo */
     height: auto;
   }
 
   .hero-content h1 {
-    font-family: 'Montserrat', sans-serif; /* Confirma que Montserrat está cargada */
-    font-size: 32px; /* Ajusta según tu diseño */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    margin: 0; /* Elimina cualquier margen por defecto */
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .hero-content p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px; /* Ajusta según tu diseño */
-    margin: 0; /* Elimina cualquier margen por defecto */
+    font-size: 24px;
+    opacity: 0.85;
+    margin-top: 10px;
   }
