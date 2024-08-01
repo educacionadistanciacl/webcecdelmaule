@@ -1,0 +1,10 @@
+---
+// Importar imágenes y otros componentes si es necesario
+const { icon, title, description } = Astro.props;
+---
+
+<div class="feature-item">
+  <img src={icon} alt={title} />
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div>

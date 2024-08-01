@@ -1,0 +1,43 @@
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0; /* Añade más espacio vertical */
+  background-color: #FCFCFC; /* Fondo de la sección */
+}
+
+.feature-item {
+  width: 240px; /* Ancho exacto para cada ítem */
+  height: 320px; /* Altura exacta para cada ítem */
+  margin: 0 15px; /* Espaciado horizontal entre ítems */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra ligera */
+  border: 2px solid #0056b3; /* Añade un borde claro */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrado del contenido en la columna */
+}
+
+.feature-item img {
+  width: 60px; /* Tamaño del ícono */
+  height: 60px; /* Mantiene la proporción del ícono */
+  margin-bottom: 20px;
+  background-color: #0056b3; /* Azul más oscuro para los íconos */
+  border-radius: 50%; /* Círculo completo */
+  padding: 9px; /* Espacio interno para el ícono */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+  font-size: 20px; /* Tamaño de fuente para títulos */
+  font-weight: bold; /* Asegura que el texto sea negrita */
+  color: #0056b3;
+  margin-bottom: 10px; /* Espaciado bajo el título */
+}
+
+.feature-item p {
+  font-size: 16px; /* Tamaño de fuente para descripciones */
+  color: #0056b3;
+  text-align: center; /* Alineación del texto */
+}
