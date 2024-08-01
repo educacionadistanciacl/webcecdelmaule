@@ -3,8 +3,16 @@
 const { icon, title, description } = Astro.props;
 ---
 
-<div class="feature-item">
+<!-- <div class="feature-item">
   <img src={icon} alt={title} />
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div> -->
+
+<div class="feature-item">
+  <div class="icon-container">
+    <img src={icon} alt={title} />
+  </div>
   <h3>{title}</h3>
   <p>{description}</p>
 </div>

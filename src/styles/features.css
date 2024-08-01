@@ -19,14 +19,21 @@
   align-items: center; /* Centrado del contenido en la columna */
 }
 
+.feature-item .icon-container {
+  width: 90px;  /* Tamaño fijo del círculo */
+  height: 90px;  /* Tamaño fijo del círculo */
+  background-color: #0056b3;  /* Color azul para el fondo del círculo */
+  border-radius: 50%;  /* Círculo completo */
+  display: flex;  /* Flexbox para centrar el ícono */
+  align-items: center;  /* Alineación vertical */
+  justify-content: center;  /* Alineación horizontal */
+  margin-bottom: 20px;  /* Espacio debajo del círculo */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Sombra suave */
+}
+
 .feature-item img {
-  width: 60px; /* Tamaño del ícono */
-  height: 60px; /* Mantiene la proporción del ícono */
-  margin-bottom: 20px;
-  background-color: #0056b3; /* Azul más oscuro para los íconos */
-  border-radius: 50%; /* Círculo completo */
-  padding: 9px; /* Espacio interno para el ícono */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 60px;  /* Tamaño del ícono */
+  height: 60px;  /* Mantiene la proporción del ícono */
 }
 
 .feature-item h3 {
