@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; /* Aumenta el padding para más espacio */
+    padding: 10px 50px; /* Aumenta el padding para más espacio */
     background-color: #1E57A4; /* Ajusta al color exacto del diseño */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -16,6 +16,12 @@
     opacity: 0px;
 
   }
+
+  nav {
+    margin-left: 25%;  /* Asegura que el nav empuje a la derecha */
+    margin-right: 0%;
+  }  
+
   
   nav ul {
     list-style: none;
@@ -26,17 +32,21 @@
   
   nav a {
     text-decoration: none;
-    color: #ffffff; /* Cambia el color del texto a blanco */
+    color: #FCFCFC; /* Cambia el color del texto a blanco */
     font-size: 14px;
+    text-transform: uppercase;
   }
   
   .buttonAulaVirtual {
-    padding: 10px 25px;
-    background-color: #FCFCFC; /* Color del botón a blanco */
-    color: #29AAE9; /* Color del texto a azul oscuro para visibilidad */
+    padding: 10px 25px;  /* Asegúrate de que esto refleja el diseño de Figma */
+    background-color: #FCFCFC; /* Blanco */
+    color: #29AAE9; /* Azul claro, asegúrate de que es el tono correcto */
     text-decoration: none;
-    border-radius: 20px; /* Bordes más redondeados */
-    border: none; /* Asegúrate de que no haya borde visible */
-    font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
-  }
+    border-radius: 20px; /* Bordes redondeados como en Figma */
+    border: none;  /* Sin bordes visibles */
+    font-size: 16px; /* Coincide con Figma */
+    font-weight: 700; /* Peso semibold */
+    text-transform: uppercase;
+}
+
   
