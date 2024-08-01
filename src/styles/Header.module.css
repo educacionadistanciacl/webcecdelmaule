@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Aumenta el padding para más espacio */
+    background-color: #1E57A4; /* Ajusta al color exacto del diseño */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo img {
+    width: 162px;
+    height: 88px;
+    top: 8px;
+    left: 26px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Aumenta el espacio entre elementos del menú */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    font-size: 14px;
+  }
+  
+  .buttonAulaVirtual {
+    padding: 10px 25px;
+    background-color: #FCFCFC; /* Color del botón a blanco */
+    color: #29AAE9; /* Color del texto a azul oscuro para visibilidad */
+    text-decoration: none;
+    border-radius: 20px; /* Bordes más redondeados */
+    border: none; /* Asegúrate de que no haya borde visible */
+    font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+  }
+  
