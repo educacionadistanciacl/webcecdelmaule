@@ -8,4 +8,5 @@
     font-size: 16px; /* Coincide con Figma */
     font-weight: 700; /* Peso semibold */
     text-transform: uppercase;
+    margin-left: auto; /* Empuja el botón a la derecha */
 }
