@@ -1,4 +1,10 @@
 /* src/styles/global.css */
+:root {
+  --color-primario: #1E57A4;
+  --color-secundario: #FCFCFC;
+  --color-tercero: #D99F3F;
+}
+
 html, body {
     margin: 0;
     padding: 0;

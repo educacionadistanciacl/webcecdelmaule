@@ -1,0 +1,22 @@
+---
+import IconItem from './FilosofiaItem.astro';
+const path_icon = '../public/img/icons'
+---
+
+<div class="filosofia-section">
+  <IconItem icon=`${path_icon}/icon-graph-up.svg` label="Crecimiento profesional" percentage="70" colorIcon="#FDC115" />
+  <IconItem icon=`${path_icon}/icon-sun-ligth.svg` label="Nuevas oportunidades" percentage="93" colorIcon="#F46822"/>
+  <IconItem icon=`${path_icon}/icon-tools.svg` label="Aumento en la productividad" percentage="82" colorIcon="#DB1A5D"/>
+  <IconItem icon=`${path_icon}/icon-verified-user.svg` label="Satisfacción de nuestros alumnos" percentage="88" colorIcon="#643090"/>
+</div>
+
+<style>
+.filosofia-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-secundario);  /* Fondo del contenedor */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+}
+</style>

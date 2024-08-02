@@ -2,7 +2,7 @@
 
 import FeatureItem from "./FeatureItem.astro";
 // Definir datos para los features si es necesario o importarlos
-const path_icon = '../public/img/features'
+const path_icon = '../public/img/icons'
 const features = [
   { icon: `${path_icon}/icon-verified-user.svg`, title: 'Formación a medida', description: 'Desarrollamos cursos a medida adecuándonos a las necesidades particulares de nuestros clientes.' },
   { icon: `${path_icon}/icon-rocket.svg`, title: 'Intuitivo e Innovador', description: 'Le proporcionamos un modelo de aprendizaje intuitivo e innovador.' },
@@ -21,6 +21,6 @@ const features = [
   display: flex;
   justify-content: center;
   padding: 40px 0; /* Añade más espacio vertical */
-  background-color: #FCFCFC; /* Fondo de la sección */
+  background-color: var(--color-secundario);
 }
 </style>

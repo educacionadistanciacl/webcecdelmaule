@@ -1,0 +1,51 @@
+---
+// Recibe props de los iconos, títulos y números
+const { icon, label, percentage, colorIcon } = Astro.props;
+---
+
+<div class="icon-item">
+    <div class="icon-container" style={{ backgroundColor: colorIcon }}>
+    <img src={icon} alt={label} class="icon-image" />
+  </div>
+  <div class="icon-text">
+    <h3 style={{color: colorIcon}} >{percentage}%</h3>
+    <p>{label}</p>
+  </div>
+</div>
+
+<style>
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  background-color: var(--color-secundario); /* Color de fondo del ítem */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+.icon-container {
+  width: 90px;  /* Tamaño fijo para el círculo */
+  height: 90px;  /* Tamaño fijo para el círculo */
+  border-radius: 50%;  /* Hace el div completamente redondo */
+  display: flex;
+  align-items: center;  /* Centra el ícono verticalmente */
+  justify-content: center;  /* Centra el ícono horizontalmente */
+  margin-bottom: 20px;  /* Espacio debajo del contenedor del ícono */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra ligera */
+}
+
+.icon-image {
+  width: 60px;  /* Tamaño del ícono */
+  height: 60px;  /* Mantiene la proporción del ícono */
+}
+
+.icon-text h3 {
+  margin: 0;
+}
+
+.icon-text p {
+    margin: 0;
+    color: var(--color-primario);
+}
+</style>
