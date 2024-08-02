@@ -1,6 +1,7 @@
 ---
 // Importar el archivo CSS
 import styles from '../styles/Header.module.css';
+import BtnAulaVirtual from './BtnAulaVirtual.astro';
 ---
 <header class={styles.header}>
   <div class={styles.logo}>
@@ -17,5 +18,5 @@ import styles from '../styles/Header.module.css';
       <li><a href="/contacto" class={styles.link}>Contacto</a></li>
     </ul>
   </nav>
-  <a href="/aula-virtual" class={styles.buttonAulaVirtual}>Acceso Aula Virtual</a>
+  <BtnAulaVirtual/>
 </header>
