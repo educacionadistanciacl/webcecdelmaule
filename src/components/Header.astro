@@ -1,22 +1,69 @@
 ---
 // Importar el archivo CSS
-import styles from '../styles/Header.module.css';
 import BtnAulaVirtual from './BtnAulaVirtual.astro';
 ---
-<header class={styles.header}>
-  <div class={styles.logo}>
+<header >
+  <div>
     <a href="/">
       <img src="/public/img/logo.webp" alt="Logo CSC del Maule" />
     </a>
   </div>
   <nav>
     <ul>
-      <li><a href="/" class={styles.link}>Inicio</a></li>
-      <li><a href="/nosotros" class={styles.link}>Nosotros</a></li>
-      <li><a href="/cursos" class={styles.link}>Cursos</a></li>
-      <li><a href="/articulos" class={styles.link}>Artículos</a></li>
-      <li><a href="/contacto" class={styles.link}>Contacto</a></li>
+      <li><a href="/" >Inicio</a></li>
+      <li><a href="/nosotros" >Nosotros</a></li>
+      <li><a href="/cursos" >Cursos</a></li>
+      <li><a href="/articulos" >Artículos</a></li>
+      <li><a href="/contacto" >Contacto</a></li>
     </ul>
   </nav>
   <BtnAulaVirtual/>
 </header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Aumenta el padding para más espacio */
+    background-color: #1E57A4; /* Ajusta al color exacto del diseño */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  div img {
+    width: 162px;
+    height: 88px;
+    top: 8px;
+    left: 26px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  nav {
+    flex-grow: 1; /* Permite que el nav ocupe todo el espacio disponible */
+    /* margin-left: 25%;
+    margin-right: 0%; */
+    display: flex;
+    justify-content: flex-end; /* Empieza los elementos desde la izquierda */
+    margin-right: 5%; /* Incrementa el margen izquierdo para empujarlo a la derecha */
+  }  
+
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Ajusta el espacio entre los links */
+    margin: 0 10px; /* Añade márgenes a los lados para no pegar con los bordes */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #FCFCFC; /* Cambia el color del texto a blanco */
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  
+</style>

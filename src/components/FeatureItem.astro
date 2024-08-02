@@ -11,3 +11,49 @@ const { icon, title, description } = Astro.props;
   <h3>{title}</h3>
   <p>{description}</p>
 </div>
+
+<style>
+  .feature-item {
+  width: 240px; /* Ancho exacto para cada ítem */
+  height: 320px; /* Altura exacta para cada ítem */
+  margin: 0 15px; /* Espaciado horizontal entre ítems */
+  padding: 20px;
+  background-color: #FCFCFC;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra ligera */
+  border: 2px solid #0056b3; /* Añade un borde claro */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrado del contenido en la columna */
+}
+
+.feature-item .icon-container {
+  width: 90px;  /* Tamaño fijo del círculo */
+  height: 90px;  /* Tamaño fijo del círculo */
+  background-color: #0056b3;  /* Color azul para el fondo del círculo */
+  border-radius: 50%;  /* Círculo completo */
+  display: flex;  /* Flexbox para centrar el ícono */
+  align-items: center;  /* Alineación vertical */
+  justify-content: center;  /* Alineación horizontal */
+  margin-bottom: 20px;  /* Espacio debajo del círculo */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Sombra suave */
+}
+
+.feature-item img {
+  width: 60px;  /* Tamaño del ícono */
+  height: 60px;  /* Mantiene la proporción del ícono */
+}
+
+.feature-item h3 {
+  font-size: 20px; /* Tamaño de fuente para títulos */
+  font-weight: bold; /* Asegura que el texto sea negrita */
+  color: #0056b3;
+  margin-bottom: 10px; /* Espaciado bajo el título */
+}
+
+.feature-item p {
+  font-size: 16px; /* Tamaño de fuente para descripciones */
+  color: #0056b3;
+  text-align: center; /* Alineación del texto */
+}
+</style>

@@ -1,6 +1,6 @@
 ---
 // Importar estilos específicos si es necesario
-import '../styles/testimonials.css';
+
 ---
 
 <!-- Componente Testimonials -->
@@ -15,3 +15,57 @@ import '../styles/testimonials.css';
         </div>
     </div>
 </div>
+
+<style>
+    /* Estilos para el contenedor .Testimonials */
+.Testimonials {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    height: 100%; /* Ocupa todo el alto disponible de .content-area */
+    margin-top: auto; /* Empuja todo el contenido hacia abajo */
+    padding: 0 20px 20px 20px; /* Añade padding excepto en la parte superior */
+}
+
+/* Ajustes para la imagen del testimonio */
+.testimonial-image {
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    bottom: 0; /* Alinea la imagen al final del contenedor */
+    left: 15%; /* Alinea la imagen a la izquierda */
+    max-width: 27%; /* Control del ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: 340px; /* Establece un alto máximo */
+}
+
+
+/* Ajustes para el contenido del testimonio */
+.testimonial-content {
+    position: absolute;
+    left: 60%; /* Posiciona al centro horizontal */
+    transform: translateX(-50%); /* Centra exactamente en el medio */
+    top: 20%; /* Alinea el contenido en la parte superior */
+    width: 50%; /* Controla el ancho del contenido */
+    padding: 4% 3%; /* Reduce el padding lateral para más compactación */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    height: 60%; /* Ajusta la altura según necesidad */
+    color: #FCFCFC;
+    text-align: center; /* Centra el texto horizontalmente */
+
+}
+
+
+.testimonial-logo {
+    position: absolute;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Asegura centrado preciso */
+    bottom: -10%; /* Alinea el logo en la parte inferior */
+    width: auto; /* Ancho automático o definido si es necesario */
+}
+
+
+.testimonial-logo img {
+    width: 50%; /* Reduce el ancho del logo */
+    height: auto; /* Mantiene la proporción del logo al cambiar el ancho */
+}
+
+</style>

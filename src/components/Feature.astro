@@ -1,6 +1,5 @@
 ---
 
-import '../styles/features.css';
 import FeatureItem from "./FeatureItem.astro";
 // Definir datos para los features si es necesario o importarlos
 const path_icon = '../public/img/features'
@@ -16,3 +15,12 @@ const features = [
     <FeatureItem icon={feature.icon} title={feature.title} description={feature.description} />
   ))}
 </section>
+
+<style>
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0; /* Añade más espacio vertical */
+  background-color: #FCFCFC; /* Fondo de la sección */
+}
+</style>
