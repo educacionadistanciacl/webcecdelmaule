@@ -10,7 +10,7 @@
   height: 320px; /* Altura exacta para cada ítem */
   margin: 0 15px; /* Espaciado horizontal entre ítems */
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #FCFCFC;
   border-radius: 15px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra ligera */
   border: 2px solid #0056b3; /* Añade un borde claro */
