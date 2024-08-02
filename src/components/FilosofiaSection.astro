@@ -3,15 +3,40 @@ import IconItem from './FilosofiaItem.astro';
 const path_icon = '../public/img/icons'
 ---
 
-<div class="filosofia-section">
-  <IconItem icon=`${path_icon}/icon-graph-up.svg` label="Crecimiento profesional" percentage="70" colorIcon="#FDC115" />
-  <IconItem icon=`${path_icon}/icon-sun-ligth.svg` label="Nuevas oportunidades" percentage="93" colorIcon="#F46822"/>
-  <IconItem icon=`${path_icon}/icon-tools.svg` label="Aumento en la productividad" percentage="82" colorIcon="#DB1A5D"/>
-  <IconItem icon=`${path_icon}/icon-verified-user.svg` label="Satisfacción de nuestros alumnos" percentage="88" colorIcon="#643090"/>
+<div class="filosofia-container">
+  <div class="section-title">Nuestra Filosofia</div>
+  <p class="section-description">Creemos en el crecimiento profesional de todas las personas, generando un impacto positivo en sus puestos de trabajo.</p>
+  <div class="filosofia-section">
+    <IconItem icon=`${path_icon}/icon-graph-up.svg` label="Crecimiento profesional" percentage="70" colorIcon="#FDC115" />
+    <IconItem icon=`${path_icon}/icon-sun-ligth.svg` label="Nuevas oportunidades" percentage="93" colorIcon="#F46822"/>
+    <IconItem icon=`${path_icon}/icon-tools.svg` label="Aumento en la productividad" percentage="82" colorIcon="#DB1A5D"/>
+    <IconItem icon=`${path_icon}/icon-verified-user.svg` label="Satisfacción de nuestros alumnos" percentage="88" colorIcon="#643090"/>
+  </div>
 </div>
 
 <style>
+.filosofia-container {
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-secundario);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  color: var(--color-primario);
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.section-description {
+  color: var(--color-primario);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 .filosofia-section {
+  height: 400px; /* Mantiene la altura general del contenedor */
   display: flex;
   justify-content: space-around;
   align-items: center;
