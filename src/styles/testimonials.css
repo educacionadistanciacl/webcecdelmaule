@@ -21,18 +21,28 @@
 /* Ajustes para el contenido del testimonio */
 .testimonial-content {
     position: absolute;
-    right: 0; /* Alinea el contenido a la derecha */
+    left: 60%; /* Posiciona al centro horizontal */
+    transform: translateX(-50%); /* Centra exactamente en el medio */
     top: 20%; /* Alinea el contenido en la parte superior */
-    width: 60%; /* Controla el ancho del contenido */
-    padding: 20px; /* Añade padding para no pegar el texto a los bordes */
+    width: 50%; /* Controla el ancho del contenido */
+    padding: 4% 3%; /* Reduce el padding lateral para más compactación */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
-    height: 80%; /* Asegura que ocupe todo el alto del contenedor */
+    height: 60%; /* Ajusta la altura según necesidad */
     color: #FCFCFC;
     text-align: center; /* Centra el texto horizontalmente */
 }
 
+
 .testimonial-logo {
     position: absolute;
-    bottom: 20px; /* Alinea el logo en la parte inferior */
-    right: 20px; /* Alinea el logo en la parte derecha */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Asegura centrado preciso */
+    bottom: 0; /* Alinea el logo en la parte inferior */
+    width: auto; /* Ancho automático o definido si es necesario */
+}
+
+
+.testimonial-logo img {
+    width: 50%; /* Reduce el ancho del logo */
+    height: auto; /* Mantiene la proporción del logo al cambiar el ancho */
 }
