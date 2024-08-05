@@ -1,11 +1,13 @@
 ---
 // Importar el archivo CSS
 import BtnAulaVirtual from './BtnAulaVirtual.astro';
+import CecLogo from './CecLogo.astro';
 ---
 <header >
   <div>
     <a href="/">
-      <img src="/public/img/logo.webp" alt="Logo CSC del Maule" />
+      <!-- <img src="/public/img/logo.webp" alt="Logo CSC del Maule" /> -->
+       <CecLogo/>
     </a>
   </div>
   <nav>
@@ -28,16 +30,6 @@ import BtnAulaVirtual from './BtnAulaVirtual.astro';
     padding: 10px 50px; /* Aumenta el padding para más espacio */
     background-color: var(--color-primario);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  div img {
-    width: 175px;
-    height: 95px;
-    top: 8px;
-    left: 26px;
-    gap: 0px;
-    opacity: 0px;
-
   }
 
   nav {
