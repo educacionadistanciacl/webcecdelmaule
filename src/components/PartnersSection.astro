@@ -1,0 +1,52 @@
+---
+// Simulando la lista de logos como propiedades; reemplaza esto según cómo obtengas tus datos.
+const path_img = '../public/img/partners'
+
+const partners = [
+  { logo: `${path_img}/cosito-verde.svg`, name: '' },
+  { logo: `${path_img}/ucm-logo-vertical.svg`, name: 'UCM' },
+  { logo: `${path_img}/logo-utalca.svg`, name: 'U. de Talca' },
+  { logo: `${path_img}/servimaule.svg`, name: 'SERVIRMAULE' },
+  { logo: `${path_img}/laboratorio-ucm.svg`, name: 'LABORATORIO UCM' },
+];
+---
+
+<div class="partners-container">
+  <h2>HAN ELEGIDO TRABAJAR CON CEC del Maule</h2>
+  <div class="logos">
+    {partners.map((partner) => (
+      <img src={partner.logo} alt={`Logo de ${partner.name}`} class="partner-logo" />
+    ))}
+  </div>
+</div>
+
+<style>
+    .partners-container {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #17417D 0%, #448FCD 100%); /* Degradado de azul oscuro a azul claro */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.partners-container h2 {
+  margin-bottom: 20px; /* Espacio entre el título y los logos */
+  font-size: 24px;
+  padding: 0 20%;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around; /* Distribuye los logos equitativamente */
+  align-items: center;
+  flex-wrap: wrap; /* Permite envolver en pantallas más pequeñas */
+  padding: 0 20%; /* Reduce el área utilizada por los logos */
+}
+
+.partner-logo {
+  max-width: 120px; /* Limita el tamaño de los logos */
+  height: auto; /* Mantiene la proporción */
+  padding: 10px; /* Espacio alrededor de cada logo para evitar que se toquen */
+}
+
+</style>
