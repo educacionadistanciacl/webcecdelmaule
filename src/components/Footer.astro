@@ -12,7 +12,7 @@ const footerData = {
     { name: 'Icontec', url: 'https://www.icontec.org/' }
   ],
   certification: {
-    name: 'Certificado NCH 2728:2015',
+    name: 'CERTIFICADO NCH 2728:2015',
     logo: `${path_img}/icontec.svg`,
     code: 'OC - CEN8799'
   }
@@ -21,7 +21,7 @@ const footerData = {
 
 <footer class="footer-container">
   <div class="links-section">
-    <h3>ENLACES DE INTERÉS</h3>
+    <h4>ENLACES DE INTERÉS</h4>
     <ul>
       {footerData.links.map(link => (
         <li><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
@@ -30,7 +30,7 @@ const footerData = {
     <CecLogo/>
   </div>
   <div class="certification-section">
-    <h3>{footerData.certification.name}</h3>
+    <h4>{footerData.certification.name}</h4>
     <img src={footerData.certification.logo} alt="Certificado Logo" />
     <p>{footerData.certification.code}</p>
   </div>
@@ -52,9 +52,12 @@ const footerData = {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Solo cambia la alineación del texto en esta sección */
+    margin-top: auto; /* Empuja todo el contenido hacia abajo */
+    margin-bottom: auto; /* Ajusta la posición vertical para centrarlo */
 }
 
-.links-section h3 {
+.links-section h4 {
+    text-transform: uppercase;
     text-align: left; /* Alinea el texto del título a la izquierda */
     margin-left: 20px;
 }
@@ -80,15 +83,17 @@ const footerData = {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra los elementos horizontalmente en esta sección */
+    margin-top: auto; /* Empuja todo el contenido hacia abajo */
+    margin-bottom: auto; /* Ajusta la posición vertical para centrarlo */
 }
 
 .certification-section img {
-    width: 83px; /* Ajusta el tamaño según necesidad */
     margin: 10px 0;
 }
 
 .certification-section p {
     margin: 0;
+    font-size: 10px;
 }
 
 .CecLogo {
