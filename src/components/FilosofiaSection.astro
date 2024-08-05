@@ -4,7 +4,7 @@ const path_icon = '../public/img/icons'
 ---
 
 <div class="filosofia-container">
-  <div class="section-title">Nuestra Filosofia</div>
+  <h3 class="section-title">Nuestra Filosofia</h3>
   <p class="section-description">Creemos en el crecimiento profesional de todas las personas, generando un impacto positivo en sus puestos de trabajo.</p>
   <div class="filosofia-section">
     <IconItem icon=`${path_icon}/icon-graph-up.svg` label="Crecimiento profesional" percentage="70" colorIcon="#FDC115" />
@@ -16,32 +16,38 @@ const path_icon = '../public/img/icons'
 
 <style>
 .filosofia-container {
-  width: 100%;
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  width: 60%; /* Usa solo el 60% del ancho disponible */
+  margin: auto; /* Centra el contenedor en la página con márgenes automáticos */
   text-align: center;
-  background-color: var(--color-secundario);
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px; /* Padding vertical ajustado */
+  height: 500px; /* Altura general del contenedor */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .section-title {
   color: var(--color-primario);
   font-size: 24px;
-  margin: 10px 0;
+  margin-top: 20px; /* Espacio adicional arriba del título */
+  margin-bottom: 10px; /* Menos espacio antes de la descripción */
 }
 
 .section-description {
   color: var(--color-primario);
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 40px; /* Aumenta el espacio antes de la sección de íconos */
+  padding: 0 20%; /* Añade padding a los lados para más enfoque en el texto */
 }
 
 .filosofia-section {
-  height: 400px; /* Mantiene la altura general del contenedor */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly; /* Asegura un espaciado uniforme entre los ítems */
   align-items: center;
-  padding: 20px;
-  background-color: var(--color-secundario);  /* Fondo del contenedor */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  gap: 15px; /* Ajusta el espacio entre los ítems si es necesario */
+  padding: 0 5%; /* Reduce el padding para que los ítems estén más juntos */
 }
+
 </style>
