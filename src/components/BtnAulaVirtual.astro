@@ -1,8 +1,9 @@
 ---
 // hacer importaciones necesarias
+
 ---
 
-<a href="/aula-virtual" class="buttonAulaVirtual">Acceso Aula Virtual</a>
+<a href="/aula-virtual" class="buttonAulaVirtual" id="aulaVirtualButton">Acceso Aula Virtual</a>
 
 <style>
     .buttonAulaVirtual {
@@ -17,4 +18,36 @@
     text-transform: uppercase;
     margin-left: auto; /* Empuja el botón a la derecha */
 }
+
+@media (max-width: 900px) { 
+  .buttonAulaVirtual {
+    margin: 0; /* Ajusta el margen a 0 en pantallas pequeñas */
+  }
+}
 </style>
+
+<script>
+  const button = document.getElementById('aulaVirtualButton');
+  
+  // Define el texto para diferentes tamaños
+  const originalText = 'Acceso Aula Virtual';
+  const alternateText = 'Aula Virtual';
+
+  // Función para cambiar el texto basado en el ancho de la ventana
+  function updateButtonText() {
+    if (button){
+      if (window.matchMedia('(max-width: 900px)').matches) {
+        button.textContent = alternateText;
+      } else {
+        button.textContent = originalText;
+      }
+    }
+
+  }
+
+  // Escucha el evento resize y ejecuta la función para cambiar el texto
+  window.addEventListener('resize', updateButtonText);
+
+  // Ejecuta la función al cargar la página para establecer el texto inicial
+  updateButtonText();
+</script>

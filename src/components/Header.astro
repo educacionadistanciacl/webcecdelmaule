@@ -10,6 +10,7 @@ import CecLogo from './CecLogo.astro';
        <CecLogo/>
     </a>
   </div>
+  <div class="menu-icon" id="menuToggle">☰</div>
   <nav>
     <ul>
       <li><a href="/" >Inicio</a></li>
@@ -59,5 +60,84 @@ import CecLogo from './CecLogo.astro';
     text-transform: uppercase;
   }
 
+.menu-icon {
+  display: none; /* Oculta por defecto y se muestra solo en pantallas pequeñas */
+  cursor: pointer;
+  font-size: 24px; /* Tamaño del ícono del menú */
+  padding: 10px;
+}
+
+  /* Media query para ajustar la vista en dispositivos hasta 1024px */
+@media (max-width: 1024px) {
+  header {
+    justify-content: center; /* Centra todos los elementos del header */
+    padding: 10px 20px; /* Reduce el padding lateral */
+  }
+
+  nav {
+    margin-right: 0; /* Elimina el margen derecho extra */
+    justify-content: center; /* Centra los elementos del nav */
+  }
+
+  nav ul {
+    justify-content: center; /* Asegura que los 'li' estén centrados */
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    justify-content: space-between; /* Mantiene el logo y el botón en los extremos */
+    position: relative; /* Establece la posición relativa para el posicionamiento absoluto del nav */
+  }
+
+  .menu-icon {
+    display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+    font-size: 30px; /* Aumenta el tamaño para una mejor visibilidad */
+    color: white; /* Cambia el color a blanco */
+    padding: 10px 20px; /* Ajusta el padding para mejor acceso y visibilidad */
+    margin: 0 auto; /* Centra el ícono del menú horizontalmente */
+  }
+
+  nav {
+    position: absolute;
+    top: 100%; /* Coloca el menú directamente debajo del header */
+    left: 0;
+    right: 0;
+    background-color: var(--color-primario);
+    flex-direction: column;
+    display: none; /* Oculta el menú por defecto */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Añade sombra para resaltar el menú */
+    z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    text-align: center; /* Centra los enlaces en su contenedor */
+  }
+
+  nav a {
+    display: block; /* Hace que los enlaces llenen todo el ancho del menú */
+    padding: 10px 0; /* Añade padding para aumentar el área de clic */
+  }
+}
   
 </style>
+
+
+<script type="module">
+  const menuToggle = document.getElementById('menuToggle');
+  if (menuToggle) {
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', function() {
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+  } else {
+    console.error('El elemento menuToggle no fue encontrado');
+  }
+</script>
