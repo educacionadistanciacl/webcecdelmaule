@@ -1,0 +1,40 @@
+---
+// Importaciones o scripts aquí si son necesarios más adelante
+import ImagenContainer from "./ImagenContainer.astro"
+
+const imagenURL = '/public/img/banner_nosotros.svg'
+---
+
+<ImagenContainer ImagenBackgounrd={imagenURL}>
+    <div class="nosotros">
+        <div class="nosotros-content">
+          <h1>NOSOTROS</h1>
+          <p>Somos un equipo de profesionales con experiencia en capacitación online que pone de frente toda la innovación y tecnología para entregar una solución integra a todos nuestros alumnos, contribuyendo al crecimiento y desarrollo de las personas.</p>
+        </div>
+      </div>
+</ImagenContainer>
+
+<style>
+
+
+.nosotros-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido horizontalmente al inicio */
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 60%; /* Controla la anchura del contenido */
+  margin-left: 10%; /* Reducido para empujar menos hacia el centro */
+}
+
+.nosotros-content h1 {
+  font-size: 45px;  /* Ajusta el tamaño de fuente del título */
+  margin: 0;
+}
+
+.nosotros-content p {
+  font-size: 30px;  /* Ajusta el tamaño de fuente del párrafo */
+  margin-top: 3%;
+  padding-right: 20%;
+}
+
+</style>
