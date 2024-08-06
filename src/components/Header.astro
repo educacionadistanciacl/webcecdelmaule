@@ -29,20 +29,16 @@ import CecLogo from './CecLogo.astro';
 </header>
 
 <style>
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-  background-color: var(--color-primario);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 1000; /* Asegura que el header esté sobre otros contenidos */
-}
-
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Aumenta el padding para más espacio */
+    background-color: var(--color-primario);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-height: 60px; /* Ajusta esto según el mínimo necesario */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si no hay suficiente espacio */
+  }
 
   nav {
     flex-grow: 1; /* Permite que el nav ocupe todo el espacio disponible */
@@ -74,6 +70,21 @@ header {
   cursor: pointer;
   font-size: 24px; /* Tamaño del ícono del menú */
   padding: 10px;
+}
+
+/* Clase que se añadirá cuando se haga scroll */
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: var(--color-primario);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000; /* Asegura que el header esté sobre otros contenidos */
 }
 
 #mobileMenuBtn {
@@ -155,6 +166,7 @@ header {
 
 
 <script type="module">
+  // Manejar responsivamente el menu del header
   const menuToggle = document.getElementById('menuToggle');
   const nav = document.querySelector('nav');
 
@@ -181,4 +193,21 @@ header {
   } else {
     console.error('El elemento menuToggle no fue encontrado');
   }
+
+
+// -------------------------------------------------------------------
+
+// Manejar el header fijo cuando se hace scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header'); // Asegúrate de tener un elemento 'header'
+  const headerHeight = header.offsetHeight; // Altura del header para calcular el punto de cambio
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+      header.classList.add('header-fixed');
+    } else {
+      header.classList.remove('header-fixed');
+    }
+  });
+});
 </script>
