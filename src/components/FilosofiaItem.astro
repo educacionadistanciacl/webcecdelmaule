@@ -1,10 +1,10 @@
 ---
 // Recibe props de los iconos, títulos y números
-const { icon, label, percentage, colorIcon } = Astro.props;
+const { icon, label, percentage, colorIcon, additionalClass = ''} = Astro.props;
 ---
 
 <div class="icon-item">
-    <div class="icon-container" style={{ backgroundColor: colorIcon }}>
+    <div class=`icon-container ${additionalClass}` style={{ backgroundColor: colorIcon }}>
     <img src={icon} alt={label} class="icon-image" />
   </div>
   <div class="icon-text">
@@ -33,14 +33,16 @@ const { icon, label, percentage, colorIcon } = Astro.props;
   border-radius: 50%;  /* Hace el div completamente redondo */
   display: flex;
   align-items: center;  /* Centra el ícono verticalmente */
-  justify-content: center;  /* Centra el ícono horizontalmente */
+  justify-content: space-around; /* Distribuye el espacio uniformemente */
   margin-bottom: 20px;  /* Espacio debajo del contenedor del ícono */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra ligera */
+  border: 5px solid white
+  
 }
 
 .icon-image {
-  width: 60px;  /* Tamaño del ícono */
-  height: 60px;  /* Mantiene la proporción del ícono */
+  width: 50px;  /* Tamaño del ícono */
+  height: 50px;  /* Mantiene la proporción del ícono */
 }
 
 .icon-text h3 {
@@ -53,6 +55,6 @@ const { icon, label, percentage, colorIcon } = Astro.props;
     margin: 0;
     color: var(--color-primario);
     font-size: 14px; /* Ajusta este tamaño para la descripción */
-    padding: 0 15%; /* Añade padding a los lados para más enfoque en el texto */
+    padding: 0 5%; /* Añade padding a los lados para más enfoque en el texto */
 }
 </style>

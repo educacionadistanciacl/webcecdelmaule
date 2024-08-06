@@ -1,10 +1,10 @@
 ---
 // Importar imágenes y otros componentes si es necesario
-const { icon, title, description } = Astro.props;
+const { icon, title, description, additionalClass = '' } = Astro.props;
 ---
 
 
-<div class="feature-item">
+<div class=`feature-item ${additionalClass}`>
   <div class="icon-container">
     <img src={icon} alt={title} />
   </div>
