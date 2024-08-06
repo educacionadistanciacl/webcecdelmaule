@@ -54,4 +54,39 @@
   margin-top: 5px;  /* Espacio reducido para estar más cerca del título */
 }
 
+@media (max-width: 600px) {
+    .hero-content h1 {
+      font-size: 38.4px; /* Reduce el tamaño de la fuente en un 20% */
+      padding: 0 10%; /* Reduce el padding lateral para que quepa mejor */
+    }
+
+    .hero-content p {
+      font-size: 16px; /* Reduce el tamaño de la fuente en un 20% */
+    }
+
+    .hero-content {
+      width: 90%; /* Reduce el ancho del contenedor para asegurarse de que no se desborde */
+    }
+  }
+
+@media (max-width: 450px) {
+  .hero-content h1 {
+    font-size: 30.7px; /* Reduce el tamaño de la fuente en un 20% adicional desde 38.4px */
+    padding: 0 5%; /* Aumenta el padding lateral para mejorar la legibilidad */
+  }
+
+  .hero-content p {
+    font-size: 12.8px; /* Reduce el tamaño de la fuente en un 20% adicional desde 16px */
+  }
+
+  .hero-content img {
+    max-width: 200px; /* Reduce el tamaño del logo para que se ajuste mejor */
+    max-height: 115px;
+  }
+
+  .hero-content {
+    width: 95%; /* Reduce el ancho del contenedor para asegurar que no se desborde */
+  }
+}
+
 </style>
