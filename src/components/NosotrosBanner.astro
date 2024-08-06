@@ -37,4 +37,30 @@ const imagenURL = '/public/img/banner_nosotros.svg'
   padding-right: 20%;
 }
 
+/* Media query para ajustar la vista en dispositivos hasta 950px */
+@media (max-width: 1024px) {
+    .nosotros-content {
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto horizontalmente */
+        width: 80%; /* Aumenta el ancho del contenido para centrarlo visualmente */
+        margin-left: auto; /* Ajuste automático del margen izquierdo para centrado */
+        margin-right: auto; /* Ajuste automático del margen derecho para centrado */
+    }
+    
+    .nosotros-content p {
+        padding: 0;
+    }
+}
+
+/* Ajustes adicionales para menores resoluciones si es necesario */
+@media (max-width: 600px) {
+    .nosotros-content h1 {
+        font-size: 36px; /* Tamaño de fuente más pequeño para h1 */
+    }
+
+    .nosotros-content p {
+        font-size: 18px; /* Tamaño de fuente más pequeño para el párrafo */
+    }
+}
+
 </style>
