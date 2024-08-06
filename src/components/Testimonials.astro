@@ -71,4 +71,23 @@
     height: auto; /* Mantiene la proporción del logo al cambiar el ancho */
 }
 
+@media (max-width: 912px) {
+  .testimonial-image {
+    display: none; /* Oculta la imagen del testimonio */
+  }
+
+  .testimonial-content {
+    left: 50%; /* Asegura que el contenido esté centrado horizontalmente */
+    width: 80%; /* Ajusta el ancho del contenido para que no sea demasiado ancho */
+    transform: translateX(-50%); /* Centra exactamente en el medio */
+    top: 50%; /* Centra verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar perfectamente */
+  }
+
+  .testimonial-logo {
+    bottom: 10%; /* Ajusta la posición del logo para estar más cerca del texto */
+  }
+}
+
+
 </style>
