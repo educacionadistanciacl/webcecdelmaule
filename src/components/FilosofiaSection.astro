@@ -1,16 +1,28 @@
 ---
-import IconItem from './FilosofiaItem.astro';
-const path_icon = '../public/img/icons'
+import IconItem from './IconItem.astro';
+const path_icon = '../public/img/icons';
+
+const iconItems = [
+  { icon: `${path_icon}/icon-graph-up.svg`, label: "Crecimiento profesional", percentage: "70", colorIcon: "#FDC115" },
+  { icon: `${path_icon}/icon-sun-ligth.svg`, label: "Nuevas oportunidades", percentage: "93", colorIcon: "#F46822" },
+  { icon: `${path_icon}/icon-tools.svg`, label: "Aumento en la productividad", percentage: "82", colorIcon: "#DB1A5D" },
+  { icon: `${path_icon}/icon-verified-user.svg`, label: "Satisfacción de nuestros alumnos", percentage: "88", colorIcon: "#643090" }
+];
 ---
 
 <div class="filosofia-container">
   <h3 class="section-title">Nuestra Filosofia</h3>
   <p class="section-description">Creemos en el crecimiento profesional de todas las personas, generando un impacto positivo en sus puestos de trabajo.</p>
   <div class="filosofia-section">
-    <IconItem icon=`${path_icon}/icon-graph-up.svg` label="Crecimiento profesional" percentage="70" colorIcon="#FDC115" additionalClass="hover" />
-    <IconItem icon=`${path_icon}/icon-sun-ligth.svg` label="Nuevas oportunidades" percentage="93" colorIcon="#F46822" additionalClass="hover"/>
-    <IconItem icon=`${path_icon}/icon-tools.svg` label="Aumento en la productividad" percentage="82" colorIcon="#DB1A5D" additionalClass="hover"/>
-    <IconItem icon=`${path_icon}/icon-verified-user.svg` label="Satisfacción de nuestros alumnos" percentage="88" colorIcon="#643090" additionalClass="hover"/>
+    {iconItems.map(item => (
+      <IconItem
+        icon={item.icon}
+        label={item.label}
+        percentage={item.percentage}
+        colorIcon={item.colorIcon}
+        additionalClass="hover"
+      />
+    ))}
   </div>
 </div>
 

@@ -1,15 +1,17 @@
 ---
 // Recibe props de los iconos, títulos y números
-const { icon, label, percentage, colorIcon, additionalClass = ''} = Astro.props;
+const { icon, label, percentage, colorIcon, colorText, additionalClass = ''} = Astro.props;
 ---
 
 <div class="icon-item">
     <div class=`icon-container ${additionalClass}` style={{ backgroundColor: colorIcon }}>
-    <img src={icon} alt={label} class="icon-image" />
+      <slot name="icon-content"> <!-- Slot para contenido personalizado -->
+        <img src={icon} alt={label} class="icon-image" /> <!-- Contenido predeterminado -->
+      </slot>
   </div>
   <div class="icon-text">
-    <h3 style={{color: colorIcon}} >{percentage}%</h3>
-    <p>{label}</p>
+    {percentage && <h3 style={{ color: colorIcon }}>{percentage}%</h3>}
+    <p style={{ color: colorText }} >{label}</p>
   </div>
 </div>
 
@@ -20,7 +22,6 @@ const { icon, label, percentage, colorIcon, additionalClass = ''} = Astro.props;
   align-items: center;
   text-align: center;
   margin: 10px;
-  background-color: var(--color-secundario); /* Color de fondo del ítem */
   border-radius: 50px; /* Bordes redondeados */
   flex: 1; /* Cada ítem crecerá equitativamente */
   min-width: 120px; /* Mínimo ancho para cada ítem */
@@ -36,7 +37,10 @@ const { icon, label, percentage, colorIcon, additionalClass = ''} = Astro.props;
   justify-content: space-around; /* Distribuye el espacio uniformemente */
   margin-bottom: 20px;  /* Espacio debajo del contenedor del ícono */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra ligera */
-  border: 5px solid white
+  border: 5px solid var(--color-secundario);
+  color: var(--color-secundario);  /* Cambia el color del texto */
+  font-size: 24px;  /* Aumenta el tamaño del texto */
+  font-weight: bold;
   
 }
 
@@ -53,8 +57,8 @@ const { icon, label, percentage, colorIcon, additionalClass = ''} = Astro.props;
 
 .icon-text p {
     margin: 0;
-    color: var(--color-primario);
     font-size: 14px; /* Ajusta este tamaño para la descripción */
     padding: 0 5%; /* Añade padding a los lados para más enfoque en el texto */
+    color: var(--color-primario);
 }
 </style>
