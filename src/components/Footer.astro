@@ -101,4 +101,38 @@ const footerData = {
     margin-top: 30px;  /* Aumenta el espacio para bajar el logo */
     align-self: flex-start; /* Alineación a la izquierda dentro de la sección de enlaces */
 }
+
+@media (max-width: 450px) {
+    .footer-container {
+        flex-direction: column; /* Cambia la disposición a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 20px; /* Ajusta el padding según sea necesario */
+    }
+
+    .links-section, .certification-section {
+        align-items: center; /* Asegura que todo esté centrado en la sección */
+        width: 100%; /* Asegura que las secciones usen todo el ancho disponible */
+        text-align: center; /* Alinea el texto al centro */
+        margin: 10px 0; /* Añade un margen vertical para separación */
+    }
+
+    .links-section h4, .certification-section h4 {
+        text-align: center; /* Centra los títulos */
+        margin: 10px 0; /* Añade margen para separar de otros elementos */
+    }
+
+    .links-section ul, .certification-section img {
+        align-self: center; /* Alinea los elementos al centro de su contenedor */
+    }
+
+    .links-section a, .certification-section p {
+        text-align: center; /* Alinea el texto de enlaces y párrafos al centro */
+    }
+
+    .CecLogo {
+        margin-top: 20px; /* Espacio antes del logo si es necesario */
+        margin-bottom: 20px; /* Espacio después del logo */
+    }
+}
+
 </style>
