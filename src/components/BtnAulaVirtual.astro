@@ -1,9 +1,11 @@
 ---
 // hacer importaciones necesarias
 const url_aulavirutal = 'https://aula.cecdelmaule.cl/login/index.php'
+
+const { additionalClasses = '' } = Astro.props;
 ---
 
-<a href=`${url_aulavirutal}` class="buttonAulaVirtual" id="aulaVirtualButton">Acceso Aula Virtual</a>
+<a href=`${url_aulavirutal}` class=`buttonAulaVirtual ${additionalClasses}` id="aulaVirtualButton">Acceso Aula Virtual</a>
 
 <style>
     .buttonAulaVirtual {

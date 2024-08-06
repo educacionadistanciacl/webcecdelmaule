@@ -18,3 +18,11 @@ html, body {
     background: #FCFCFC; /* Ajusta el color de fondo según tu diseño */
   }
   
+  .hover {
+    display: inline-block; /* Asegura que transform funcione en elementos inline */
+    transition: transform 0.3s ease; /* Suaviza la transición */
+  }
+  
+  .hover:hover {
+    transform: scale(1.1); /* Escala el elemento al pasar el ratón */
+  }

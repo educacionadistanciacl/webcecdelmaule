@@ -13,18 +13,18 @@ import CecLogo from './CecLogo.astro';
   <div class="menu-icon" id="menuToggle">☰</div>
   <nav>
     <ul>
-      <li><a href="/" >Inicio</a></li>
-      <li><a href="/nosotros" >Nosotros</a></li>
-      <li><a href="/cursos" >Cursos</a></li>
-      <li><a href="/articulos" >Artículos</a></li>
-      <li><a href="/contacto" >Contacto</a></li>
+      <li><a class="hover" href="/" >Inicio</a></li>
+      <li><a class="hover" href="/nosotros" >Nosotros</a></li>
+      <li><a class="hover" href="/cursos" >Cursos</a></li>
+      <li><a class="hover" href="/articulos" >Artículos</a></li>
+      <li><a class="hover" href="/contacto" >Contacto</a></li>
     </ul>
     <div id="mobileMenuBtn" class="hidden">
       <BtnAulaVirtual />
     </div>
   </nav>
   <div id="desktopMenuBtn">
-    <BtnAulaVirtual />
+    <BtnAulaVirtual additionalClasses="hover"  />
   </div>
 </header>
 
