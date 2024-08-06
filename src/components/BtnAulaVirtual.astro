@@ -36,7 +36,8 @@ const url_aulavirutal = 'https://aula.cecdelmaule.cl/login/index.php'
   // Función para cambiar el texto basado en el ancho de la ventana
   function updateButtonText() {
     if (button){
-      if (window.matchMedia('(max-width: 900px)').matches) {
+      
+      if (window.innerWidth > 912) {
         button.textContent = alternateText;
       } else {
         button.textContent = originalText;

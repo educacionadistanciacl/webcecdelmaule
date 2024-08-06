@@ -19,12 +19,18 @@ import CecLogo from './CecLogo.astro';
       <li><a href="/articulos" >Artículos</a></li>
       <li><a href="/contacto" >Contacto</a></li>
     </ul>
+    <div id="mobileMenuBtn" class="hidden">
+      <BtnAulaVirtual />
+    </div>
   </nav>
-  <BtnAulaVirtual/>
+  <div id="desktopMenuBtn">
+    <BtnAulaVirtual />
+  </div>
 </header>
 
 <style>
   header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +73,10 @@ import CecLogo from './CecLogo.astro';
   padding: 10px;
 }
 
+#mobileMenuBtn {
+    display: none;
+}
+
   /* Media query para ajustar la vista en dispositivos hasta 1024px */
 @media (max-width: 1024px) {
   header {
@@ -84,7 +94,7 @@ import CecLogo from './CecLogo.astro';
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   header {
     justify-content: space-between; /* Mantiene el logo y el botón en los extremos */
     position: relative; /* Establece la posición relativa para el posicionamiento absoluto del nav */
@@ -125,18 +135,46 @@ import CecLogo from './CecLogo.astro';
     padding: 10px 0; /* Añade padding para aumentar el área de clic */
   }
 }
+
+@media (max-width: 530px) {
+    #desktopMenuBtn {
+      display: none; /* Oculta el botón en el header en pantallas pequeñas */
+    }
+
+    #mobileMenuBtn {
+      display: flex; /* Muestra el botón dentro del menú en pantallas pequeñas */
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
   
 </style>
 
 
 <script type="module">
   const menuToggle = document.getElementById('menuToggle');
-  if (menuToggle) {
-    const nav = document.querySelector('nav');
+  const nav = document.querySelector('nav');
 
-    menuToggle.addEventListener('click', function() {
-      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-    });
+  function toggleMenu() {
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+
+  function handleResize() {
+    if (window.innerWidth > 912) {
+      nav.style.display = 'flex'; // Muestra el menú en pantallas grandes
+    } else {
+      nav.style.display = 'none'; // Oculta el menú en pantallas pequeñas por defecto
+    }
+  }
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Llama a la función inicialmente para establecer el estado correcto
   } else {
     console.error('El elemento menuToggle no fue encontrado');
   }
