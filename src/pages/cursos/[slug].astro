@@ -1,0 +1,42 @@
+---
+// ---------------------------------------------------------------------
+// Un slug es una versión simplificada y legible de un nombre o título, 
+// utilizado comúnmente en URLs para mejorar 
+// la legibilidad y el SEO (optimización para motores de búsqueda).
+// EJEMPLO 
+// un artículo titulado "Cómo Optimizar Tu Sitio Web", el slug correspondiente sería como-optimizar-tu-sitio-web.
+// --------------------------------------------------------------------
+
+
+// Importa los datos de los cursos
+import cursos from '../../data/cursos.json';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  return cursos.map(curso => {
+    const slug = curso.NOMBRE.replace(/\s+/g, '-').toLowerCase(); // Reemplaza espacios por guiones y convierte a minúsculas
+    return {
+      params: {
+        slug
+      },
+      props: {
+        curso
+      }
+    };
+  });
+}
+
+// Accede a los props pasados por getStaticPaths
+const { slug } = Astro.params;
+const curso = cursos.find(c => c.NOMBRE.replace(/\s+/g, '-').toLowerCase() === slug);
+
+if (!curso) {
+  return Astro.redirect('/404');
+}
+---
+<!-- aqui aplicar componente de cursoTemplate -->
+
+<BaseLayout title={curso.NOMBRE}>
+  <h1>{curso.NOMBRE}</h1>
+  <p>{curso.COMPETENCIA_DESARROLLAR}</p>
+</BaseLayout>

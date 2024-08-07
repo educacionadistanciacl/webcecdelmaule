@@ -1,13 +1,37 @@
 [
     {
-      "id": "curso1",
-      "nombre": "Curso de Desarrollo Web",
-      "descripcion": "Aprende a crear sitios web increíbles."
-    },
-    {
-      "id": "curso2",
-      "nombre": "Curso de Marketing Digital",
-      "descripcion": "Domina el arte del marketing digital."
-    }
+        "NOMBRE": "APLICACIÓN DE HERRAMIENTAS DE OFIMÁTICA (WINDOWS 10)",
+        "CODIGO": "1238036927",
+        "TIPO": "CURSO SINCRÓNICO",
+        "HORAS_CRONOLOGICAS": "24",
+        "COMPETENCIA_DESARROLLAR": "Al finalizar la actividad el participante será capaz de aplicar herramientas de ofimática (Windows, Word, Excel, PowerPoint) de acuerdo a las especificaciones técnicas establecidas por el software, logrando optimizar sus tareas.",
+        "MODULO": [
+          {
+            "NUMERO": "Modulo 1",
+            "NOMBRE": "CONCEPTOS BÁSICOS DE LA OFIMÁTICA (WINDOWS 10)",
+            "DESCRIPCION": "Conceptos básicos de la ofimática (Windows 10)."
+          },
+          {
+            "NUMERO": "Modulo 2",
+            "NOMBRE": "MICROSOFT WORD",
+            "DESCRIPCION": "Utilizar los comandos y herramientas de Word en la creación de documentos de texto."
+          },
+          {
+            "NUMERO": "Modulo 3",
+            "NOMBRE": "MICROSOFT EXCEL",
+            "DESCRIPCION": "Aplicar las herramientas y fórmulas de Excel en la creación de documentos numéricos."
+          },
+          {
+            "NUMERO": "Modulo 4",
+            "NOMBRE": "MICROSOFT POWERPOINT",
+            "DESCRIPCION": "Aplicar distintas herramientas y utilidades para dar formato al texto de la presentación según las opciones del programa Microsoft PowerPoint."
+          },
+          {
+            "NUMERO": "Modulo 5",
+            "NOMBRE": "MICROSOFT OUTLOOK",
+            "DESCRIPCION": "Aplicar las opciones y ajustes de configuración de la ventana de Microsoft Outlook."
+          }
+        ]
+      }      
   ]
   

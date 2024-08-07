@@ -2,6 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import cursos from '../../src/data/cursos.json';
+
+const slugReplace = (slug: string): string => {
+    return slug.replace(/\s+/g, '-').toLowerCase();
+}
+
 ---
 <!-- aqui usar componente de pagina de cursos -->
 
@@ -9,7 +14,8 @@ import cursos from '../../src/data/cursos.json';
     <h1>Cursos disponibles</h1>
     <ul>
         {cursos.map(curso => (
-            <li><a href={`/cursos/${curso.id}`}>{curso.nombre}</a></li>
+            <li><a href={`/cursos/${slugReplace(curso.NOMBRE)}`}>{curso.NOMBRE}</a>
+</li>
         ))}
     </ul>
 </BaseLayout>
