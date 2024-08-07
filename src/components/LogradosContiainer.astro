@@ -71,11 +71,14 @@ const iconItemsData = [
     
     .logrados-section {
       display: flex;
-      justify-content: space-evenly; /* Asegura un espaciado uniforme entre los ítems */
+      overflow-x: auto; /* Permite desplazamiento horizontal */
+      scroll-snap-type: x mandatory; /* Asegura que el desplazamiento se ajuste al siguiente elemento automáticamente */
+      justify-content: flex-start; /* Alinea los ítems al inicio del contenedor */
       align-items: center;
-      flex-wrap: wrap; /* Evita que los elementos se envuelvan */
+      flex-wrap: nowrap; /* Evita que los ítems se envuelvan */
       gap: 15px; /* Ajusta el espacio entre los ítems si es necesario */
       padding: 0 5%; /* Reduce el padding para que los ítems estén más juntos */
     }
+
     
-    </style>
+</style>
