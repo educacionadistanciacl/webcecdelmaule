@@ -1,0 +1,13 @@
+[
+    {
+      "id": "curso1",
+      "nombre": "Curso de Desarrollo Web",
+      "descripcion": "Aprende a crear sitios web increíbles."
+    },
+    {
+      "id": "curso2",
+      "nombre": "Curso de Marketing Digital",
+      "descripcion": "Domina el arte del marketing digital."
+    }
+  ]
+  

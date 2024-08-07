@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import cursos from '../../src/data/cursos.json';
+---
+<!-- aqui usar componente de pagina de cursos -->
+
+<BaseLayout title="Cursos">
+    <h1>Cursos disponibles</h1>
+    <ul>
+        {cursos.map(curso => (
+            <li><a href={`/cursos/${curso.id}`}>{curso.nombre}</a></li>
+        ))}
+    </ul>
+</BaseLayout>
