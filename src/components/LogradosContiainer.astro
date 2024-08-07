@@ -80,5 +80,48 @@ const iconItemsData = [
       padding: 0 5%; /* Reduce el padding para que los ítems estén más juntos */
     }
 
+    @media (max-width: 450px) {
+    .section-description {
+        display: none; /* Oculta la descripción de la sección */
+    }
     
+    .logrados-section {
+        gap: 0; /* Reduce el espacio entre los ítems */
+        justify-content: center; /* Centra los ítems horizontalmente */
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        align-items: center;
+        padding: 0; /* Reduce el padding a cero para maximizar el uso del espacio */
+    }
+    
+    .logrados-container {
+        padding: 20px 20px 0 20px; /* Ajusta el padding superior para alinear con la desaparición de la descripción */
+    }
+}
+
+@media (max-width: 350px) {
+
+  .logrados-container {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .logrados-section {
+        display: flex;
+        flex-wrap: nowrap; /* Asegura que los ítems no se envuelvan */
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        scroll-snap-type: x mandatory; /* Asegura que cada elemento se alinee correctamente al desplazarse */
+        width: 100%; /* Establece un ancho explícito para el contenedor */
+        justify-content: flex-start; /* Alinea los ítems al inicio */
+    }
+
+    .logrados-section > * {
+        flex: 0 0 100%; /* Cada ítem ocupa el 100% del ancho del contenedor */
+        max-width: 100%; /* Asegura que cada ítem no exceda el ancho del contenedor */
+        scroll-snap-align: start; /* Alinea los elementos al inicio durante el desplazamiento */
+    }
+}
+
+
+
 </style>
