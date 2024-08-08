@@ -1,27 +1,61 @@
 ---
-const { curso } = Astro.props;
+// Define una interfaz para los datos de los módulos
+interface Modulo {
+  NUMERO: string;
+  NOMBRE: string;
+  DESCRIPCION: string;
+}
+
+interface Curso {
+  NOMBRE: string;
+  CODIGO: string;
+  TIPO: string;
+  HORAS_CRONOLOGICAS: string;
+  COMPETENCIA_DESARROLLAR: string;
+  MODULO: Modulo[];
+}
+
+const curso: Curso = Astro.props.curso;
+
+if (!curso) {
+  throw new Error("El curso no está disponible.");
+}
+
 ---
 
 <div class="curso-container">
   <!-- Header del curso -->
   <div class="curso-header">
     <div class="curso-header-inner">
-      <h1 class="curso-title">{curso.NOMBRE}</h1>
-      <p class="curso-codigo">Código Sence: {curso.CODIGO}</p>
+      <h1 class="curso-title">{curso?.NOMBRE}</h1>
+      <p class="curso-codigo">Código Sence: {curso?.CODIGO}</p>
     </div>
     <div class="curso-info">
       <img src="../public/img/portada_empresa.webp" alt="Imagen del Curso">
       <div class="curso-metadata">
-        <p class="curso-tipo">{curso.TIPO}</p>
-        <p class="curso-horas" >{curso.HORAS_CRONOLOGICAS} horas cronológicas</p>
-        <p class="curso-descripcion">{curso.COMPETENCIA_DESARROLLAR}</p>
+        <p class="curso-tipo">{curso?.TIPO}</p>
+        <p class="curso-horas">{curso?.HORAS_CRONOLOGICAS} horas cronológicas</p>
+        <p class="curso-descripcion">{curso?.COMPETENCIA_DESARROLLAR}</p>
       </div>
     </div>
   </div>
 
-
+  <!-- Modulos del curso -->
+  <div class="modulos-container">
+    {curso?.MODULO.map((modulo: Modulo) => (
+      <div class={`modulo ${parseInt(modulo.NUMERO) % 2 === 0 ? 'right' : 'left'}`}>
+        <div class="modulo-info">
+          <div class="modulo-numero">{modulo.NUMERO}</div>
+          <div class="modulo-nombre">{modulo.NOMBRE}</div>
+          <div class="modulo-descripcion">{modulo.DESCRIPCION}</div>
+        </div>
+      </div>
+    ))}
+  </div>
 </div>
 <style>
+
+  /* ------------------------------------------- CURSO HEADER */
 
 .curso-header {
   max-width: 800px; /* Ajusta según la anchura deseada */
@@ -90,6 +124,60 @@ const { curso } = Astro.props;
   padding-right: 20%;
   font-size: 17px;
 }
+
+/* ----------------------------------- MODULO CONTAINER */
+.modulos-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modulo {
+  display: flex;
+  align-items: center; /* Asegura alineación vertical central */
+  margin: 20px 0;
+  background: #FFFFFF; /* Fondo blanco para cada módulo */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.modulo.left, .modulo.right {
+  position: relative; /* Posición relativa para posicionar la barra de color */
+}
+
+.modulo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px; /* Ancho de la barra de color */
+  top: 0;
+  bottom: 0;
+  background-color: #007BFF; /* Color de la barra por defecto */
+}
+
+.modulo.right::before {
+  left: unset;
+  right: 0;
+  background-color: #FFD600; /* Color específico para los módulos 'right' */
+}
+
+.modulo-info {
+  padding: 20px;
+  flex-grow: 1; /* Crecimiento para ocupar el espacio disponible */
+}
+
+.modulo-numero {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modulo-nombre, .modulo-descripcion {
+  font-size: 16px;
+  color: #666;
+  padding: 5px 0; /* Espaciado vertical para separación */
+}
+
+
 
 @media (max-width: 600px) {
   .curso-info img {
