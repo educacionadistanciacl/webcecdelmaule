@@ -91,6 +91,23 @@ const { curso } = Astro.props;
   font-size: 17px;
 }
 
-/* @media 600px */
+@media (max-width: 600px) {
+  .curso-info img {
+    display: none; /* Esconde la imagen */
+  }
+
+  .curso-metadata {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    text-align: center; /* Centra el texto */
+    margin: auto; /* Alinea automáticamente al centro si es necesario */
+  }
+
+  .curso-header-inner,
+  .curso-metadata,
+  .curso-descripcion {
+    padding: 0; /* Remueve cualquier padding que pueda afectar el centrado */
+  }
+}
+
 
 </style>
