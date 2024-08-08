@@ -1,0 +1,92 @@
+---
+const { curso } = Astro.props;
+---
+
+<div class="curso-container">
+  <!-- Header del curso -->
+  <div class="curso-header">
+    <div class="curso-header-inner">
+      <h1 class="curso-title">{curso.NOMBRE}</h1>
+      <p class="curso-codigo">Código Sence: {curso.CODIGO}</p>
+    </div>
+    <div class="curso-info">
+      <img src="../public/img/portada_empresa.webp" alt="Imagen del Curso">
+      <div class="curso-metadata">
+        <p class="curso-tipo">{curso.TIPO}</p>
+        <p class="curso-horas" >{curso.HORAS_CRONOLOGICAS} horas cronológicas</p>
+        <p class="curso-descripcion">{curso.COMPETENCIA_DESARROLLAR}</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<style>
+
+.curso-header {
+  max-width: 800px; /* Ajusta según la anchura deseada */
+  margin: auto;
+  padding: 20px; /* Espacio interior */
+  padding-bottom: 20px; /* Espacio debajo del encabezado */
+  margin-bottom: 20px; /* Espacio separador entre el encabezado y el contenido siguiente */
+  color: var(--cec-oscuro); /* Color oscuro para texto */
+}
+
+.curso-header-inner {
+  text-align: center; /* Centra el contenido textual */
+  max-width: 600px; /* Limita el ancho máximo para el título y el código */
+  margin: auto; /* Centra el div en la página */
+  padding: 0 20%;
+}
+
+
+.curso-title {
+  font-size: 24px; /* Tamaño de fuente para el título */
+  margin-bottom: 5px; /* Espacio debajo del título */
+}
+
+.curso-codigo {
+  font-size: 21px; /* Tamaño de la fuente para el código Sence */
+  margin-bottom: 20px; /* Espacio debajo del código */
+}
+
+.curso-info {
+  display: flex; /* Distribución en línea para la imagen y los metadatos */
+  align-items: center; /* Alineación vertical al centro */
+}
+
+.curso-info img {
+  width: 40%; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 20px; /* Espacio entre la imagen y los metadatos */
+}
+
+.curso-metadata {
+  width: 60%; /* Ancho del área de metadatos */
+}
+
+.curso-tipo {
+  background-color: #FFD600; /* Color amarillo para el fondo */
+  font-weight: 600;
+  font-size: 16px; /* Tamaño de la fuente ajustado */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  padding: 2px 20px 2px 1px; /* Padding para dar más espacio alrededor del texto */
+  display: inline-block; /* Hace que el fondo sólo cubra el texto */
+  margin: 0 0 5px 0; /* Espacio debajo del elemento */
+  text-align: center; /* Centra el texto dentro del bloque */
+  width: auto; /* Ancho automático para ajustarse al contenido */
+}
+
+.curso-horas {
+  margin: 0;
+  font-weight: 600;
+}
+
+.curso-descripcion {
+  padding-right: 20%;
+  font-size: 17px;
+}
+
+/* @media 600px */
+
+</style>

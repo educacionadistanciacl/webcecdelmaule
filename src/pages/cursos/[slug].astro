@@ -11,6 +11,7 @@
 // Importa los datos de los cursos
 import cursos from '../../data/cursos.json';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CursoTemplate from '../../components/CursoTemplate.astro';
 
 export async function getStaticPaths() {
   return cursos.map(curso => {
@@ -37,6 +38,5 @@ if (!curso) {
 <!-- aqui aplicar componente de cursoTemplate -->
 
 <BaseLayout title={curso.NOMBRE}>
-  <h1>{curso.NOMBRE}</h1>
-  <p>{curso.COMPETENCIA_DESARROLLAR}</p>
+  <CursoTemplate curso={curso} />
 </BaseLayout>
