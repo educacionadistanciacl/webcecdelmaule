@@ -42,6 +42,7 @@ if (!curso) {
 
   <!-- Modulos del curso -->
   <div class="modulos-container">
+    <h3>Modulos</h3>
     {curso?.MODULO.map((modulo: Modulo) => (
       <div class={`modulo ${parseInt(modulo.NUMERO) % 2 === 0 ? 'right' : 'left'}`}>
         <div class="modulo-info">
@@ -129,14 +130,25 @@ if (!curso) {
 .modulos-container {
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(to bottom, #17417D 0%, #448FCD 100%);
+}
+
+.modulos-container h3 {
+  text-align: center; /* Centra el texto horizontalmente */
+  color: var(--color-secundario);
+  background-color: var(--color-primario); /* Color de fondo del pseudo-elemento */
+  position: relative; /* Posición relativa para posicionar pseudo-elementos respecto a este */
+  margin:20px 0; /* Elimina márgenes por defecto */
+  left: 50%; /* Posiciona el inicio del pseudo-elemento en el centro del h3 */
+  transform: translateX(-50%); /* Centra el pseudo-elemento exactamente */
+  width: 50%; /* Ancho del pseudo-elemento como porcentaje del ancho del h3 */ 
 }
 
 .modulo {
   display: flex;
   align-items: center; /* Asegura alineación vertical central */
   margin: 20px 0;
-  background: #FFFFFF; /* Fondo blanco para cada módulo */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra suave */
+
   border-radius: 8px; /* Bordes redondeados */
 }
 
@@ -163,17 +175,16 @@ if (!curso) {
 .modulo-info {
   padding: 20px;
   flex-grow: 1; /* Crecimiento para ocupar el espacio disponible */
+  color: var(--color-secundario);
 }
 
 .modulo-numero {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
 }
 
 .modulo-nombre, .modulo-descripcion {
   font-size: 16px;
-  color: #666;
   padding: 5px 0; /* Espaciado vertical para separación */
 }
 
