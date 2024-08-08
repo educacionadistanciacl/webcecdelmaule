@@ -4,6 +4,8 @@ import type { Curso } from '../types/cursoTypes';
 
 const curso: Curso = Astro.props.curso;
 
+const icono = "icono-1.svg"
+
 ---
 
 <div class="curso-container">
@@ -27,7 +29,11 @@ const curso: Curso = Astro.props.curso;
   <div class="modulos-container">
     <h3>Modulos</h3>
       {curso.MODULO.map((modulo, index) => (
-        <ModuloCurso key={index} modulo={modulo} className={index % 2 === 0 ? 'left' : 'right'} icon="icon-tools.svg" />
+        <ModuloCurso 
+        key={index} 
+        modulo={modulo} 
+        className={index % 2 === 0 ? 'left' : 'right'} 
+        icon={icono} />
       ))}
   </div>
 </div>

@@ -9,7 +9,7 @@ interface ModuloCursoProps {
 
 const { modulo, className, icon } = Astro.props as ModuloCursoProps;
 
-const iconPath = '../public/img/icons'
+const iconPath = '../public/img/icons/modulos'
 ---
 
 <div class={`modulo ${className}`}>
@@ -51,19 +51,22 @@ const iconPath = '../public/img/icons'
 
 .modulo.left .modulo-icon {
     flex: 1;  /* Ocupa la mitad del módulo */
-    background-color: #FFD600;  /* Fondo amarillo */
+    background-color: #FDC115;  /* Fondo amarillo */
     display: flex;
     justify-content: flex-end;  /* Centra el icono horizontalmente */
     align-items: center;  /* Centra el icono verticalmente */
     border-top-right-radius: 100px;  /* Hace que la curvatura superior derecha sea semicircular */
     border-bottom-right-radius: 100px;  /* Hace que la curvatura inferior derecha sea semicircular */
-    padding-right: 10px;  /* Espacio a la derecha del icono para evitar que toque el borde */
+    padding: 10px;  /* Espacio a la derecha del icono para evitar que toque el borde */
     overflow: hidden;  /* Oculta cualquier desbordamiento, útil si el icono es grande */
     height: 100%;  /* Asegura que el borde redondeado ocupe toda la altura del contenedor */
 }
 
 .modulo img {
   width: 80px; /* Ajusta el tamaño del icono según sea necesario */
+  background-color: white;
+  border-radius: 50%;  /* Hace el div completamente redondo */
+
 }
 
 
