@@ -1,0 +1,70 @@
+---
+import type { Modulo } from '../types/cursoTypes';
+
+interface ModuloCursoProps {
+  modulo: Modulo;
+  className: string; // 'left' o 'right', para estilizar según la clase
+  icon: string;
+}
+
+const { modulo, className, icon } = Astro.props as ModuloCursoProps;
+
+const iconPath = '../public/img/icons'
+---
+
+<div class={`modulo ${className}`}>
+    <div class="modulo-icon">
+      <img src={`${iconPath}/${icon}`} alt="Icono del Módulo" />
+    </div>
+    <div class="modulo-info">
+      <div class="modulo-numero">{modulo.NUMERO}</div>
+      <div class="modulo-nombre">{modulo.NOMBRE}</div>
+      <div class="modulo-descripcion">{modulo.DESCRIPCION}</div>
+    </div>
+  </div>
+
+  <style>
+.modulo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: var(--color-secundario);
+}
+
+.modulo.left {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; /* Evita que el contenido sobresalga del borde redondeado */
+}
+
+.modulo.left .modulo-info {
+  flex: 1; /* Toma la mitad izquierda del módulo */
+  padding: 10px; /* Padding interior para el texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.modulo.left .modulo-icon {
+    flex: 1;  /* Ocupa la mitad del módulo */
+    background-color: #FFD600;  /* Fondo amarillo */
+    display: flex;
+    justify-content: flex-end;  /* Centra el icono horizontalmente */
+    align-items: center;  /* Centra el icono verticalmente */
+    border-top-right-radius: 100px;  /* Hace que la curvatura superior derecha sea semicircular */
+    border-bottom-right-radius: 100px;  /* Hace que la curvatura inferior derecha sea semicircular */
+    padding-right: 10px;  /* Espacio a la derecha del icono para evitar que toque el borde */
+    overflow: hidden;  /* Oculta cualquier desbordamiento, útil si el icono es grande */
+    height: 100%;  /* Asegura que el borde redondeado ocupe toda la altura del contenedor */
+}
+
+.modulo img {
+  width: 80px; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+
+    </style>
