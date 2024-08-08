@@ -5,15 +5,16 @@ interface ModuloCursoProps {
   modulo: Modulo;
   className: string; // 'left' o 'right', para estilizar según la clase
   icon: string;
+  colorIcon: string;
 }
 
-const { modulo, className, icon } = Astro.props as ModuloCursoProps;
+const { modulo, className, icon, colorIcon } = Astro.props as ModuloCursoProps;
 
 const iconPath = '../public/img/icons/modulos'
 ---
 
 <div class={`modulo ${className}`}>
-    <div class="modulo-icon">
+    <div class="modulo-icon" style={{ backgroundColor: colorIcon }}>
       <img src={`${iconPath}/${icon}`} alt="Icono del Módulo" />
     </div>
     <div class="modulo-info">
@@ -64,9 +65,8 @@ const iconPath = '../public/img/icons/modulos'
 
 .modulo img {
   width: 80px; /* Ajusta el tamaño del icono según sea necesario */
-  background-color: white;
+  background-color: var(--color-secundario);
   border-radius: 50%;  /* Hace el div completamente redondo */
-
 }
 
 
