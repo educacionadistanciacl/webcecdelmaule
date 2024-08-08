@@ -25,18 +25,22 @@ const { curso } = Astro.props;
 
 .curso-header {
   max-width: 800px; /* Ajusta según la anchura deseada */
+  min-height: 500px;
   margin: auto;
   padding: 20px; /* Espacio interior */
-  padding-bottom: 20px; /* Espacio debajo del encabezado */
-  margin-bottom: 20px; /* Espacio separador entre el encabezado y el contenido siguiente */
   color: var(--cec-oscuro); /* Color oscuro para texto */
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column; /* Organiza los elementos en una columna */
 }
+
 
 .curso-header-inner {
   text-align: center; /* Centra el contenido textual */
   max-width: 600px; /* Limita el ancho máximo para el título y el código */
-  margin: auto; /* Centra el div en la página */
-  padding: 0 20%;
+  padding: 0 15%;
+  margin-bottom: 50px;
 }
 
 
@@ -47,7 +51,7 @@ const { curso } = Astro.props;
 
 .curso-codigo {
   font-size: 21px; /* Tamaño de la fuente para el código Sence */
-  margin-bottom: 20px; /* Espacio debajo del código */
+  margin: 0; /* Espacio debajo del código */
 }
 
 .curso-info {
