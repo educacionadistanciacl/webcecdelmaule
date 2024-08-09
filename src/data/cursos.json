@@ -32,6 +32,26 @@
             "DESCRIPCION": "Aplicar las opciones y ajustes de configuración de la ventana de Microsoft Outlook."
           }
         ]
-      }      
+      },
+      {
+        "NOMBRE": "APLICACIÓN DE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
+        "CODIGO": "1238033591",
+        "TIPO": "Curso sincrónico",
+        "HORAS_CRONOLOGICAS": "08",
+        "COMPETENCIA_DESARROLLAR": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según métodos de abordaje, gestión del clima y de buenas prácticas laborales.",
+        "MODULO": [
+          {
+            "NUMERO": "1",
+            "NOMBRE": "FUNDAMENTOS SOBRE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
+            "DESCRIPCION": "Identificar los fundamentos sobre normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral de acuerdo con sus características."
+          },
+          {
+            "NUMERO": "2",
+            "NOMBRE": "NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
+            "DESCRIPCION": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según mecanismos de abordaje."
+          }
+        ]
+      }
+        
   ]
   
