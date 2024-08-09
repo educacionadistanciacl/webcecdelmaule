@@ -4,18 +4,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import cursos from '../../src/data/cursos.json';
 
 const slugReplace = (slug: string): string => {
-    return slug.replace(/\s+/g, '-').toLowerCase();
-}
+  return slug
+  .replace(/[^a-zA-Z0-9]+/g, '-')  // Reemplaza cualquier carácter no alfanumérico por guiones
+  .replace(/-+/g, '-')             // Reemplaza múltiples guiones consecutivos por un solo guion
+    .toLowerCase();       // Convierte a minúsculas
+};
 
 ---
 <!-- aqui usar componente de pagina de cursos -->
 
 <BaseLayout title="Cursos">
     <h1>Cursos disponibles</h1>
-    <ul>
+    <ol>
         {cursos.map(curso => (
             <li><a href={`/cursos/${slugReplace(curso.NOMBRE)}`}>{curso.NOMBRE}</a>
 </li>
         ))}
-    </ul>
+    </ol>
 </BaseLayout>

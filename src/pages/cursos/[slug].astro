@@ -15,7 +15,10 @@ import CursoTemplate from '../../components/CursoTemplate.astro';
 
 export async function getStaticPaths() {
   return cursos.map(curso => {
-    const slug = curso.NOMBRE.replace(/\s+/g, '-').toLowerCase(); // Reemplaza espacios por guiones y convierte a minúsculas
+    const slug = curso.NOMBRE
+    .replace(/[^a-zA-Z0-9]+/g, '-')  // Reemplaza cualquier carácter no alfanumérico por guiones
+    .replace(/-+/g, '-')             // Reemplaza múltiples guiones consecutivos por un solo guion
+  .toLowerCase();           // Convierte a minúsculasminúsculas
     return {
       params: {
         slug
@@ -29,7 +32,13 @@ export async function getStaticPaths() {
 
 // Accede a los props pasados por getStaticPaths
 const { slug } = Astro.params;
-const curso = cursos.find(c => c.NOMBRE.replace(/\s+/g, '-').toLowerCase() === slug);
+const curso = cursos.find(c => 
+  c.NOMBRE
+  .replace(/[^a-zA-Z0-9]+/g, '-')  // Reemplaza cualquier carácter no alfanumérico por guiones
+  .replace(/-+/g, '-')             // Reemplaza múltiples guiones consecutivos por un solo guion
+    .toLowerCase() === slug   // Compara con el slug generado
+);
+
 
 if (!curso) {
   return Astro.redirect('/404');
