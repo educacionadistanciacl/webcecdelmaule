@@ -6,7 +6,7 @@ const curso: Curso = Astro.props.curso;
 
 const iconos = [
   { icono: "icono-1.svg", colorIcon: "#FDC115" },
-  { icono: "icono-2.svg", colorIcon: "#F46822s" },
+  { icono: "icono-2.svg", colorIcon: "#F46822" },
   { icono: "icono-3.svg", colorIcon: "#DB1A5D" },
   { icono: "icono-4.svg", colorIcon: "#643090" },
 ];
@@ -38,7 +38,7 @@ const iconos = [
         <ModuloCurso 
         key={index} 
         modulo={modulo} 
-        className={index % 2 === 0 ? 'left' : 'right'} 
+        className={index % 2 === 0 ? 'right' : 'left'} 
         icon={iconos[index % iconos.length].icono} // Utiliza módulo del índice y ajusta según la longitud de la lista para evitar errores
         colorIcon={iconos[index % iconos.length].colorIcon} />
       ))}

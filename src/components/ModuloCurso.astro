@@ -18,17 +18,19 @@ const iconPath = '../public/img/icons/modulos'
       <img src={`${iconPath}/${icon}`} alt="Icono del Módulo" />
     </div>
     <div class="modulo-info">
-      <div class="modulo-numero">{modulo.NUMERO}</div>
-      <div class="modulo-nombre">{modulo.NOMBRE}</div>
-      <div class="modulo-descripcion">{modulo.DESCRIPCION}</div>
-    </div>
+        <div class="modulo-numero">{modulo.NUMERO}</div>
+        <div class="modulo-texto">
+          <div class="modulo-nombre">{modulo.NOMBRE}</div>
+          <div class="modulo-descripcion">{modulo.DESCRIPCION}</div>
+        </div>
+      </div>
   </div>
 
   <style>
 .modulo {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 8px;
     margin-bottom: 10px;
     color: var(--color-secundario);
@@ -42,17 +44,37 @@ const iconPath = '../public/img/icons/modulos'
     overflow: hidden; /* Evita que el contenido sobresalga del borde redondeado */
 }
 
-.modulo.left .modulo-info {
+ .modulo-info {
   flex: 1; /* Toma la mitad izquierda del módulo */
   padding: 10px; /* Padding interior para el texto */
   display: flex;
+  align-items: center;
+}
+
+.modulo-numero {
+  font-size: 120px;  /* Tamaño grande para el número */
+  font-weight: bold;  /* Hacer el número más prominente */
+  margin-right: 20px;  /* Espacio entre el número y el texto */
+}
+
+.modulo-texto {
+  display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido de texto verticalmente */
+}
+
+.modulo-nombre {
+  font-size: 18px;  /* Un tamaño mayor para el nombre */
+  font-weight: bold;
+  margin-bottom: 5px;  /* Espacio entre nombre y descripción */
+}
+
+.modulo-descripcion {
+  font-size: 14px;  /* Tamaño más pequeño para la descripción */
 }
 
 .modulo.left .modulo-icon {
-    flex: 1;  /* Ocupa la mitad del módulo */
-    background-color: #FDC115;  /* Fondo amarillo */
+    flex: 0.7;  /* Ocupa la mitad del módulo */
     display: flex;
     justify-content: flex-end;  /* Centra el icono horizontalmente */
     align-items: center;  /* Centra el icono verticalmente */
@@ -63,11 +85,20 @@ const iconPath = '../public/img/icons/modulos'
     height: 100%;  /* Asegura que el borde redondeado ocupe toda la altura del contenedor */
 }
 
-.modulo img {
+.modulo.left .modulo-info {
+    padding-left: 5%;
+}
+
+.modulo.left .modulo-texto {
+    padding-right: 30%;
+}
+
+.modulo-icon img {
   width: 80px; /* Ajusta el tamaño del icono según sea necesario */
+  height: 80px;
   background-color: var(--color-secundario);
   border-radius: 50%;  /* Hace el div completamente redondo */
 }
 
 
-    </style>
+</style>
