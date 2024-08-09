@@ -38,6 +38,12 @@ import CecLogo from './CecLogo.astro';
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     min-height: 60px; /* Ajusta esto según el mínimo necesario */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si no hay suficiente espacio */
+    position: fixed; /* Cambiado de sticky a fixed */
+    top: 0;
+    left: 0; /* Asegura que inicie en el borde izquierdo */
+    right: 0; /* Asegura que se extienda hasta el borde derecho */
+    z-index: 1000;
+
   }
 
   nav {
@@ -194,20 +200,4 @@ import CecLogo from './CecLogo.astro';
     console.error('El elemento menuToggle no fue encontrado');
   }
 
-
-// -------------------------------------------------------------------
-
-// Manejar el header fijo cuando se hace scroll
-document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('header'); // Asegúrate de tener un elemento 'header'
-  const headerHeight = header.offsetHeight; // Altura del header para calcular el punto de cambio
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > headerHeight) {
-      header.classList.add('header-fixed');
-    } else {
-      header.classList.remove('header-fixed');
-    }
-  });
-});
 </script>
