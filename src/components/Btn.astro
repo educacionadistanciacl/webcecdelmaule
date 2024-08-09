@@ -1,0 +1,30 @@
+---
+// Definir las props que el componente `Btn` recibirá
+interface BtnProps {
+  text: string;
+  color?: string;
+  backgroundColor?: string;
+  fontSize?: string;
+  url?: string;
+  additionalClasses?: string;
+}
+
+const { text, url, color = '#ffffff', backgroundColor = '#007bff', fontSize = '16px', additionalClasses = '' } = Astro.props as BtnProps;
+---
+
+<a href={url} class={`baseButton ${additionalClasses}`} style={`color: ${color}; background-color: ${backgroundColor}; font-size: ${fontSize};`}>
+  {text}
+</a>
+
+<style>
+  .baseButton {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+</style>

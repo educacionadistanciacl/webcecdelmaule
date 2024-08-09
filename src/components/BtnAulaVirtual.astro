@@ -1,56 +1,26 @@
 ---
 // hacer importaciones necesarias
+// Importa el componente base `Btn`
+import Btn from './Btn.astro';
+
 const url_aulavirutal = 'https://aula.cecdelmaule.cl/login/index.php'
 
 const { additionalClasses = '' } = Astro.props;
 ---
 
-<a href=`${url_aulavirutal}` class=`buttonAulaVirtual ${additionalClasses}` id="aulaVirtualButton">Acceso Aula Virtual</a>
+<Btn 
+  url={url_aulavirutal}
+  text="Acceso Aula Virtual" 
+  backgroundColor="var(--color-secundario)" 
+  color="#29AAE9" 
+  additionalClasses={`buttonAulaVirtual ${additionalClasses}`} 
+  fontSize="16px" 
+/>
 
 <style>
+  @media (max-width: 900px) {
     .buttonAulaVirtual {
-    padding: 10px 25px;  /* Asegúrate de que esto refleja el diseño de Figma */
-    background-color: var(--color-secundario);
-    color: #29AAE9;
-    text-decoration: none;
-    border-radius: 20px; /* Bordes redondeados como en Figma */
-    border: none;  /* Sin bordes visibles */
-    font-size: 16px; /* Coincide con Figma */
-    font-weight: 700; /* Peso semibold */
-    text-transform: uppercase;
-    margin-left: auto; /* Empuja el botón a la derecha */
-}
-
-@media (max-width: 900px) { 
-  .buttonAulaVirtual {
-    margin: 0; /* Ajusta el margen a 0 en pantallas pequeñas */
-  }
-}
-</style>
-
-<script>
-  const button = document.getElementById('aulaVirtualButton');
-  
-  // Define el texto para diferentes tamaños
-  const originalText = 'Acceso Aula Virtual';
-  const alternateText = 'Aula Virtual';
-
-  // Función para cambiar el texto basado en el ancho de la ventana
-  function updateButtonText() {
-    if (button){
-      
-      if (window.innerWidth > 912) {
-        button.textContent = alternateText;
-      } else {
-        button.textContent = originalText;
-      }
+      margin: 0; /* Ajusta el margen a 0 en pantallas pequeñas */
     }
-
   }
-
-  // Escucha el evento resize y ejecuta la función para cambiar el texto
-  window.addEventListener('resize', updateButtonText);
-
-  // Ejecuta la función al cargar la página para establecer el texto inicial
-  updateButtonText();
-</script>
+</style>
