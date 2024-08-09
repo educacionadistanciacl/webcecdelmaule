@@ -19,6 +19,11 @@ html, body {
     font-family: 'Montserrat'; /* Ejemplo de fuente, ajusta a tu diseño */
     background: #FCFCFC; /* Ajusta el color de fondo según tu diseño */
   }
+
+  body .page-container {
+    /* ayuda a fija el header con el atributo position:sticky; */
+    overflow: visible; 
+  }
   
   .hover {
     display: inline-block; /* Asegura que transform funcione en elementos inline */
