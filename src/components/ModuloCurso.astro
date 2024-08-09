@@ -36,17 +36,9 @@ const iconPath = '../public/img/icons/modulos'
     color: var(--color-secundario);
 }
 
-.modulo.left {
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden; /* Evita que el contenido sobresalga del borde redondeado */
-}
-
  .modulo-info {
   flex: 1; /* Toma la mitad izquierda del módulo */
-  padding: 10px; /* Padding interior para el texto */
+  padding: 10px 20px 10px 10px; /* Padding interior para el texto */
   display: flex;
   align-items: center;
 }
@@ -73,24 +65,13 @@ const iconPath = '../public/img/icons/modulos'
   font-size: 14px;  /* Tamaño más pequeño para la descripción */
 }
 
-.modulo.left .modulo-icon {
-    flex: 0.7;  /* Ocupa la mitad del módulo */
+.modulo-icon {
+    flex: 1;  /* Ocupa la mitad del módulo */
     display: flex;
-    justify-content: flex-end;  /* Centra el icono horizontalmente */
     align-items: center;  /* Centra el icono verticalmente */
-    border-top-right-radius: 100px;  /* Hace que la curvatura superior derecha sea semicircular */
-    border-bottom-right-radius: 100px;  /* Hace que la curvatura inferior derecha sea semicircular */
     padding: 10px;  /* Espacio a la derecha del icono para evitar que toque el borde */
     overflow: hidden;  /* Oculta cualquier desbordamiento, útil si el icono es grande */
     height: 100%;  /* Asegura que el borde redondeado ocupe toda la altura del contenedor */
-}
-
-.modulo.left .modulo-info {
-    padding-left: 5%;
-}
-
-.modulo.left .modulo-texto {
-    padding-right: 30%;
 }
 
 .modulo-icon img {
@@ -100,5 +81,44 @@ const iconPath = '../public/img/icons/modulos'
   border-radius: 50%;  /* Hace el div completamente redondo */
 }
 
+/* CON LA CLASE LEFT */
+
+.modulo.left {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Evita que el contenido sobresalga del borde redondeado */
+}
+
+.modulo.left .modulo-icon {
+    justify-content: flex-end;  /* Centra el icono horizontalmente */
+    border-top-right-radius: 100px;  /* Hace que la curvatura superior derecha sea semicircular */
+    border-bottom-right-radius: 100px;  /* Hace que la curvatura inferior derecha sea semicircular */
+}
+
+.modulo.left .modulo-info {
+    padding-left: 5%;
+    padding-right: 25%;
+}
+
+/* CON LA CALSE RIGTH */
+
+.modulo.right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Evita que el contenido sobresalga del borde redondeado */
+}
+
+.modulo.right .modulo-icon {
+    justify-content: flex-start;  /* Centra el icono horizontalmente hacia el comienzo */
+    border-top-left-radius: 100px;  /* Hace que la curvatura superior izquierda sea semicircular */
+    border-bottom-left-radius: 100px;  /* Hace que la curvatura inferior izquierda sea semicircular */
+    order: 2;  /* Coloca el icono a la derecha del texto */
+}
+
+.modulo.right .modulo-info {
+    padding-left: 25%; /* Espacio extra a la izquierda para el texto, separándolo del icono */
+}
 
 </style>
