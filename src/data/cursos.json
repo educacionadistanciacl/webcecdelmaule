@@ -1,57 +1,834 @@
 [
-    {
-        "NOMBRE": "APLICACIÓN DE HERRAMIENTAS DE OFIMÁTICA (WINDOWS 10)",
-        "CODIGO": "1238036927",
-        "TIPO": "Curso Sincrónico",
-        "HORAS_CRONOLOGICAS": "24",
-        "COMPETENCIA_DESARROLLAR": "Al finalizar la actividad el participante será capaz de aplicar herramientas de ofimática (Windows, Word, Excel, PowerPoint) de acuerdo a las especificaciones técnicas establecidas por el software, logrando optimizar sus tareas.",
-        "MODULO": [
-          {
-            "NUMERO": "1",
-            "NOMBRE": "CONCEPTOS BÁSICOS DE LA OFIMÁTICA (WINDOWS 10)",
-            "DESCRIPCION": "Conceptos básicos de la ofimática (Windows 10)."
-          },
-          {
-            "NUMERO": "2",
-            "NOMBRE": "MICROSOFT WORD",
-            "DESCRIPCION": "Utilizar los comandos y herramientas de Word en la creación de documentos de texto."
-          },
-          {
-            "NUMERO": "3",
-            "NOMBRE": "MICROSOFT EXCEL",
-            "DESCRIPCION": "Aplicar las herramientas y fórmulas de Excel en la creación de documentos numéricos."
-          },
-          {
-            "NUMERO": "4",
-            "NOMBRE": "MICROSOFT POWERPOINT",
-            "DESCRIPCION": "Aplicar distintas herramientas y utilidades para dar formato al texto de la presentación según las opciones del programa Microsoft PowerPoint."
-          },
-          {
-            "NUMERO": "5",
-            "NOMBRE": "MICROSOFT OUTLOOK",
-            "DESCRIPCION": "Aplicar las opciones y ajustes de configuración de la ventana de Microsoft Outlook."
-          }
-        ]
+  {
+    "NOMBRE": "APLICACIÓN DE HERRAMIENTAS DE OFIMÁTICA (WINDOWS 10)",
+    "CODIGO": "1238036927",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Al finalizar la actividad el participante será capaz de aplicar herramientas de ofimática (Windows, Word, Excel, PowerPoint) de acuerdo a las especificaciones técnicas establecidas por el software, logrando optimizar sus tareas.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "CONCEPTOS BÁSICOS DE LA OFIMÁTICA (WINDOWS 10)",
+        "DESCRIPCION": "Conceptos básicos de la ofimática (Windows 10)."
       },
       {
-        "NOMBRE": "APLICACIÓN DE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
-        "CODIGO": "1238033591",
-        "TIPO": "Curso sincrónico",
-        "HORAS_CRONOLOGICAS": "08",
-        "COMPETENCIA_DESARROLLAR": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según métodos de abordaje, gestión del clima y de buenas prácticas laborales.",
-        "MODULO": [
-          {
-            "NUMERO": "1",
-            "NOMBRE": "FUNDAMENTOS SOBRE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
-            "DESCRIPCION": "Identificar los fundamentos sobre normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral de acuerdo con sus características."
-          },
-          {
-            "NUMERO": "2",
-            "NOMBRE": "NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
-            "DESCRIPCION": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según mecanismos de abordaje."
-          }
-        ]
+        "NUMERO": "2",
+        "NOMBRE": "MICROSOFT WORD",
+        "DESCRIPCION": "Utilizar los comandos y herramientas de Word en la creación de documentos de texto."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "MICROSOFT EXCEL",
+        "DESCRIPCION": "Aplicar las herramientas y fórmulas de Excel en la creación de documentos numéricos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "MICROSOFT POWERPOINT",
+        "DESCRIPCION": "Aplicar distintas herramientas y utilidades para dar formato al texto de la presentación según las opciones del programa Microsoft PowerPoint."
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "MICROSOFT OUTLOOK",
+        "DESCRIPCION": "Aplicar las opciones y ajustes de configuración de la ventana de Microsoft Outlook."
       }
-        
-  ]
-  
+    ]
+  },
+  {
+    "NOMBRE": "APLICACIÓN DE LAS NORMAS INTERNACIONALES DE INFORMACION FINANCIERA EN TRATAMIENTOS CONTABLES ESPECIFICOS",
+    "CODIGO": "1238035626",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar las normas internacionales de información financiera en tratamientos contables específicos respetando el proceso de convergencia y de evaluación de cuentas de activo y pasivo.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LOS PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN TRATAMIENTOS CONTABLES ESPECÍFICOS",
+        "DESCRIPCION": "Identificar los fundamentos de los principios de las normas internacionales de información financiera en tratamientos contables específicos según su proceso de convergencia."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LOS ASPECTOS RELEVANTES DE LOS TRATAMIENTOS CONTABLES ESPECÍFICOS",
+        "DESCRIPCION": "Describir los aspectos relevantes de los tratamientos contables específicos respetando las cuentas de activo y pasivo."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN TRATAMIENTOS CONTABLES ESPECÍFICOS",
+        "DESCRIPCION": "Aplicar procedimientos de diseño de protocolos de trabajo asociados a las normas internacionales de información financiera en tratamientos contables específicos respetando el marco conceptual y el tipo de cuenta."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "APLICACIÓN DE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
+    "CODIGO": "1238033591",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según métodos de abordaje, gestión del clima y de buenas prácticas laborales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
+        "DESCRIPCION": "Identificar los fundamentos sobre normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
+        "DESCRIPCION": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según mecanismos de abordaje."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "APLICACIÓN DE PROCEDIMIENTOS DE CONTRATACIÓN DE EXTRANJEROS EN CHILE",
+    "CODIGO": "1238014535",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar procedimientos de contratación de extranjeros en Chile respetando procedimientos administrativos y estatutos establecidos en la normativa laboral vigente.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LA CONTRATACIÓN DE EXTRANJEROS EN CHILE",
+        "DESCRIPCION": "Identificar los fundamentos de la contratación de extranjeros en Chile según su composición y efectos en diversos escenarios."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "MARCO JURÍDICO APLICABLE EN LA CONTRATACIÓN DE EXTRANJEROS",
+        "DESCRIPCION": "Describir el marco jurídico aplicable en la contratación de extranjeros de acuerdo con los límites y formas especiales de contratos laborales."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PROCEDIMIENTOS DE CONTRATACIÓN DE EXTRANJEROS EN CHILE",
+        "DESCRIPCION": "Aplicar procedimientos de contratación de extranjeros en Chile, respetando las medidas administrativas."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "ESTRATEGIAS DE LIDERAZGO EN ESCENARIOS DE INCERTIDUMBRE",
+    "CODIGO": "1238034377",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de liderazgo en escenarios de  incertidumbre según mecanismos interaccionales y de manejo de conflictos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE LIDERAZGO EN ESCENARIOS DE INCERTIDUMBRE",
+        "DESCRIPCION": "Identificar los fundamentos sobre liderazgo en escenarios de incertidumbre de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ASPECTOS RELATIVOS A LOS COMPORTAMIENTOS HUMANOS",
+        "DESCRIPCION": "Describir aspectos relativos a los comportamientos humanos de acuerdo con los niveles de conciencia."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ESTRATEGIAS DE LIDERAZGO EN ESCENARIOS DE INCERTIDUMBRE",
+        "DESCRIPCION": "Aplicar estrategias de liderazgo en escenarios de incertidumbre según métodos de relacionamiento y manejo emocional."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "FUNDAMENTOS DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GENERO EN LA EDUCACIÓN SUPERIOR",
+    "CODIGO": "1238036928",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Identificar conocimientos teórico-prácticos generales de normativa nacional e internacional, sobre derechos humanos, discriminación y violencia de género, en base a la normativa legal vigente.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
+        "DESCRIPCION": "Identificar aspectos fundamentales sobre los derechos humanos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
+        "DESCRIPCION": "Analizar los principales conceptos sobre derechos humanos, género y perspectiva de género."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "OBLIGACIONES EN MATERIA EN DERECHOS HUMANOS Y GÉNERO EN EL ÁMBITO DE LA EDUCACIÓN",
+        "DESCRIPCION": "Aplicar obligaciones en materia de derechos humanos y género en el ámbito de la educación superior."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTA DE POWER BI EN LA GESTIÓN DE DATOS",
+    "CODIGO": "1238049605",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Power Bi respetando métodos de creación y administración de datos, para realizar análisis de datos de forma rápida y eficiente.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ASPECTOS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientas de Power BI respetando métodos de creación y administración de datos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PREPARACIÓN Y LIMPIEZA DE DATOS",
+        "DESCRIPCION": "Aplicar transformaciones de forma de datos a estructuras de tabla."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRINCIPALES ELEMENTOS DE VISUALIZACIÓN DE INFORMACIÓN",
+        "DESCRIPCION": "Describir los principales elementos de visualización de información de los acuerdos a los tipos de gráficos y filtros requeridos en Power BI."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientas de Power BI según formulas y criterios de gestión de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS COLABORATIVAS PARA EL TRABAJO EN EQUIPO",
+    "CODIGO": "1238035631",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas colaborativas para el trabajo en equipo, respetando componentes de comunicación y contexto situacional.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Conocer los fundamentos sobre trabajo en equipo de acuerdo a sus características e importancia en el contexto laboral."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LA ERA DE LA COLABORACIÓN Y FUNDAMENTO BIOLÓGICO",
+        "DESCRIPCION": "Reconocer los cambios de paradigmas del trabajo colaborativo y su impacto en las organizaciones para una adaptación continua y logro de resultados."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "GESTIÓN PARA EL TRABAJO COLABORATIVO A TRAVÉS DE LAS 5C JUNTO A MI EQUIPO Y LA ORGANIZACIÓN",
+        "DESCRIPCION": "Aplicar herramientas colaborativas para el logro de resultados y mejora del clima laboral."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE ADMINISTRACIÓN DE PROYECTOS",
+    "CODIGO": "1238012286",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de administración de proyectos respetando criterios de planificación y control.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE ADMINISTRACIÓN DE PROYECTOS",
+        "DESCRIPCION": "Identificar los fundamentos sobre administración de proyectos según sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "HERRAMIENTAS DE PLANIFICACIÓN DE PROYECTOS",
+        "DESCRIPCION": "Aplicar herramientas de planificación de proyectos respetando los criterios de definición de costos y rutas críticas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE GESTIÓN DE COMUNICACIÓN DEL PROYECTO",
+        "DESCRIPCION": "Utilizar herramientas de gestión de comunicación del proyecto respetando mecanismos de monitoreo y manejo de grupos de interés."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "HERRAMIENTAS DE SEGUIMIENTO DE PROYECTOS",
+        "DESCRIPCION": "Emplear herramientas de seguimiento de proyectos respetando las líneas base y métodos de control por valor ganado."
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "HERRAMIENTAS DE REPORTERÍA DE PROYECTOS",
+        "DESCRIPCION": "Aplicar herramientas de reportería de proyectos según el estudio de tecnologías de información y programaciones del cronograma."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+    "CODIGO": "1238029413",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "16",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión de responsabilidad social en contextos universitarios a través de las funciones sustantivas como gestión, investigación, vinculación y docencia.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE HERRAMIENTAS DE RESPONSABILIDAD SOCIAL UNIVERSITARIA: FUNCIONES SUSTANTIVAS",
+        "DESCRIPCION": "Identificar los fundamentos de la responsabilidad social universitaria de acuerdo a sus características normativas."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "HERRAMIENTAS DE RESPONSABILIDAD SOCIAL UNIVERSITARIA: FUNCIONES SUSTANTIVAS",
+        "DESCRIPCION": "Aplicar herramientas de responsabilidad social universitaria según métodos adecuados."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE SHAREPOINT PARA USUARIOS FUNCIONALES",
+    "CODIGO": "1238037941",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "22",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de SharePoint intermedio según métodos de creación, automatización y administración de datos de documentales y bibliotecas.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ELEMENTOS BASE DE LA PLATAFORMA MICROSOFT 365 COMO CONTENEDOR CENTRAL DE LAS HERRAMIENTAS SHARE POINT",
+        "DESCRIPCION": "Identificar los conceptos base de productividad en sitios Share Point, sus alcances, beneficios e impacto en la colaboración de los equipos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LISTA COMO UNIDAD MÍNIMA DE GESTIÓN DE DATOS",
+        "DESCRIPCION": "Identificar unidades de información basada en listas de datos, para la gestión colaborativa de la productividad de equipos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "BIBLIOTECA COMO UNIDAD MÍNIMA DE GESTIÓN DE DATOS",
+        "DESCRIPCION": "Identificar unidades documentales basada en bibliotecas de Share Point, para la gestión documental de los equipos de trabajo."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "ALERTAS APLICADAS A LISTAS Y BIBLIOTECAS Y SU IMPACTO A LA AUTOMATIZACIÓN DE LA GESTIÓN",
+        "DESCRIPCION": "Aplicar funcionalidades periféricas a listas y bibliotecas de SharePoint, para satisfacer las necesidades de gestión y automatización de la información."
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "LAS PÁGINAS, APLICACIÓN OBJETO VISTA",
+        "DESCRIPCION": "Identificar elementos de páginas para la distribución de información en un sitio web de SharePoint."
+      },
+      {
+        "NUMERO": "6",
+        "NOMBRE": "WORKFLOW, FLUJOS DE TRABAJO, DESENCADENADORES Y ACCIONES DE FLUJO",
+        "DESCRIPCION": "Identificar los conceptos de automatización de tareas y procesos a través de flujos de trabajo nativos de SharePoint y de la herramienta Power Automate."
+      },
+      {
+        "NUMERO": "7",
+        "NOMBRE": "CREACIÓN FLUJOS DE TRABAJO QUE PERMITA LA AUTOMATIZACIÓN DE APROBACIONES",
+        "DESCRIPCION": "Aplicar funcionalidades de automatización a unidades de información lista, documental y sitios, para la ejecución de flujos de trabajo."
+      },
+      {
+        "NUMERO": "8",
+        "NOMBRE": "LAS PÁGINAS, APLICACIÓN OBJETO VISTA",
+        "DESCRIPCION": "Identificar elementos de páginas para la distribución de información en un sitio web de SharePoint."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE ACCESIBILIDAD UNIVERSAL",
+    "CODIGO": "1238054919",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "28",
+    "COMPETENCIA_DESARROLLAR": "Comprender la normativa, teoría y los fundamentos actuales entorno a la accesibilidad universal presente en el país.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPIOS GENERALES",
+        "DESCRIPCION": "Identificar normativa vigente aplicable en la accesibilidad universal."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TIPOS DE ESPACIOS",
+        "DESCRIPCION": "Distinguir las bases de la teoría sobre el concepto de accesibilidad universal y su aplicación en espacio público."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "INTRODUCCIÓN Y CONCEPTOS GENERALES",
+        "DESCRIPCION": "Generar un diagnóstico de las problemáticas vinculadas con la accesibilidad universal."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE GESTIÓN DE RIESGOS EN PROYECTOS Y CONTRATO",
+    "CODIGO": "1238025160",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión de riesgos en proyectos y contratos respetando mecanismos de planificación, monitoreo y control de eventualidades.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE GESTIÓN DE RIESGOS EN PROYECTOS Y CONTRATOS",
+        "DESCRIPCION": "Identificar los fundamentos sobre gestión de riesgos en proyectos y contratos de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "HERRAMIENTAS DE PLANIFICACIÓN DE PROYECTOS Y CONTRATOS",
+        "DESCRIPCION": "Emplear herramientas de planificación de proyectos y contratos respetando criterios de programación y control de avance."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE GESTIÓN DE RIESGOS EN PROYECTOS Y CONTRATOS",
+        "DESCRIPCION": "Aplicar herramientas de gestión de riesgos en proyectos y contratos respetando métodos de valoración y monitoreo de eventualidades."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACION DE NEGOCIOS",
+    "CODIGO": "1238035627",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de las Normas Internacionales de Información Financiera en estados financieros consolidados y la combinación de negocios tomando en cuenta la moneda funcional y las diferencias de cambio.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACIÓN DE NEGOCIOS",
+        "DESCRIPCION": "Identificar los fundamentos sobre normas internacionales de información financiera en estados financieros consolidados y la combinación de negocios según sus características e importancia."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACIÓN DE NEGOCIOS",
+        "DESCRIPCION": "Aplicar herramientas de las normas internacionales de información financiera en estados financieros consolidados y la combinación de negocios respetando marcos administrativos contables."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
+    "CODIGO": "1238035629",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de las Normas Internacionales de Información Financiera en la realización de informes financieros respetando criterios de evaluación, tratado y presentación de estados de cuentas de activos y pasivos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
+        "DESCRIPCION": "Identificar los principios de las normas internacionales de información financiera en la realización de informes financieros según sus características e importancia."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LOS PRINCIPALES ASPECTOS DE LOS TRATAMIENTOS CONTABLES ESPECÍFICOS",
+        "DESCRIPCION": "Aplicar herramientas de las normas internacionales de información financiera en estados financieros consolidados y la combinación de negocios respetando marcos administrativos contables."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
+        "DESCRIPCION": "Aplicar herramientas de las normas internacionales de información financiera en la realización de informes financieros respetando el tipo tratamiento contable específico."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE LEGISLACIÓN LABORAL",
+    "CODIGO": "1238050083",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Identificar herramientas de Legislación Laboral respetando criterios de protección e indemnización al trabajador.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE LEGISLACIÓN LABORAL",
+        "DESCRIPCION": "Identificar los fundamentos sobre legislación laboral de acuerdo a sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "HERRAMIENTAS DE LEGISLACIÓN LABORAL",
+        "DESCRIPCION": "Aplicar herramientas de legislación laboral respetando lineamientos de protección al trabajador y finiquitos de contrato."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
+    "CODIGO": "1238034374",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas fundamentales de Power Bi, respetando métodos de creación y administración de datos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ASPECTOS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Identificar aspectos fundamentales de Power Bi de acuerdo a sus funciones y elementos base de la plataforma Microsoft 365."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PRINCIPALES ELEMENTOS DE VISUALIZACIÓN DE INFORMACIÓN",
+        "DESCRIPCION": "Describir los principales elementos de visualización de información de acuerdo a los tipos de gráficos y filtros requeridos en Power Bi."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientas fundamentales de Power Bi según fórmulas y criterios de gestión de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS PARA LIDERAZGO INCLUSIVO",
+    "CODIGO": "1238063618",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "15",
+    "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de liderazgo inclusivo con foco en el fortalecimiento de la diversidad y la equidad en las organizaciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "MARCO CONCEPTUAL, LIDERAZGO INCLUSIVO",
+        "DESCRIPCION": "Reconocer fundamentos de liderazgo inclusivo."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "MODELO LIDERAZGO INCLUSIVO PRINCIPIOS RECTORES",
+        "DESCRIPCION": "Identificar el modelo de liderazgo inclusivo, basado en sus principios rectores."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "CONCEPTO HERRAMIENTAS METODOLÓGICAS PARA DEFINIR PLAN DE ACCIÓN",
+        "DESCRIPCION": "Aplicar herramientas y métodos para levantar nivel en el pilar de inclusión en que se trabaja."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "PLAN DE ACCIÓN PARA LEVANTAR EL NIVEL DE INCLUSIÓN",
+        "DESCRIPCION": "Analizar plan de acción para levantar el nivel en el pilar de inclusión en que se trabaja."
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "MÉTODO OKR",
+        "DESCRIPCION": "Construir plan de acción a través de método OKR."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS PARA UN LIDERAZGO ASERTIVO",
+    "CODIGO": "1238066126",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de liderazgo asertivo que agreguen valor a la organización.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "AUTOGESTIÓN Y LIDERAZGO",
+        "DESCRIPCION": "Identificar elementos de autogestión y liderazgo."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LIDERAZGO ASERTIVO, IMPACTO EN LA GESTIÓN DE PERSONAS",
+        "DESCRIPCION": "Reconocer conceptos claves del liderazgo asertivo, feedback y retroalimentación positiva."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "LA COMUNICACIÓN EN LOS EQUIPOS Y EL MANEJO DE CONFLICTO",
+        "DESCRIPCION": "Aplicar la comunicación y la resolución de conflictos en la productividad de los equipos de trabajo."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "LIQUIDACIÓN Y CÁLCULO DE REMUNERACIONES",
+    "CODIGO": "1238061591",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar las herramientas necesarias en los procesos de liquidación y cálculo de remuneraciones salariales para cumplir los diversos reportes y requerimientos en una organización.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "CÁLCULO DE LIQUIDACIONES DE SUELDO",
+        "DESCRIPCION": "Emplear el cálculo de liquidaciones de sueldo cumpliendo procesos de remuneraciones, considerando los haberes."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PLANILLAS DE COTIZACIONES, IMPUESTOS Y OTROS DESCUENTOS",
+        "DESCRIPCION": "Manejar las planillas de cotizaciones, impuestos y otros descuentos, de acuerdo con la normativa vigente."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MICROSOFT EXCEL AVANZADO",
+    "CODIGO": "1238033983",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel avanzado según criterios de manejo de Power Query, inserción, edición de datos y gráficos en tablas dinámicas.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS DE MICROSOFT EXCEL AVANZADO",
+        "DESCRIPCION": "Identificar las principales características de Microsoft Excel avanzado de acuerdo a sus entornos e interfaces."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "FUNCIONES EN PLANILLAS ELECTRÓNICAS DE EXCEL",
+        "DESCRIPCION": "Utilizar funciones en planillas electrónicas de Excel según el trabajo que se desea realizar."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANEJO DE TABLAS DINÁMICAS EN MICROSOFT EXCEL",
+        "DESCRIPCION": "Emplear herramientas de creación y manejo de tablas dinámicas en Microsoft Excel según criterios de diseño, edición de campos, validación de datos y gráficos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "HERRAMIENTAS DE POWER QUERY EN MICROSOFT EXCEL",
+        "DESCRIPCION": "Aplicar herramientas de Power Query en Microsoft Excel según mecanismos de carga, intercambio de filas, inserción de gráficos y manejo de bases de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MICROSOFT EXCEL INTERMEDIO",
+    "CODIGO": "1238033982",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel intermedio según mecanismos de creación, automatización y administración de datos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS DE MICROSOFT EXCEL INTERMEDIO",
+        "DESCRIPCION": "Identificar las principales características de Microsoft Excel intermedio de acuerdo a sus entornos e interfaces."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "FUNCIONES EN PLANILLAS ELECTRÓNICAS DE EXCEL",
+        "DESCRIPCION": "Utilizar funciones en planillas electrónicas de Excel según el trabajo que se desea realizar."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANEJO DE TABLAS DINÁMICAS EN MICROSOFT EXCEL",
+        "DESCRIPCION": "Utilizar funciones en planillas electrónicas de Excel según el trabajo que se desea realizar."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "NORMATIVA VIGENTE SOBRE ACOSO LABORAL Y/O SEXUAL EN LAS ORGANIZACIONES",
+    "CODIGO": "1238058374",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Reconocer la normativa vigente respecto al acoso laboral/sexual y maltrato laboral dentro de las organizaciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ACOSO LABORAL/SEXUAL Y MALTRATO LABORAL EN CONTEXTO CON NUESTRA LEGISLACIÓN",
+        "DESCRIPCION": "Identificar y reconocer el acoso laboral/sexual y maltrato laboral en contexto con nuestra legislación."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "APLICACIÓN DE HERRAMIENTAS DE LEGISLACIÓN LABORAL",
+        "DESCRIPCION": "Aplicar herramientas de legislación laboral destinadas a la prevención, erradicación y sanción del acoso laboral/sexual y maltrato laboral."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "NORMATIVAS VIGENTES LEY DE SUBCONTRATACIÓN, ASPECTOS LEGALES, SEGURIDAD E HIGIENE",
+    "CODIGO": "1238038772",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Al término de la actividad los participantes serán capaces de aplicar normativas vigentes de la ley de subcontratación de acuerdo con sus aspectos legales de seguridad e higiene.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "LA RELACIÓN LABORAL TÍPICA VERSUS EL TRABAJO SUBCONTRATADO",
+        "DESCRIPCION": "Identificar conceptos básicos de la ley de subcontratación según sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LOS DERECHOS DEL TRABAJADOR SUBCONTRATADO: LA RESPONSABILIDAD DEL SUBCONTRATISTA",
+        "DESCRIPCION": "Reconocer el sistema de derecho del trabajador en el contexto de régimen de subcontratación."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ALCANCE DE RESPONSABILIDADES Y MEDIDAS DE GESTIÓN PARA CUMPLIMIENTO DE LAS NORMAS DE HIGIENE Y SEGURIDAD",
+        "DESCRIPCION": "Aplicar normativas vigentes de la ley de subcontratación de acuerdo con criterios de gestión de cumplimiento de higiene y seguridad."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE CONTABILIDAD BÁSICA",
+    "CODIGO": "1238033981",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de contabilidad básica según métodos de control financiero y confección de informes contables.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE CONTABILIDAD BÁSICA",
+        "DESCRIPCION": "Identificar los fundamentos de contabilidad básica de acuerdo a las características de los informes contables."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE CONTABILIDAD BÁSICA",
+        "DESCRIPCION": "Aplicar técnicas de contabilidad básica según métodos de control de estados financieros, manejo de sistemas de control de inventarios y de tratamientos contables."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGAS Y CONTROL DE INVENTARIOS",
+    "CODIGO": "1238034378",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración de bodegas y control de inventarios respetando criterios de logística y abastecimiento.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE ADMINISTRACIÓN DE BODEGAS Y CONTROL DE INVENTARIOS",
+        "DESCRIPCION": "Identificar los fundamentos sobre administración de bodegas y control de inventarios de acuerdo a sus características e importancia en el contexto laboral."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ASPECTOS RELATIVOS A LA DEMANDA",
+        "DESCRIPCION": "Describir aspectos relativos a la demanda de acuerdo a sus tipos, pronósticos e incertidumbres en la gestión de stock en bodegas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGAS Y CONTROL DE INVENTARIOS",
+        "DESCRIPCION": "Aplicar técnicas de administración de bodegas y control de inventarios según mecanismos de gestión de documentos, reposición y abastecimiento."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
+    "CODIGO": "1238028980",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de análisis de datos con lenguaje y entorno analítico de R y R-Estudio, respetando métodos de programación y verificación de supuestos estadísticos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
+        "DESCRIPCION": "Identificar los fundamentos sobre análisis de datos con lenguaje y entorno analítico de R y R-Estudio de acuerdo a sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
+        "DESCRIPCION": "Aplicar técnicas de análisis de datos con lenguaje y entorno analítico de R y R-Estudio según métodos de creación de script, codificación y verificación."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE CALIDAD DE SERVICIO AL CLIENTE",
+    "CODIGO": "1238011613",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de servicio al cliente respetando parámetros de calidad y mecanismos de enfrentamiento de situaciones difíciles.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TIPOS DE CLIENTES",
+        "DESCRIPCION": "Identificar los tipos de clientes según estilos personales, características y necesidades."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "CALIDAD DE SERVICIO",
+        "DESCRIPCION": "Describir la importancia de la calidad de servicio al cliente tomando en cuenta los elementos a evitar en el proceso de atención."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE SERVICIO AL CLIENTE",
+        "DESCRIPCION": "Aplicar técnicas de servicio al cliente respetando mecanismos de enfrentamiento de situaciones difíciles."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE GESTIÓN DE CONFLICTO Y NEGOCIACIÓN LABORAL",
+    "CODIGO": "1238019509",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "16",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión de conflicto y negociación laboral según métodos de relacionamiento laboral y gestión de cambios organizacionales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE GESTIÓN DE CONFLICTO Y NEGOCIACIÓN LABORAL",
+        "DESCRIPCION": "Identificar los fundamentos sobre gestión de conflicto y negociación laboral de acuerdo con criterios de gestión del cambio."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ELEMENTOS CLAVES EN LA GESTIÓN DE CONFLICTO Y NEGOCIACIÓN LABORAL",
+        "DESCRIPCION": "Reconocer elementos claves en la gestión de conflicto y negociación laboral según criterios de optimización del clima."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "NEGOCIACIÓN LABORAL SEGÚN MECANISMOS DE COMUNICACIÓN",
+        "DESCRIPCION": "Negociación laboral según mecanismos de comunicación."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE GESTIÓN DE DATOS EN LA PLATAFORMA QLIK SENSE",
+    "CODIGO": "1238011483",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión de datos en la plataforma Qlik Sense de acuerdo con los mecanismos de inserción, análisis y administración de información.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "LOS PRINCIPALES COMPONENTES DE QLIK SENSE",
+        "DESCRIPCION": "Identificar los principales componentes de la plataforma Qlik Sense de acuerdo con sus características e importancia de la gestión de reportes."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANIPULACIÓN DE CUENTA QLIK SENSE",
+        "DESCRIPCION": "Utilizar herramientas de creación y manipulación de cuenta Qlik Sense de acuerdo con el tipo de conexión y protocolos de manejo de datos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE GESTIÓN DE DATOS EN LA PLATAFORMA QLIK SENSE",
+        "DESCRIPCION": "Aplicar técnicas de gestión de datos en la plataforma Qlik Sense según criterios de análisis, diseño y modelamiento de información."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE GESTIÓN DE RECURSOS Y BÚSQUEDA DE INFORMACIÓN",
+    "CODIGO": "1238022237",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "33",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión de recursos y búsqueda de información según mecanismos de manejo de fuentes e indicadores bibliográficos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE GESTIÓN DE RECURSOS Y BÚSQUEDA DE INFORMACIÓN",
+        "DESCRIPCION": "Identificar los fundamentos sobre gestión de recursos y búsqueda de información de acuerdo a sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ASPECTOS RELATIVOS A TESAUROS",
+        "DESCRIPCION": "Reconocer aspectos relativos a tesauros de acuerdo a sus funcionalidades, objetivos, estructuras e importancia de los operadores booleanos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE GESTIÓN DE RECURSOS Y BÚSQUEDA DE INFORMACIÓN",
+        "DESCRIPCION": "Aplicar técnicas de gestión de recursos y búsqueda de información según métodos de selección de fuentes y manejo de bases de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE INTERPRETACIÓN DE PROTOCOLOS DE REANIMACIÓN CARDIOPULMONAR BÁSICA Y USO DE DESFIBRILADOR EXTERNO AUTOMÁTICO",
+    "CODIGO": "1238024662",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Interpretar protocolos de reanimación cardiopulmonar básica y uso de desfibrilador externo automático respetando métodos de asistencia y control del estado del afectado.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE REANIMACIÓN CARDIOPULMONAR BÁSICA Y USO DE DESFIBRILADOR AUTOMÁTICO",
+        "DESCRIPCION": "Identificar los fundamentos sobre reanimación cardiopulmonar básica y uso de desfibrilador externo automático de acuerdo a sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PROTOCOLOS DE REANIMACIÓN CARDIOPULMONAR BÁSICA Y USO DE DESFIBRILADOR EXTERNO AUTOMÁTICO",
+        "DESCRIPCION": "Interpretar protocolos de reanimación cardiopulmonar básica y uso de desfibrilador externo automático según mecanismos de valoración y asistencia."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE TOMA DE DECISIONES",
+    "CODIGO": "1238024184",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de toma de decisiones respetando mecanismos de análisis de opciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE TOMA DE DECISIONES",
+        "DESCRIPCION": "Identificar los fundamentos sobre toma de decisiones de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE TOMA DE DECISIONES",
+        "DESCRIPCION": "Aplicar técnicas de toma de decisiones según método de análisis de opciones y oportunidades."
+      }
+    ]
+  },
+
+  {
+    "NOMBRE": "TECNICAS DE TRABAJO EN EQUIPO",
+    "CODIGO": "1238019262",
+    "TIPO": "Curso Sincrónico",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de trabajo en equipo según enfoque interaccional y de resolución de conflictos laborales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Identificar los fundamentos sobre trabajo en equipo de acuerdo a sus características e importancia en el contexto laboral."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LOS PRINCIPIOS BÁSICOS DEL TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Reconocer los principios básicos del trabajo en equipo de acuerdo a sus funciones e importancia de la sinergia y control de avance de tareas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Aplicar técnicas de trabajo en equipo según métodos colaborativos de planificación y manejo de conflictos."
+      }
+    ]
+  }
+]
