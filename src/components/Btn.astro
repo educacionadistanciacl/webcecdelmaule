@@ -12,7 +12,7 @@ interface BtnProps {
 const { text, url, color = '#ffffff', backgroundColor = '#007bff', fontSize = '16px', additionalClasses = '' } = Astro.props as BtnProps;
 ---
 
-<a href={url} class={`baseButton ${additionalClasses}`} style={`color: ${color}; background-color: ${backgroundColor}; font-size: ${fontSize};`}>
+<a href={url} class={`baseButton hover ${additionalClasses}`} style={`color: ${color}; background-color: ${backgroundColor}; font-size: ${fontSize};`}>
   {text}
 </a>
 
