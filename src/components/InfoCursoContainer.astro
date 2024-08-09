@@ -1,0 +1,76 @@
+---
+// Importaciones o scripts aquí si son necesarios más adelante
+import ImagenContainer from "./ImagenContainer.astro"
+
+const imagenURL = '/public/img/shadow_person_sky_morning.webp'
+---
+<ImagenContainer ImagenBackgounrd={imagenURL}>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>¿Necesitas Información?</h1>
+      <p>¡Convercemos!</p>
+    </div>
+  </div>
+</ImagenContainer>
+
+
+<style>
+.hero-content {
+  text-align: center;
+  position: absolute;  /* Usa posicionamiento absoluto para controlar la ubicación exacta */
+  top: 30%;  /* Inicia en el centro */
+  left: 50%;  /* Centrado horizontalmente */
+  transform: translate(-50%);  /* Ajusta horizontal y verticalmente */
+  width: 100%;  /* Asegura que el contenido no se desborde */
+}
+
+.hero-content h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 10px ;  /* Ajusta el margen debajo del título para acercarlo al párrafo */
+  padding: 0 20%; /* Reduce el padding para que los ítems estén más juntos */
+}
+
+.hero-content p {
+  font-size: 20px;
+  opacity: 0.85;
+  margin-top: 5px;  /* Espacio reducido para estar más cerca del título */
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+      font-size: 38.4px; /* Reduce el tamaño de la fuente en un 20% */
+      padding: 0 10%; /* Reduce el padding lateral para que quepa mejor */
+    }
+
+    .hero-content p {
+      font-size: 16px; /* Reduce el tamaño de la fuente en un 20% */
+    }
+
+    .hero-content {
+      width: 90%; /* Reduce el ancho del contenedor para asegurarse de que no se desborde */
+    }
+  }
+
+@media (max-width: 450px) {
+  .hero-content h1 {
+    font-size: 30.7px; /* Reduce el tamaño de la fuente en un 20% adicional desde 38.4px */
+    padding: 0 5%; /* Aumenta el padding lateral para mejorar la legibilidad */
+  }
+
+  .hero-content p {
+    font-size: 12.8px; /* Reduce el tamaño de la fuente en un 20% adicional desde 16px */
+  }
+
+  .hero-content img {
+    max-width: 200px; /* Reduce el tamaño del logo para que se ajuste mejor */
+    max-height: 115px;
+  }
+
+  .hero-content {
+    width: 95%; /* Reduce el ancho del contenedor para asegurar que no se desborde */
+  }
+}
+
+</style>

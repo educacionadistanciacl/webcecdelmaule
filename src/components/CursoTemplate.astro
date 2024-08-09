@@ -1,5 +1,7 @@
 ---
 import ModuloCurso from './ModuloCurso.astro';
+import InforCursoContainer from './InfoCursoContainer.astro';
+
 import type { Curso } from '../types/cursoTypes';
 
 const curso: Curso = Astro.props.curso;
@@ -43,6 +45,9 @@ const iconos = [
         colorIcon={iconos[index % iconos.length].colorIcon} />
       ))}
   </div>
+
+  <!-- Banner de contacto -->
+   <InforCursoContainer />
 </div>
 <style>
 
