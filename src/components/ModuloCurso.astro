@@ -97,7 +97,7 @@ const iconPath = '../public/img/icons/modulos'
 }
 
 .modulo.left .modulo-info {
-    padding-left: 5%;
+    padding-left: 3%;
     padding-right: 25%;
 }
 
@@ -127,7 +127,7 @@ const iconPath = '../public/img/icons/modulos'
         font-size: 80px;  /* Tamaño grande para el número */
     }
 
-    .modulo-nombre {
+    .modulo-texto > * {
         font-size: 16px;
     }
 
@@ -138,6 +138,18 @@ const iconPath = '../public/img/icons/modulos'
     .modulo.left .modulo-info {
         padding-right: 10%;
     }
+}
+
+@media (max-width: 400px) {
+
+    .modulo-numero {
+        font-size: 60px;  /* Tamaño grande para el número */
+    }
+
+    .modulo-texto > * {
+        font-size: 12px;
+    }
+
 }
 
 </style>
