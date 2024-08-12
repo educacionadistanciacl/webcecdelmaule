@@ -12,7 +12,7 @@ import cursos from '../../src/data/cursos.json';
 
 <BaseLayout title="Cursos">
 <ImagenContainer ImagenBackgounrd={imagenURL}>
-        <div class="curso-content">
+        <div class="curso-banner">
           <img src="/public/img/logo_color.svg" alt="Logo de CSC del Maule" />
           <h1>Nuestros Cursos</h1>
         </div>
@@ -23,7 +23,7 @@ import cursos from '../../src/data/cursos.json';
 
 
 <style>
-    .curso-content {
+    .curso-banner {
     text-align: center;
     position: absolute;  /* Usa posicionamiento absoluto para controlar la ubicación exacta */
     top: 15%;  /* Inicia en el centro */
@@ -31,7 +31,7 @@ import cursos from '../../src/data/cursos.json';
     width: auto;  /* Asegura que el contenido no se desborde */
     }
 
-.curso-content h1 {
+.curso-banner h1 {
     font-size: 50px;
     color: #062C5B;
     margin: 0;
@@ -40,13 +40,13 @@ import cursos from '../../src/data/cursos.json';
 }
 
 @media (max-width: 800px) {
-    .curso-content {
+    .curso-banner {
         top: 20%;  /* Aumenta si necesitas más espacio en la parte superior */
         left: 10%; /* Ajusta para una alineación más a la izquierda */
         width: 80%; /* Da más espacio para el texto */
     }
 
-    .curso-content h1 {
+    .curso-banner h1 {
         font-size: 24px; /* Reduce el tamaño del texto para adaptarse a pantallas más pequeñas */
         padding: 0 10%; /* Reduce el padding para evitar desbordamiento */
     }

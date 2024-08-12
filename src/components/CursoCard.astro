@@ -1,34 +1,49 @@
 ---
 // CursoCard.astro
-const { nombreCurso, tipoCurso, link } = Astro.props;
+import Btn from "./Btn.astro";
+
+const { nombreCurso, tipoCurso, link, backgroundColor } = Astro.props;
 ---
+
 <div class="curso-card" data-tipo={tipoCurso}>
-    <h2>{nombreCurso}</h2>
-    <a href={link}>Ver más</a>
+  <div class="curso-info">
+    <p>{nombreCurso}</p>
+  </div>
+  <div class="button-container">
+    <Btn
+      url={link}
+      text="ver más"
+      backgroundColor={backgroundColor}
+      fontSize="12px"
+    />
+  </div>
 </div>
 
 <style>
-    .curso-card {
-    background-color: var(--color-de-fondo); /* Define los colores en una hoja de estilos o en el :root */
+  .curso-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido interno se distribuya con espacio al final */
+    background-image: linear-gradient(to bottom, #17417d 0%, #448fcd 100%);
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--color-secundario);
+  }
 
-.curso-card[data-tipo='sincronico'] {
-    background-color: #blue; /* Color para sincrónico */
-}
+  .curso-info {
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    flex: 1; /* Asegura que ocupe todo el espacio disponible */
 
-.curso-card[data-tipo='asincronico'] {
-    background-color: #green; /* Color para asincrónico */
-}
+  }
 
-.curso-card[data-tipo='presencial'] {
-    background-color: #red; /* Color para presencial */
-}
-
-.curso-card[data-tipo='todos'] {
-    background-color: #purple; /* Color para todos */
-}
+  .button-container {
+    width: auto; /* Mantiene el tamaño natural del botón */
+    display: flex;
+    justify-content: center; /* Centra el botón dentro del contenedor */
+  }
+  
 </style>
