@@ -830,5 +830,530 @@
         "DESCRIPCION": "Aplicar técnicas de trabajo en equipo según métodos colaborativos de planificación y manejo de conflictos."
       }
     ]
+  },
+  {
+    "NOMBRE": "DIDÁCTICA PARA LA ENSEÑANZA Y EL APRENDIZAJE EFECTIVO EN EL AULA",
+    "CODIGO": "1238057321",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar metodologías didácticas efectivas en el aula centradas en la enseñanza y el aprendizaje de estudiantes escolares.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "SISTEMA DIDÁCTICO COMO EJE DEL APRENDIZAJE",
+        "DESCRIPCION": "Comprender conceptos de didáctica general que permiten usar de mejor manera estrategias metodológicas de enseñanza y aprendizaje."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "METODOLOGÍAS DE ENSEÑANZA EFECTIVA PARA EL AULA",
+        "DESCRIPCION": "Analizar distintas metodologías de aprendizaje en el aula según desarrollo cognitivo y biológico de las y los estudiantes."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "APRENDIZAJE SIGNIFICATIVO",
+        "DESCRIPCION": "Evaluar distintos tipos y estilos de aprendizaje en el aula."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "DIVERSIFICACIÓN DE LA EVALUACIÓN PARA LA EQUIDAD DEL APRENDIZAJE",
+    "CODIGO": "1238057283",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar distintos tipos de instrumentos de evaluación de acuerdo con el contexto educativo en que ejerce la docencia para asegurar la equidad del aprendizaje.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ELEMENTOS PRINCIPALES DEL DECRETO N°67",
+        "DESCRIPCION": "Reconocer elementos relevantes del Decreto N°67 (2018), que inciden en la evaluación y promoción de las y los estudiantes."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "CONCEPTOS DE IGUALDAD Y EQUIDAD",
+        "DESCRIPCION": "Comparar los conceptos de igualdad y equidad en el proceso de enseñanza y aprendizaje con centralidad en las y los estudiantes."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRINCIPIOS DE EVALUACIÓN FORMATIVA Y SUMATIVA SEGÚN DECRETO 67",
+        "DESCRIPCION": "Analizar la evaluación sumativa y la evaluación formativa para su aplicación en el aula, según el contexto social y cultural de sus estudiantes."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "RETROALIMENTACIÓN EFECTIVA EN AULA",
+        "DESCRIPCION": "Aplicar técnicas de retroalimentación para distintos tipos de evaluación."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS PARA LA EVALUACIÓN DEL DESEMPEÑO LABORAL",
+    "CODIGO": "1238039397",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas para la evaluación del desempeño laboral de manera eficaz.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PROPÓSITO DEL PROCESO DE EVALUACIÓN DE DESEMPEÑO",
+        "DESCRIPCION": "Comprender la aplicación del proceso de evaluación de desempeño para el crecimiento y desarrollo de los equipos de trabajo y la organización."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "INSTRUMENTO Y METODOLOGÍA",
+        "DESCRIPCION": "Reforzar el conocimiento y manejo del instrumento de la evaluación de desempeño para estandarizar su uso y compromiso en su aplicación."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "APLICACIÓN INSTRUMENTO DE EVALUACIÓN DE DESEMPEÑO",
+        "DESCRIPCION": "Aplicar el instrumento de evaluación de desempeño en pro del crecimiento de los equipos y de su líder."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS PARA LA RESOLUCIÓN DE CONFLICTOS DESDE LA MEDIACIÓN",
+    "CODIGO": "1238042024",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Ejercer un rol activo en la resolución de conflictos, basándose en la reforma educativa, abordando desde el diálogo, prestando atención a la diversidad, la no discriminación y a la tolerancia de una forma reflexiva a través de la mediación.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "INTRODUCCIÓN A LA MEDIACIÓN ESCOLAR",
+        "DESCRIPCION": "Conocer los orígenes y principios de la mediación escolar."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "COMUNICACIÓN EFECTIVA",
+        "DESCRIPCION": "Identificar los conceptos de una comunicación efectiva y el proceso comunicacional."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TEORÍA DEL CONFLICTO",
+        "DESCRIPCION": "Reconocer los tipos de conflictos según sus características."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TÉCNICAS DE GESTIÓN DE LAS EMOCIONES EN EL PROCESO DE MEDIACIÓN",
+        "DESCRIPCION": "Reconocer las técnicas de gestión de emociones y cómo afectan durante una mediación."
+      }
+    ]
+  },  
+  {
+    "NOMBRE": "HERRAMIENTAS PARA LOGRAR UN LIDERAZGO ASERTIVO",
+    "CODIGO": "1238048016",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de liderazgo asertivo que agreguen valor a la organización.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "AUTOGESTIÓN Y LIDERAZGO",
+        "DESCRIPCION": "Identificar elementos de autogestión y liderazgo."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LIDERAZGO ASERTIVO, IMPACTO EN LA GESTIÓN DE PERSONAS",
+        "DESCRIPCION": "Reconocer conceptos claves del liderazgo asertivo, feedback y retroalimentación positiva."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "LA COMUNICACIÓN EN LOS EQUIPOS Y EL MANEJO DE CONFLICTO",
+        "DESCRIPCION": "Aplicar la comunicación y la resolución de conflictos en la productividad de los equipos de trabajo."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "LENGUA DE SEÑAS CHILENA A1",
+    "CODIGO": "1238048855",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "30",
+    "COMPETENCIA_DESARROLLAR": "Adquirir conocimientos teóricos y prácticos básicos de la Lengua de Señas Chilena, que permitan una comunicación efectiva con personas sordas en distintos contextos tales como laboral, escolar y en el quehacer diario.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "INTRODUCCIÓN A LA LENGUA DE SEÑAS, CULTURA DE LAS PERSONAS SORDAS",
+        "DESCRIPCION": "Identificar los tópicos, usos y costumbres de la subcultura formada por personas sordas."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ABECEDARIO DACTILOLÓGICO, VOCABULARIO",
+        "DESCRIPCION": "Aplicar la lengua de señas chilena, con foco en situaciones comunicativas de la vida diaria."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "LENGUA DE SEÑAS CHILENA A2",
+    "CODIGO": "1238048856",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "30",
+    "COMPETENCIA_DESARROLLAR": "Adquirir conocimientos teóricos y prácticos básicos de la Lengua de Señas Chilena nivel A2, que permitan la comunicación efectiva en situaciones comunicativas simples y funcionales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "LA LENGUA DE SEÑAS CHILENA",
+        "DESCRIPCION": "Reconocer los parámetros manuales específicos de la Lengua de Señas Chilena."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "SITUACIONES COMUNICATIVAS",
+        "DESCRIPCION": "Comunicarse a la hora de llevar a cabo tareas simples y cotidianas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "COMUNICACIÓN INDEPENDIENTE",
+        "DESCRIPCION": "Aplicar vocabulario en la Lengua de Señas Chilena en situaciones comunicativas ficticias."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MANEJO Y USO DE PLAGUICIDAS AGRÍCOLAS",
+    "CODIGO": "1238050384",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "32",
+    "COMPETENCIA_DESARROLLAR": "Realizar labores agrícolas de almacenamiento, transporte, mezcla, manejo y uso de plaguicidas agrícolas de acuerdo a las diferentes condiciones prediales y a la normativa vigente.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "DEFINICIONES Y CONCEPTOS BÁSICOS",
+        "DESCRIPCION": "Reconocer conceptos básicos asociados al manejo y uso de plaguicidas."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LEGISLACIÓN NORMAS LEGALES",
+        "DESCRIPCION": "Reconocer la normativa legal vigente relativa al manejo y uso de plaguicidas agrícolas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "INTOXICACIÓN POR PLAGUICIDAS Y MANEJO DE SITUACIONES DE EMERGENCIA",
+        "DESCRIPCION": "Identificar situaciones de riesgo para la salud. Aplicar procedimientos básicos de primeros auxilios respecto a emergencia con plaguicidas. Aplicar procedimientos de seguridad y control frente a emergencias de intoxicación por plaguicidas."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "CLASIFICACIÓN, PREPARACIÓN, MANEJO Y APLICACIÓN DE PLAGUICIDAS",
+        "DESCRIPCION": "Identificar, clasificar y reconocer los distintos grupos de plaguicidas, condiciones de manipulación y formas de aplicación, según normativa vigente."
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "MANEJO INTEGRADO DE PLAGAS Y ENFERMEDADES (MIPE)",
+        "DESCRIPCION": "Conocer conceptos propios del MIPE y los distintos métodos de prevención y control de plagas y enfermedades. Conocer alternativas distintas al uso de plaguicidas de tipo químico."
+      },
+      {
+        "NUMERO": "6",
+        "NOMBRE": "IMPLEMENTACIÓN DE BUENAS PRÁCTICAS AGRÍCOLAS (BPA)",
+        "DESCRIPCION": "Conocer conceptos de buenas prácticas agrícolas en relación al manejo y uso de plaguicidas."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MICROSOFT EXCEL AVANZADO",
+    "CODIGO": "1238033985",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel avanzado según criterios de inserción, edición de datos y gráficos en tablas dinámicas.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS DE MICROSOFT EXCEL AVANZADO",
+        "DESCRIPCION": "Identificar las principales características de Microsoft Excel avanzado de acuerdo a sus entornos e interfaces."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "FUNCIONES EN PLANILLAS ELECTRÓNICAS DE EXCEL",
+        "DESCRIPCION": "Utilizar funciones en planillas electrónicas de Excel según el trabajo que se desea realizar."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANEJO DE TABLAS DINÁMICAS EN MICROSOFT EXCEL",
+        "DESCRIPCION": "Emplear herramientas de creación y manejo de tablas dinámicas en Microsoft Excel según criterios de diseño, edición de campos, validación de datos y gráficos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "HERRAMIENTAS DE POWER QUERY EN MICROSOFT EXCEL",
+        "DESCRIPCION": "Aplicar herramientas de Power Query en Microsoft Excel según mecanismos de carga, intercambio de filas, inserción de gráficos y manejo de bases de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MICROSOFT EXCEL INTERMEDIO",
+    "CODIGO": "1238033984",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel intermedio según mecanismos de creación y administración de datos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS DE MICROSOFT EXCEL INTERMEDIO",
+        "DESCRIPCION": "Aplicar herramientas de Microsoft Excel intermedio según mecanismos de creación y administración de datos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "FUNCIONES EN PLANILLAS ELECTRÓNICAS DE EXCEL",
+        "DESCRIPCION": "Utilizar funciones en planillas electrónicas de Excel según el trabajo que se desea realizar."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANEJO DE TABLAS DINÁMICAS EN MICROSOFT EXCEL",
+        "DESCRIPCION": "Aplicar herramientas de creación y manejo de tablas dinámicas en Microsoft Excel según criterios de diseño, edición, validación de datos y gráficos."
+      }
+    ]
+  },  
+  {
+    "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
+    "CODIGO": "1238051103",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de análisis de datos con lenguaje y entorno analítico de R y R-Estudio, respetando métodos de programación y verificación de supuestos estadísticos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS SOBRE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
+        "DESCRIPCION": "Identificar los fundamentos sobre análisis de datos con lenguaje y entorno analítico de R y R-Estudio de acuerdo a sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
+        "DESCRIPCION": "Aplicar técnicas de análisis de datos con lenguaje y entorno analítico de R y R-Estudio según métodos de creación de script, codificación y verificación."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "INTRODUCCIÓN AL SISTEMA GRÁFICO (GGPLOT2)",
+        "DESCRIPCION": "Reconocer las múltiples funciones diseñadas para la representación gráfica de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ATENCIÓN Y SERVICIO AL CLIENTE",
+    "CODIGO": "1238054037",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención y servicio al cliente considerando protocolos de la empresa en relación a la comunicación y manejo de clientes.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE ATENCIÓN Y SERVICIO AL CLIENTE",
+        "DESCRIPCION": "Identificar los fundamentos de atención y servicio al cliente de acuerdo a sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE ATENCIÓN Y SERVICIO AL CLIENTE",
+        "DESCRIPCION": "Aplicar técnicas de atención y servicio al cliente respetando protocolos comunicacionales promotores de aptitudes positivas."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
+    "CODIGO": "1238061634",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de comunicación y trabajo en equipo según contexto situacional y mecanismos de resolución de conflictos laborales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Identificar los fundamentos de comunicación y trabajo en equipo según su importancia y factores que le afectan."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ESTRATEGIAS DE RESOLUCIÓN DE CONFLICTOS",
+        "DESCRIPCION": "Emplear estrategias de resolución de conflictos según mecanismos de motivación y mediación laboral."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Aplicar técnicas de comunicación y trabajo en equipo de acuerdo con el contexto situacional."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE FORMACIÓN DE RELATORES",
+    "CODIGO": "1238048283",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "16",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas que faciliten el aprendizaje en adultos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "INTRODUCCIÓN AL PROCESO DE FORMACIÓN ADULTOS",
+        "DESCRIPCION": "Comprender los fundamentos para organizar el proceso de formación en adultos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ESTRATEGIAS FORMATIVAS Y HERRAMIENTAS DIDÁCTICAS",
+        "DESCRIPCION": "Aplicar herramientas didácticas para la formación en el marco de una relatoría."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "EVALUACIÓN EN EL PROCESO FORMATIVO",
+        "DESCRIPCION": "Aplicar estrategias evaluativas para la formación en el marco de una relatoría."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE PRIMEROS AUXILIOS",
+    "CODIGO": "1238055273",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de primeros auxilios, a fin de dar una pronta respuesta ante un accidente laboral.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE PRIMEROS AUXILIOS",
+        "DESCRIPCION": "Comprender los fundamentos de los primeros auxilios, las medidas de bioseguridad y los lineamientos legales que rigen la práctica de primeros auxilios."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ASPECTOS BÁSICOS DE ATENCIÓN DE PRIMEROS AUXILIOS EN SITUACIONES DE EMERGENCIA",
+        "DESCRIPCION": "Aplicar las pautas de la atención al lesionado."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ACTUACIÓN EN EMERGENCIA",
+        "DESCRIPCION": "Actuar en caso de situaciones de emergencias (cadena de supervivencia)."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE TRABAJO EN EQUIPO",
+    "CODIGO": "1238054065",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de trabajo en equipo considerando criterios de control de tareas y protocolos comunicacionales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "IMPORTANCIA DEL TRABAJO EN EQUIPO PARA LA ORGANIZACIÓN",
+        "DESCRIPCION": "Identificar la importancia del trabajo en equipo en el contexto laboral considerando sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ASPECTOS REQUERIDOS PARA OPTIMIZAR EL TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Analizar los aspectos requeridos para un trabajo en equipo efectivo considerando criterios de control y avance de tareas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE FORTALECIMIENTO DEL TRABAJO EN EQUIPO",
+        "DESCRIPCION": "Aplicar técnicas de trabajo en equipo respetando protocolos comunicacionales."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "GESTIÓN DE LA CONVIVENCIA EN EQUIPOS DE TRABAJO",
+    "CODIGO": "1238063939",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Identificar los principales desafíos y conflictos en la convivencia laboral, a través de técnicas que fomentan un ambiente de trabajo positivo y colaborativo.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "INTRODUCCIÓN E IDENTIFICACIÓN DE LOS DESAFÍOS EN LA CONVIVENCIA LABORAL",
+        "DESCRIPCION": "Identificar herramientas para abordar y superar los desafíos en la convivencia laboral."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "COMUNICACIÓN EFECTIVA Y RESOLUCIÓN DE CONFLICTOS EN EL EQUIPO",
+        "DESCRIPCION": "Aplicar la comunicación desde una mirada abierta y efectiva, incluyendo negociación, mediación y compromiso."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HABILIDADES Y GESTIÓN PARA LA CONVIVENCIA LABORAL A TRAVÉS DE LA CONSTRUCCIÓN DE EQUIPOS Y COOPERACIÓN",
+        "DESCRIPCION": "Reconocer el rol del líder y su importancia en la convivencia laboral, fortaleciendo la colaboración y el sentido de equipo."
+      }
+    ]
+  },  
+  {
+    "NOMBRE": "HERRAMIENTAS PARA LIDERAZGO INCLUSIVO",
+    "CODIGO": "1238063599",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de liderazgo inclusivo con foco en el fortalecimiento de la diversidad y la equidad en las organizaciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LIDERAZGO",
+        "DESCRIPCION": "Reconocer fundamentos de liderazgo como un fenómeno social y contextual."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "MARCO ORGANIZACIONAL DEI",
+        "DESCRIPCION": "Comprender los 4 pilares de un liderazgo inclusivo."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "MODELO LIDERAZGO INCLUSIVO",
+        "DESCRIPCION": "Reconocer el modelo de liderazgo inclusivo, basado en sus principios rectores."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "CONCEPTO HERRAMIENTAS METODOLÓGICAS PARA DEFINIR PLAN DE ACCIÓN",
+        "DESCRIPCION": "Aplicar herramientas y métodos para levantar nivel en el pilar de inclusión en que se trabaja."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MIRADA INCLUSIVA, ESTRATEGIAS DE INCLUSIÓN EN ESTUDIANTES QUE PRESENTAN TEA",
+    "CODIGO": "1238063292",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Implementar estrategias para la inclusión efectiva de estudiantes que presentan trastorno del espectro autista en el contexto educativo.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ESTUDIANTES TEA EN LA EDUCACIÓN SUPERIOR, MIRADA INCLUSIVA DESDE LAS HERRAMIENTAS LEGALES",
+        "DESCRIPCION": "Analizar Ley TEA, su definición legal y las innovaciones recientes para proporcionar un enfoque integral para abordar al estudiante."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS, DESARROLLO EVOLUTIVO DE PERSONAS CON TEA",
+        "DESCRIPCION": "Identificar las principales características de las personas dentro del espectro autista (TEA)."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "GRADOS DE SEVERIDAD DEL TRASTORNO DEL ESPECTRO AUTISTA",
+        "DESCRIPCION": "Conocer estrategias prácticas de trabajo y comunicación para personas dentro del espectro autista."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "NORMATIVA VIGENTE SOBRE ACOSO LABORAL Y/O SEXUAL EN LAS ORGANIZACIONES LEY KARIN",
+    "CODIGO": "1238066581",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Reconocer la normativa vigente respecto al acoso laboral/sexual y maltrato laboral dentro de las organizaciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ACOSO LABORAL/SEXUAL Y MALTRATO LABORAL EN CONTEXTO CON NUESTRA LEGISLACIÓN",
+        "DESCRIPCION": "Identificar y reconocer el acoso laboral/sexual y maltrato laboral en contexto con nuestra legislación."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "APLICACIÓN DE HERRAMIENTAS DE LEGISLACIÓN LABORAL",
+        "DESCRIPCION": "Aplicar herramientas de legislación laboral destinadas a la prevención, erradicación y sanción del acoso laboral/sexual y maltrato laboral."
+      }
+    ]
+  },    
+  {
+    "NOMBRE": "SENSIBILIZACIÓN DE INCLUSIÓN LABORAL",
+    "CODIGO": "1238062783",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Sensibilizar sobre las disposiciones de la legislación vigente (Ley 21.015) en cuanto a discapacidad e inclusión laboral en el contexto de la organización.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LA LEY DE INCLUSIÓN Y SU LENGUAJE INCLUSIVO",
+        "DESCRIPCION": "Reconocer los fundamentos de la ley de inclusión y su lenguaje inclusivo."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "SESGOS INCONSCIENTES",
+        "DESCRIPCION": "Identificar sesgos inconscientes."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "DIVERSIDAD Y TRABAJO COLABORATIVO",
+        "DESCRIPCION": "Emplear habilidades para trabajar frente a las diversidades por medio de la colaboración."
+      }
+    ]
   }
+  
 ]
