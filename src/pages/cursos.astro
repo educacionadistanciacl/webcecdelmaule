@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ImagenContainer from "../components/ImagenContainer.astro";
+
+const imagenURL = '/public/img/bussines_woman.webp';
 
 import cursos from '../../src/data/cursos.json';
 
@@ -14,7 +17,13 @@ const slugReplace = (slug: string): string => {
 <!-- aqui usar componente de pagina de cursos -->
 
 <BaseLayout title="Cursos">
-    <h1>Cursos disponibles</h1>
+<ImagenContainer ImagenBackgounrd={imagenURL}>
+        <div class="curso-content">
+          <img src="/public/img/logo_color.svg" alt="Logo de CSC del Maule" />
+          <h1>Nuestros Cursos</h1>
+        </div>
+</ImagenContainer>
+
     <ol>
         {cursos.map(curso => (
             <li><a href={`/cursos/${slugReplace(curso.NOMBRE)}`}>{curso.NOMBRE}</a>
@@ -22,3 +31,38 @@ const slugReplace = (slug: string): string => {
         ))}
     </ol>
 </BaseLayout>
+
+
+<style>
+    .curso-content {
+    text-align: center;
+    position: absolute;  /* Usa posicionamiento absoluto para controlar la ubicación exacta */
+    top: 15%;  /* Inicia en el centro */
+    left: 50%;  /* Centrado horizontalmente */
+    width: auto;  /* Asegura que el contenido no se desborde */
+    }
+
+.curso-content h1 {
+    font-size: 50px;
+    color: #062C5B;
+    margin: 0;
+    padding: 0 20%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .curso-content {
+        top: 20%;  /* Aumenta si necesitas más espacio en la parte superior */
+        left: 10%; /* Ajusta para una alineación más a la izquierda */
+        width: 80%; /* Da más espacio para el texto */
+    }
+
+    .curso-content h1 {
+        font-size: 24px; /* Reduce el tamaño del texto para adaptarse a pantallas más pequeñas */
+        padding: 0 10%; /* Reduce el padding para evitar desbordamiento */
+    }
+}
+
+
+
+</style>
