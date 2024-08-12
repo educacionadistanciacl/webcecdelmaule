@@ -7,6 +7,18 @@ const imagenURL = '/public/img/bussines_woman.webp';
 
 import cursos from '../../src/data/cursos.json';
 
+// Función para aleatorizar el orden de un array
+function shuffleArray(array: any) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Obtener la lista completa de cursos en orden aleatorio
+const cursosAleatorios = shuffleArray([...cursos]); // Usa una copia del array original
+
 ---
 <!-- aqui usar componente de pagina de cursos -->
 
@@ -18,7 +30,7 @@ import cursos from '../../src/data/cursos.json';
         </div>
 </ImagenContainer>
 
-<CursosContainer cursos={cursos} />
+<CursosContainer cursos={cursosAleatorios} />
 </BaseLayout>
 
 
