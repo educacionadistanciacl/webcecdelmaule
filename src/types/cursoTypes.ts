@@ -13,3 +13,7 @@ export  interface Curso {
     COMPETENCIA_DESARROLLAR: string;
     MODULO: Modulo[];
   }
+
+export interface Cursos {
+    cursos: Curso[];
+  }

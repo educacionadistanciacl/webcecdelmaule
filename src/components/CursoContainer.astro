@@ -1,0 +1,24 @@
+---
+// CursosContainer.astro
+import CursoCard from './CursoCard.astro';
+import {slugReplace} from '../func/slugURL';
+import { prepararCursos } from '../func/prepararCursos';
+
+const datosCursos = Astro.props.cursos;
+
+const cursos = prepararCursos(datosCursos).cursos;
+
+---
+<div class="cursos-container">
+    {cursos.map(curso => (
+        <CursoCard nombreCurso={curso.NOMBRE} tipoCurso={curso.TIPO} link={`/cursos/${slugReplace(curso.NOMBRE)}`} />
+    ))}
+</div>
+
+<style>
+    .cursos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+</style>
