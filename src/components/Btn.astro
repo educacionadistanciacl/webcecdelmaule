@@ -8,14 +8,24 @@ interface BtnProps {
   url?: string;
   additionalClasses?: string;
   id?: string;
+  type?: string;
 }
 
-const { text, url, color = '#ffffff', backgroundColor = '#007bff', fontSize = '16px', additionalClasses = '', id = '' } = Astro.props as BtnProps;
+const { type, text, url, color = '#ffffff', backgroundColor = '#007bff', fontSize = '16px', additionalClasses = '', id = '' } = Astro.props as BtnProps;
 ---
 
-<a id={id} href={url} class={`baseButton hover ${additionalClasses}`} style={`color: ${color}; background-color: ${backgroundColor}; font-size: ${fontSize};`}>
-  {text}
-</a>
+
+<!-- Uso de lógica condicional en Astro para decidir el tipo de botón -->
+{type === "Submit" ? (
+  <button id={id} class={`baseButton hover ${additionalClasses}`} style={`color: ${color}; background-color: ${backgroundColor}; font-size: ${fontSize};`}>
+    {text}
+  </button>
+) : (
+  <a id={id} href={url} class={`baseButton hover ${additionalClasses}`} style={`color: ${color}; background-color: ${backgroundColor}; font-size: ${fontSize};`}>
+    {text}
+  </a>
+)}
+
 
 <style>
   .baseButton {

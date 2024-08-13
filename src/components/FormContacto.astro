@@ -1,54 +1,77 @@
 ---
-const API_KEY_EMAIL = "xkgwbeqa"
-const url_email = `https://formspree.io/f/${API_KEY_EMAIL}`
+const API_KEY_EMAIL = "xkgwbeqa";
+const url_email = `https://formspree.io/f/${API_KEY_EMAIL}`;
+
+import Btn from "./Btn.astro";
 ---
 
-<form action={url_email} method="POST">
-  <input type="text" name="user_name" placeholder="Nombre" required />
-  <input type="email" name="user_email" placeholder="Email" required />
-  <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
-  <button type="submit">Enviar</button>
-</form>
+<div class="form-banner">
+  <div class="form-container">
+    <h1>Formulario de contacto</h1>
+    <form action={url_email} method="POST">
+      <div class="nombre-container">
+        <span>Nombre/Empresa (Requerido)</span>
+        <input type="text" name="user_name" required />
+      </div>
+      <div class="email-container">
+        <span>Email (Requerido)</span>
+        <input type="email" name="user_email" required />
+      </div>
+      <div class="asunto-container">
+        <span>Mensaje (Requerido)</span>
+        <textarea name="message" rows="4" required
+        ></textarea>
+      </div>
+      <Btn type="Submit" text="Enviar" />
+    </form>
+  </div>
+</div>
 
 <style>
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .form-banner {
+    justify-content: center; /* Centrar el contenido verticalmente */
+    width: 55%; /* Ocupa menos espacio, ajusta según tu diseño */
+    background-color: #1e57a4;
+    color: var(--color-secundario);
+    box-sizing: border-box; /* Incluye el padding en el cálculo de width/height */
   }
 
-  input, textarea {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10% 15% 10%;
+    box-sizing: border-box;
+  }
+
+  form {
+  width: 100%; /* Ajusta esto para cambiar el ancho máximo del formulario */
+  max-width: 500px; /* O usa max-width para limitar el ancho máximo */
+}
+
+
+  input,
+  textarea {
+    width: 100%;  /* Hace que los inputs y textarea tomen todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho para evitar desbordes */
     margin-bottom: 15px;
+    margin-top: 10px;
     padding: 10px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid #ccc;
     outline: none;
     transition: border-color 0.3s;
   }
 
-  input:focus, textarea:focus {
-    border-color: #062C5B;
+  input:focus,
+  textarea:focus {
+    border-color: #062c5b;
   }
 
-  button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #062C5B;
-    background-color: #062C5B;
-    color: white;
-    transition: background-color 0.3s;
-  }
+  @media (max-width: 800px) {
+      .form-banner {
+       width: auto;
+      }
+}
 
-  button:hover {
-    background-color: #043C78;
-  }
 </style>
