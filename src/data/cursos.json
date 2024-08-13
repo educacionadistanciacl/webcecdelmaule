@@ -936,7 +936,7 @@
         "DESCRIPCION": "Reconocer las técnicas de gestión de emociones y cómo afectan durante una mediación."
       }
     ]
-  },  
+  },
   {
     "NOMBRE": "HERRAMIENTAS PARA LOGRAR UN LIDERAZGO ASERTIVO",
     "CODIGO": "1238048016",
@@ -1095,7 +1095,7 @@
         "DESCRIPCION": "Aplicar herramientas de creación y manejo de tablas dinámicas en Microsoft Excel según criterios de diseño, edición, validación de datos y gráficos."
       }
     ]
-  },  
+  },
   {
     "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
     "CODIGO": "1238051103",
@@ -1258,7 +1258,7 @@
         "DESCRIPCION": "Reconocer el rol del líder y su importancia en la convivencia laboral, fortaleciendo la colaboración y el sentido de equipo."
       }
     ]
-  },  
+  },
   {
     "NOMBRE": "HERRAMIENTAS PARA LIDERAZGO INCLUSIVO",
     "CODIGO": "1238063599",
@@ -1330,7 +1330,7 @@
         "DESCRIPCION": "Aplicar herramientas de legislación laboral destinadas a la prevención, erradicación y sanción del acoso laboral/sexual y maltrato laboral."
       }
     ]
-  },    
+  },
   {
     "NOMBRE": "SENSIBILIZACIÓN DE INCLUSIÓN LABORAL",
     "CODIGO": "1238062783",
@@ -1354,6 +1354,617 @@
         "DESCRIPCION": "Emplear habilidades para trabajar frente a las diversidades por medio de la colaboración."
       }
     ]
+  },
+  {
+    "NOMBRE": "BUSINESS ENGLISH 2",
+    "CODIGO": "1238038009",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "100",
+    "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación de negocios en inglés nivel de usuario B1+ respetando estructuras gramaticales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ACTIVE AND PASSIVE VOICE",
+        "DESCRIPCION": "Identificar la correcta conjugación de la voz activa y pasiva según el vocabulario anexo."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PHRASAL VERBS",
+        "DESCRIPCION": "Reconocer frases verbales teniendo en cuenta acciones o estados específicos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "RELATIVE CLAUSES",
+        "DESCRIPCION": "Emplear oraciones de relativo considerando oraciones subordinadas y oraciones principales."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "REPORTED SPEECH",
+        "DESCRIPCION": "Aplicar estilo indirecto o parafraseo de acuerdo con el reported speech."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE MICROSOFT TEAMS",
+    "CODIGO": "1238021385",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Teams respetando criterios de configuración, navegación y administración en reuniones virtuales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRIMEROS PASOS CON MICROSOFT TEAMS",
+        "DESCRIPCION": "Identificar funciones por categoría en Excel de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "REUNIONES VIRTUALES CON MICROSOFT TEAMS",
+        "DESCRIPCION": "Demostrar el manejo de las herramientas de Microsoft Teams respetando mecanismos de navegación y administración."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ADICIONAR CAPACIDADES A MS TEAMS CON APLICACIONES",
+        "DESCRIPCION": "Aplicar procedimientos de uso de aplicaciones externas de Microsoft Teams respetando protocolos de integración en reuniones virtuales."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE GESTIÓN ACADÉMICA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+    "CODIGO": "1238056022",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "70",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión académica de derechos humanos, tomando en cuenta los derechos centrados en la perspectiva de género en la Educación Superior.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
+        "DESCRIPCION": "Identificar conceptualización de los derechos humanos, comprendiendo sus características, sistemas de protección, instrumentos y obligaciones."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
+        "DESCRIPCION": "Reconocer las perspectivas de género teniendo en cuenta los derechos humanos, los instrumentos de DDHH y toda violencia de género."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "DERECHOS HUMANOS, GÉNERO Y EDUCACIÓN",
+        "DESCRIPCION": "Emplear distintos estatutos, procurando prevenir, investigar y sancionar toda violencia y discriminación de género."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "LEY 21.369 SOBRE ACOSO SEXUAL, VIOLENCIA Y DISCRIMINACIÓN DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+        "DESCRIPCION": "Aplicar normativa vigente asociada al acoso sexual, violencia y discriminación de género en la educación superior."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE GESTIÓN ADMINISTRATIVA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+    "CODIGO": "1238056012",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "70",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión administrativa de derechos humanos, considerando discriminación y violencia de género en la Educación Superior.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
+        "DESCRIPCION": "Identificar conceptualización de los derechos humanos, de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
+        "DESCRIPCION": "Reconocer implicancias de los derechos humanos, considerando el concepto de género."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "DERECHOS HUMANOS Y VIOLENCIA DE GÉNERO",
+        "DESCRIPCION": "Emplear herramientas contra la violencia de género, teniendo en cuenta los derechos humanos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "LEY 21.369 SOBRE ACOSO SEXUAL, VIOLENCIA Y DISCRIMINACIÓN DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+        "DESCRIPCION": "Aplicar normativa vigente asociada al acoso sexual, violencia y discriminación de género, teniendo en cuenta el contexto educacional."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "INGLÉS COMUNICACIONAL - A1 (ENGLISH AT HOME 2)",
+    "CODIGO": "1238031257",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "100",
+    "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación laboral en inglés nivel A1 básico-medio respetando estructuras gramaticales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "MY INTERESTS",
+        "DESCRIPCION": "Identificar la correcta construcción del present simple de acuerdo con el contexto de intereses personales."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TRAVELLING AROUND",
+        "DESCRIPCION": "Reconocer la correcta construcción del future simple will & be going to teniendo en cuenta fórmulas gramaticales."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PAST EXPERIENCES",
+        "DESCRIPCION": "Emplear léxico y gramática de alta frecuencia en el contexto de experiencias pasadas e hitos considerando vocabulario integrado."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TRAVEL STORIES",
+        "DESCRIPCION": "Aplicar léxico y gramática de alta frecuencia en el contexto de experiencias pasadas progresivas contemplando vocabulario integrado."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "INGLÉS COMUNICACIONAL - A1 (ENGLISH AT HOME 1)",
+    "CODIGO": "1238031249",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "100",
+    "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación laboral en inglés nivel A1 básico respetando estructuras gramaticales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "MY LIFE",
+        "DESCRIPCION": "Identificar principales características de la gramática inglesa de acuerdo con los tiempos verbales y contextos situacionales de la vida cotidiana."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DAILY ACTIVITIES",
+        "DESCRIPCION": "Reconocer el manejo gramático de alta frecuencia en rutinas diarias y actividades laborales respetando verbos modales del inglés."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PROBLEMS SOLVING SITUATIONS",
+        "DESCRIPCION": "Emplear herramientas de habla inglesa en mensajes de resolución de problemas cotidianos respetando el presente continuo."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "FUTURE PLANS",
+        "DESCRIPCION": "Aplicar modos verbales en oraciones de planes futuros respetando la estructura gramatical."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MICROSOFT EXCEL NIVEL AVANZADO",
+    "CODIGO": "1238014583",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar Microsoft Excel 365 nivel avanzado respetando procedimientos de utilización de sus herramientas y funciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TABLAS DINÁMICAS EN EXCEL",
+        "DESCRIPCION": "Identificar tablas dinámicas en Excel de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "SEGURIDAD EN EXCEL",
+        "DESCRIPCION": "Utilizar funciones de seguridad en Excel respetando los procedimientos adecuados."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "FUNCIONES FINANCIERAS EN EXCEL",
+        "DESCRIPCION": "Emplear funciones financieras en Excel de acuerdo con criterios de segmentación de datos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "POWER QUERY EN EXCEL",
+        "DESCRIPCION": "Aplicar funciones de Power Query en Excel respetando criterios de manejo de bases de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "MICROSOFT EXCEL NIVEL INTERMEDIO",
+    "CODIGO": "1238021138",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar Microsoft Excel 365 nivel intermedio respetando procedimientos de utilización de sus herramientas y funciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "VINCULACIÓN DE ARCHIVOS EN EXCEL",
+        "DESCRIPCION": "Identificar funciones por categoría en Excel de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "FUNCIONES LÓGICAS Y DE TEXTO EN EXCEL",
+        "DESCRIPCION": "Utilizar funciones lógicas y de texto en Excel respetando los procedimientos adecuados."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "FUNCIONES DE BÚSQUEDA Y CONDICIONALES EN EXCEL",
+        "DESCRIPCION": "Emplear funciones de búsqueda y condicionales en Excel de acuerdo con criterios segmentación de datos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "CRITERIOS DE BÚSQUEDA DE ERRORES EN EXCEL",
+        "DESCRIPCION": "Aplicar criterios de búsqueda de errores en Excel tomando en cuenta herramientas de inspección y rastreo."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN Y ORGANIZACIÓN DEL TIEMPO LABORAL",
+    "CODIGO": "1238021384",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración y organización del tiempo laboral respetando criterios de planificación y priorización de actividades en los equipos de trabajo.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE ADMINISTRACIÓN Y ORGANIZACIÓN DEL TIEMPO LABORAL",
+        "DESCRIPCION": "Identificar los fundamentos de administración y organización del tiempo laboral de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ELEMENTOS CLAVES PARA REALIZAR MATRIZ DE PRIORIDADES",
+        "DESCRIPCION": "Reconocer los elementos claves de la matriz de prioridades respetando parámetros de administración del tiempo."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "MECANISMOS DE ORGANIZACIÓN EFICIENTE DEL TIEMPO",
+        "DESCRIPCION": "Emplear mecanismos de organización del tiempo según criterios distribución y priorización de actividades laborales."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DEL TIEMPO LABORAL",
+        "DESCRIPCION": "Aplicar técnicas de administración del tiempo laboral respetando protocolos de trabajo."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ALIMENTACIÓN SALUDABLE",
+    "CODIGO": "1238027199",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de alimentación saludable de acuerdo con los requerimientos nutricionales de cada dieta.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "CONCEPTOS FUNDAMENTALES DE NUTRICIÓN",
+        "DESCRIPCION": "Identificar los conceptos fundamentales de nutrición y alimentación saludables tomando en cuenta las contribuciones a la salud."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "GRUPOS DE ALIMENTOS",
+        "DESCRIPCION": "Reconocer el manejo de grupos de alimentos de acuerdo a los requerimientos nutricionales de cada dieta."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRINCIPALES ENFERMEDADES NUTRICIONALES",
+        "DESCRIPCION": "Explicar las principales enfermedades nutricionales respetando sus características."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TÉCNICAS DE ALIMENTACIÓN",
+        "DESCRIPCION": "Aplicar técnicas de alimentación saludable tomando en cuenta los alimentos permitidos o restringidos por patología."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE AUTOCUIDADO Y SALUD OCUPACIONAL EN EL PUESTO DE TRABAJO",
+    "CODIGO": "1238031025",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "75",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de autocuidado y salud ocupacional, utilizando metodologías de identificación de riesgos profesionales con el fin de aportar a procesos de mejoramiento continuo en seguridad y salud en el trabajo.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "AUTOCUIDADO Y SALUD OCUPACIONAL",
+        "DESCRIPCION": "Identificar las bases del autocuidado a través de referentes históricos y su definición."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "RIESGOS PROFESIONALES",
+        "DESCRIPCION": "Reconocer los aspectos más representativos frente a los riesgos profesionales en los trabajadores."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE AUTOCUIDADO",
+        "DESCRIPCION": "Aplicar las técnicas adecuadas de autocuidado en el entorno laboral."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE NEGOCIACIÓN Y MEDIACIÓN DE CONFLICTOS",
+    "CODIGO": "1238024139",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de negociación y mediación de conflictos respetando mecanismo de abordaje comunicacional y contexto situacional.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS TEÓRICOS DEL CONFLICTO",
+        "DESCRIPCION": "Identificar los fundamentos de la negociación y mediación de conflictos de acuerdo con el contexto situacional."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "CARACTERÍSTICAS DE UN CONFLICTO",
+        "DESCRIPCION": "Reconocer los elementos claves de los conflictos de acuerdo a sus etapas."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "NEGOCIACIÓN Y MEDIACIÓN",
+        "DESCRIPCION": "Aplicar técnicas de negociación y mediación de conflictos respetando protocolos comunicacionales."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ATENCIÓN AL CLIENTE",
+    "CODIGO": "1238015089",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención al cliente respetando protocolos comunicacionales y gestión de quejas de los distintos tipos de clientes.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LA ATENCIÓN AL CLIENTE",
+        "DESCRIPCION": "Identificar los fundamentos de la atención al cliente de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "GESTIÓN DE QUEJAS Y RECLAMOS",
+        "DESCRIPCION": "Describir la importancia de gestión de quejas y reclamos de acuerdo con el tipo de cliente."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE COMUNICACIÓN CON CLIENTES",
+        "DESCRIPCION": "Aplicar técnicas de atención al cliente respetando protocolos de comunicación y abordaje de los distintos tipos de clientes."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ELABORACIÓN DE PREPARACIONES DE ALIMENTACIÓN SALUDABLE",
+    "CODIGO": "1238027346",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Interpretar técnicas de elaboración de preparaciones de alimentación saludable tomando en cuenta aspectos de nutrición y la normativa vigente.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LAS PREPARACIONES DE ALIMENTACIÓN SALUDABLE",
+        "DESCRIPCION": "Identificar los fundamentos de las preparaciones de alimentación saludable tomando en cuenta las guías alimentarias."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "RECOMENDACIONES EN LA CONSERVACIÓN Y PREPARACIÓN DE ALIMENTOS SALUDABLES",
+        "DESCRIPCION": "Reconocer recomendaciones en la conservación y preparación de alimentos saludables de acuerdo con su valor nutricional."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PREPARACIONES CON ALIMENTOS NO TRADICIONALES SALUDABLES",
+        "DESCRIPCION": "Extraer información relevante de las preparaciones con alimentos no tradicionales saludables a incorporar en la dieta cotidiana de acuerdo con sus propiedades organolépticas."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TÉCNICAS DE ELABORACIÓN DE PREPARACIONES DE ALIMENTACIÓN SALUDABLE",
+        "DESCRIPCION": "Interpretar técnicas de elaboración de preparaciones de alimentación saludable respetando criterios de prevención de enfermedades crónicas no transmisibles de la normativa vigente."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE PRIMEROS AUXILIOS PSICOLÓGICOS (PAP)",
+    "CODIGO": "1238030670",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "75",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de primeros auxilios psicológicos (PAP) a personas en situaciones de crisis respetando protocolos comunicacionales y herramientas de prevención de secuelas postraumáticas.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LOS PRIMEROS AUXILIOS PSICOLÓGICOS",
+        "DESCRIPCION": "Identificar los fundamentos de los primeros auxilios psicológicos de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "FACTORES Y NECESIDADES DE PRIMEROS AUXILIOS PSICOLÓGICOS (PAP)",
+        "DESCRIPCION": "Reconocer los factores y necesidades de los primeros auxilios psicológicos según los eventos potencialmente traumáticos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE PRIMEROS AUXILIOS (PAP)",
+        "DESCRIPCION": "Aplicar técnicas de primeros auxilios psicológicos (PAP) respetando protocolos de trabajo."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE REDACCIÓN",
+    "CODIGO": "1238028390",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de redacción respetando reglas ortográficas y gramaticales en la elaboración de documentos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "REGLAS ORTOGRÁFICAS Y GRAMATICALES",
+        "DESCRIPCION": "Identificar importancia de los signos de puntuación tomando en cuenta la estructura gramatical."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TIPOS Y CLASIFICACIÓN DE LAS COMUNICACIONES",
+        "DESCRIPCION": "Reconocer los tipos de comunicación escrita de acuerdo con el contexto situacional."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE REDACCIÓN DE DOCUMENTOS",
+        "DESCRIPCION": "Aplicar técnicas de redacción de documentos respetando normas gramaticales."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "BUSINESS ENGLISH 1",
+    "CODIGO": "1238038273",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "100",
+    "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación de negocios en inglés nivel de usuario B1 respetando estructuras gramaticales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRESENT SIMPLE",
+        "DESCRIPCION": "Identificar la correcta conjugación del presente simple según el vocabulario anexo."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PAST SIMPLE AND PAST CONTINUOUS",
+        "DESCRIPCION": "Reconocer los tiempos verbales pasado simple y pasado continuo de acuerdo con acciones específicas del pasado y acciones que aún no han finalizado."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRESENT PERFECT",
+        "DESCRIPCION": "Emplear estructura correcta del presente perfecto vinculando el pasado con el presente."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "MODAL VERBS",
+        "DESCRIPCION": "Aplicar modos verbales y cambiar el contexto de una oración considerando el segundo condicional."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE GESTIÓN ACADÉMICA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+    "CODIGO": "1238056022",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión académica de derechos humanos, tomando en cuenta los derechos centrados en la perspectiva de género en la Educación Superior.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
+        "DESCRIPCION": "Identificar conceptualización de los derechos humanos, comprendiendo sus características, sistemas de protección, instrumentos y obligaciones."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
+        "DESCRIPCION": "Reconocer las perspectivas de género teniendo en cuenta los derechos humanos, los instrumentos de DDHH y toda violencia de género."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "DERECHOS HUMANOS, GÉNERO Y EDUCACIÓN",
+        "DESCRIPCION": "Emplear distintos estatutos, procurando prevenir, investigar y sancionar toda violencia y discriminación de género."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "LEY 21.369 SOBRE ACOSO SEXUAL, VIOLENCIA Y DISCRIMINACIÓN DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+        "DESCRIPCION": "Aplicar normativa vigente asociada al acoso sexual, violencia y discriminación de género en la educación superior."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE GESTIÓN ADMINISTRATIVA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+    "CODIGO": "1238056012",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión administrativa de derechos humanos, considerando discriminación y violencia de género en la Educación Superior.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
+        "DESCRIPCION": "Identificar conceptualización de los derechos humanos, de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
+        "DESCRIPCION": "Reconocer implicancias de los derechos humanos, considerando el concepto de género."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "DERECHOS HUMANOS Y VIOLENCIA DE GÉNERO",
+        "DESCRIPCION": "Emplear herramientas contra la violencia de género, teniendo en cuenta los derechos humanos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "LEY 21.369 SOBRE ACOSO SEXUAL, VIOLENCIA Y DISCRIMINACIÓN DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
+        "DESCRIPCION": "Aplicar normativa vigente asociada al acoso sexual, violencia y discriminación de género, teniendo en cuenta el contexto educacional."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS OFIMÁTICAS DE MICROSOFT EXCEL 365 NIVEL BÁSICO",
+    "CODIGO": "1238054271",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas ofimáticas de Microsoft Excel 365 nivel básico de acuerdo con procedimientos de utilización de sus funciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "INTRODUCCIÓN A EXCEL",
+        "DESCRIPCION": "Identificar estructura de una hoja de cálculo de acuerdo con sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TRABAJAR CON FÓRMULAS Y FUNCIONES EN EXCEL",
+        "DESCRIPCION": "Utilizar funciones básicas de Microsoft Excel respetando los procedimientos adecuados."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TRABAJAR CON TABLAS EN EXCEL",
+        "DESCRIPCION": "Emplear listas de tablas en Excel de acuerdo con criterios de segmentación de datos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "GRÁFICOS EN EXCEL",
+        "DESCRIPCION": "Aplicar gráficos básicos en Excel tomando en cuenta herramientas de filtro de datos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE PRESENTACIONES EFECTIVAS EN LA EDUCACIÓN VIRTUAL",
+    "CODIGO": "1238025345",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de presentaciones efectivas en la educación virtual tomando en cuenta estrategias didácticas de educación virtual y mecanismos de creación de contenido digital.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPALES ELEMENTOS DE ATENCIÓN Y MOTIVACIÓN EN LAS PRESENTACIONES EFECTIVAS",
+        "DESCRIPCION": "Identificar principales elementos de atención y motivación en las presentaciones efectivas según características de los participantes en educación virtual."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ESTRATEGIAS DIDÁCTICAS DE EDUCACIÓN VIRTUAL",
+        "DESCRIPCION": "Reconocer estrategias didácticas de educación virtual según mecanismos cognitivos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE GESTIÓN EN ENTORNOS DE APRENDIZAJE VIRTUAL",
+        "DESCRIPCION": "Aplicar técnicas de gestión en entornos de aprendizaje virtual tomando en cuenta buenas prácticas de presentaciones efectivas."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGA Y CONTROL DE INVENTARIO",
+    "CODIGO": "1238049768",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración de bodegas y control de inventarios respetando criterios de recepción, almacenamiento y entrega de productos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LA ADMINISTRACIÓN DE BODEGAS Y CONTROL DE INVENTARIOS",
+        "DESCRIPCION": "Identificar los fundamentos de la administración de bodegas y control de inventarios tomando en cuenta sus características."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE LA ADMINISTRACIÓN DE BODEGA Y CONTROL DE INVENTARIO",
+        "DESCRIPCION": "Aplicar técnicas de administración de bodegas y control de inventarios respetando procedimientos adecuados."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE PREVENCIÓN DEL SÍNDROME DE DESGASTE PROFESIONAL",
+    "CODIGO": "1238031027",
+    "TIPO": "Curso Asincrónico",
+    "HORAS_CRONOLOGICAS": "60",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de prevención del síndrome de desgaste profesional tomando en cuenta los factores intervinientes en las situaciones de desgaste y buenas prácticas laborales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "BURNOUT",
+        "DESCRIPCION": "Identificar las características del síndrome de desgaste profesional según sus síntomas y consecuencias."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "TÉCNICAS DE PREVENCIÓN DEL SÍNDROME DE DESGASTE PROFESIONAL",
+        "DESCRIPCION": "Aplicar técnicas de prevención del síndrome de desgaste profesional respetando el contexto situacional y buenas prácticas laborales."
+      }
+    ]
   }
-  
 ]
