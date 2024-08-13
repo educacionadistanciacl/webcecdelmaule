@@ -19,10 +19,17 @@ import Btn from "./Btn.astro";
       </div>
       <div class="asunto-container">
         <span>Mensaje (Requerido)</span>
-        <textarea name="message" rows="4" required
-        ></textarea>
+        <textarea name="message" rows="4" required></textarea>
       </div>
-      <Btn type="Submit" text="Enviar" />
+      <div class="btn-container">
+        <Btn
+          id="btnEnviar"
+          type="Submit"
+          text="Enviar"
+          backgroundColor="var(--color-tercero)"
+          fontSize="14px"
+        />
+      </div>
     </form>
   </div>
 </div>
@@ -44,14 +51,13 @@ import Btn from "./Btn.astro";
   }
 
   form {
-  width: 100%; /* Ajusta esto para cambiar el ancho máximo del formulario */
-  max-width: 500px; /* O usa max-width para limitar el ancho máximo */
-}
-
+    width: 100%; /* Ajusta esto para cambiar el ancho máximo del formulario */
+    max-width: 500px; /* O usa max-width para limitar el ancho máximo */
+  }
 
   input,
   textarea {
-    width: 100%;  /* Hace que los inputs y textarea tomen todo el ancho disponible */
+    width: 100%; /* Hace que los inputs y textarea tomen todo el ancho disponible */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho para evitar desbordes */
     margin-bottom: 15px;
     margin-top: 10px;
@@ -61,17 +67,23 @@ import Btn from "./Btn.astro";
     border: 1px solid #ccc;
     outline: none;
     transition: border-color 0.3s;
+    color: var(--color-primario);
+    font-family: "Montserrat"; /* Ejemplo de fuente, ajusta a tu diseño */
   }
 
   input:focus,
   textarea:focus {
-    border-color: #062c5b;
+    border: 3px solid var(--color-tercero);
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
   }
 
   @media (max-width: 800px) {
-      .form-banner {
-       width: auto;
-      }
-}
-
+    .form-banner {
+      width: auto;
+    }
+  }
 </style>
