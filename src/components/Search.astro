@@ -1,0 +1,20 @@
+---
+const {type = "text", id="course-search", placeholder="Buscar curso por nombre..."} = Astro.props;
+---
+
+<input
+type={type}
+id={id}
+placeholder={placeholder}
+/>
+
+<style>
+  input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+  }
+</style>

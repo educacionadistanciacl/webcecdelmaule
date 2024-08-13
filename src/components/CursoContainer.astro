@@ -1,19 +1,20 @@
 ---
 // CursosContainer.astro
-import CursoCard from './CursoCard.astro';
-import Btn from './Btn.astro';
-import {slugReplace} from '../func/slugURL';
-import { prepararCursos } from '../func/prepararCursos';
+import CursoCard from "./CursoCard.astro";
+import Btn from "./Btn.astro";
+import Search from "./Search.astro";
 
-type TipoCursoKey = 'Sincrónico' | 'Asincrónico' | 'Presencial' | 'Todos';
+import { slugReplace } from "../func/slugURL";
+import { prepararCursos } from "../func/prepararCursos";
+
+type TipoCursoKey = "Sincrónico" | "Asincrónico" | "Presencial" | "Todos";
 
 const tipoCursoColores = {
-    Sincrónico: "#FFD700", // color dorado
-    Asincrónico: "#FF4500", // color rojo anaranjado
-    Presencial: "#DB1A5D", // color azul violeta
-    Todos: "#643090" // color púrpura
+  Sincrónico: "#FFD700", // color dorado
+  Asincrónico: "#FF4500", // color rojo anaranjado
+  Presencial: "#DB1A5D", // color azul violeta
+  Todos: "#643090", // color púrpura
 };
-
 
 const datosCursos = Astro.props.cursos;
 
@@ -21,90 +22,135 @@ const cursos = prepararCursos(datosCursos).cursos;
 
 // Función para extraer y ajustar el tipo de curso para coincidir con las claves en tipoCursoColores
 function ajustarTipoCurso(tipoCurso: string): string {
-    const tipo = tipoCurso.replace('Curso ', '') as TipoCursoKey;
-    return tipoCursoColores[tipo] ?? '#FFFFFF'; // Utiliza el operador Nullish coalescing para manejar claves no definidas
+  const tipo = tipoCurso.replace("Curso ", "") as TipoCursoKey;
+  return tipoCursoColores[tipo] ?? "#FFFFFF"; // Utiliza el operador Nullish coalescing para manejar claves no definidas
 }
 ---
+
 <div class="cursos-container">
-    <div class="buttons-container">
-        {Object.entries(tipoCursoColores).map(([tipo, color]) => (
-            <Btn 
-                text={tipo.toUpperCase()} 
-                backgroundColor={color}
-                fontSize="20px" 
-                id={tipo}
-            />
-        ))}
-    </div>
-    <div class="card-container">
-        {cursos.map(curso => (
-            <CursoCard
-                nombreCurso={curso.NOMBRE}
-                tipoCurso={curso.TIPO}
-                link={`/cursos/${slugReplace(curso.NOMBRE)}`}
-                backgroundColor={ajustarTipoCurso(curso.TIPO)}
-            />
-        ))}
-    </div>
+    
+  <div class="search-container">
+    <Search id="course-search"/>
+  </div>
+  <div class="buttons-container">
+    {
+      Object.entries(tipoCursoColores).map(([tipo, color]) => (
+        <Btn
+          text={tipo.toUpperCase()}
+          backgroundColor={color}
+          fontSize="20px"
+          id={tipo}
+        />
+      ))
+    }
+  </div>
+
+
+  <div class="card-container">
+    {
+      cursos.map((curso) => (
+        <CursoCard
+          nombreCurso={curso.NOMBRE}
+          tipoCurso={curso.TIPO}
+          link={`/cursos/${slugReplace(curso.NOMBRE)}`}
+          backgroundColor={ajustarTipoCurso(curso.TIPO)}
+        />
+      ))
+    }
+  </div>
 </div>
 
 <style>
-    .cursos-container {
-        background-color: #062C5B;
-        padding: 40px;
-        padding-top: 5%;
-    }
-    
-    .buttons-container {
-        display: flex;
-        justify-content: center;
-        gap: 2%;
-        margin-bottom: 4%;
-    }
-    
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-        padding-bottom: 5%;
-        box-shadow: 0px 20px 0 0 #D99F3F; /* Simula un borde inferior usando box-shadow */
-    }
+  .cursos-container {
+    background-color: #062c5b;
+    padding-top: 4%;
+    padding: 40px;
+  }
 
-    @media (max-width: 800px) {
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 4%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-bottom: 5%;
+    box-shadow: 0px 20px 0 0 #d99f3f; /* Simula un borde inferior usando box-shadow */
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+
+  @media (max-width: 800px) {
     .buttons-container {
       display: none;
     }
   }
-    </style>
+</style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Selecciona todos los botones basados en el id dinámico que estás usando
-      const tipos = ['Sincrónico', 'Asincrónico', 'Presencial', 'Todos'];
-  
-      tipos.forEach(tipo => {
-        const button = document.getElementById(tipo);
-        if (button) {
-          button.addEventListener('click', function() {
-            console.log('Botón presionado:', tipo);
-            filterCourses(tipo);
-          });
-        }
-      });
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".curso-card");
+
+    const searchInput = document.getElementById('course-search');
+
+    // Evento para limpiar el campo de búsqueda cuando se hace clic fuera de él
+    document.addEventListener('click', function(event) {
+      if (event.target !== searchInput) {
+        searchInput.value = '';
+      }
     });
-  
-    // Filtra los cursos en función del tipo seleccionado
-    function filterCourses(tipoSeleccionado: any) {
-      const cards = document.querySelectorAll('.curso-card');
-  
-      cards.forEach(card => {
-        const tipoCurso = card.getAttribute('data-tipo')?.replace('Curso ', '');
-        if (tipoSeleccionado === 'Todos' || tipoCurso === tipoSeleccionado) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
-  
+
+    searchInput?.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    filterCoursesByName(cards, query);
+    });
+
+    // Selecciona todos los botones basados en el id dinámico que estás usando
+    const tipos = ["Sincrónico", "Asincrónico", "Presencial", "Todos"];
+
+    tipos.forEach((tipo) => {
+      const button = document.getElementById(tipo);
+      if (button) {
+        button.addEventListener("click", function () {
+          filterCourses(cards, tipo);
+        });
+      }
+    });
+  });
+
+  // Filtra los cursos en función del tipo seleccionado
+  function filterCourses(cards: any, tipoSeleccionado: string) {
+    
+
+    cards.forEach((card) => {
+      const tipoCurso = card.getAttribute("data-tipo")?.replace("Curso ", "");
+      if (tipoSeleccionado === "Todos" || tipoCurso === tipoSeleccionado) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  function filterCoursesByName(cards: any, query: string) {
+
+    cards.forEach(card => {
+    const nombreCursoElement = card.querySelector('p'); // Selecciona el elemento <p> dentro de la tarjeta
+    const nombreCurso = nombreCursoElement ? nombreCursoElement.textContent?.toLowerCase() : '';
+      if (nombreCurso?.includes(query)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
