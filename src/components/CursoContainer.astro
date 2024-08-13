@@ -31,7 +31,8 @@ function ajustarTipoCurso(tipoCurso: string): string {
             <Btn 
                 text={tipo.toUpperCase()} 
                 backgroundColor={color}
-                fontSize="20px"`} 
+                fontSize="20px" 
+                id={tipo}
             />
         ))}
     </div>
@@ -75,3 +76,35 @@ function ajustarTipoCurso(tipoCurso: string): string {
     }
   }
     </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Selecciona todos los botones basados en el id dinámico que estás usando
+      const tipos = ['Sincrónico', 'Asincrónico', 'Presencial', 'Todos'];
+  
+      tipos.forEach(tipo => {
+        const button = document.getElementById(tipo);
+        if (button) {
+          button.addEventListener('click', function() {
+            console.log('Botón presionado:', tipo);
+            filterCourses(tipo);
+          });
+        }
+      });
+    });
+  
+    // Filtra los cursos en función del tipo seleccionado
+    function filterCourses(tipoSeleccionado: any) {
+      const cards = document.querySelectorAll('.curso-card');
+  
+      cards.forEach(card => {
+        const tipoCurso = card.getAttribute('data-tipo')?.replace('Curso ', '');
+        if (tipoSeleccionado === 'Todos' || tipoCurso === tipoSeleccionado) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  
