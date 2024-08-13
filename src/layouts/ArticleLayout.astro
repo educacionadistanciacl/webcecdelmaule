@@ -1,16 +1,21 @@
 ---
+
+import BaseLayout from "./BaseLayout.astro";
+
 const { title, date, author } = Astro.props;
 ---
 
-<article>
-  <header>
-    <h1>{title}</h1>
-    <p>Publicado el {date} por {author}</p>
-  </header>
-  <section>
-    <slot /> <!-- Aquí se insertará el contenido del artículo -->
-  </section>
-</article>
+<BaseLayout title={title}>
+  <article>
+    <header>
+      <h1>{title}</h1>
+      <p>Publicado el {date} por {author}</p>
+    </header>
+    <section>
+      <slot /> <!-- Aquí se insertará el contenido del artículo -->
+    </section>
+  </article>
+</BaseLayout>
 
 <style>
   article {
