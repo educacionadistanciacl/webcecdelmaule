@@ -1,0 +1,15 @@
+---
+import { getEntryBySlug } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const { slug } = Astro.params;
+const article = await getEntryBySlug('articles', slug);
+
+if (!article) {
+  throw new Error(`Artículo no encontrado: ${slug}`);
+}
+---
+
+<ArticleLayout title={article.data.title} date={article.data.date} author={article.data.author}>
+  {article.content}
+</ArticleLayout>

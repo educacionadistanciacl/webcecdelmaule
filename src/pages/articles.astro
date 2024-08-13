@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articles'); // Obtén todos los archivos Markdown de la carpeta `src/content/articles`
+---
+
+<h1>Todos los Artículos</h1>
+
+<ul>
+  {articles.map(article => (
+    <li>
+      <a href={`/articles/${article.slug}/`}>{article.data.title}</a> - {article.data.date}
+    </li>
+  ))}
+</ul>
