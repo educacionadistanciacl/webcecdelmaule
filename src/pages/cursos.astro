@@ -7,17 +7,37 @@ const imagenURL = '/public/img/bussines_woman.webp';
 
 import cursos from '../../src/data/cursos.json';
 
-// Función para aleatorizar el orden de un array
-function shuffleArray(array: any) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+// Función para agrupar cursos por tipo y organizarlos de manera cíclica
+function organizarCursosPorTipo(cursos: any[]): any[] {
+  // Agrupar cursos por tipo
+  const cursosPorTipo: { [key: string]: any[] } = cursos.reduce((acc, curso) => {
+    if (!acc[curso.TIPO]) {
+      acc[curso.TIPO] = [];
+    }
+    acc[curso.TIPO].push(curso);
+    return acc;
+  }, {});
+
+  // Obtener todos los tipos de curso
+  const tipos = Object.keys(cursosPorTipo);
+
+  // Crear el array resultante con cursos intercalados
+  const resultado: any[] = [];
+  let maxCursosPorTipo = Math.max(...tipos.map(tipo => cursosPorTipo[tipo].length));
+
+  for (let i = 0; i < maxCursosPorTipo; i++) {
+    for (const tipo of tipos) {
+      if (cursosPorTipo[tipo][i]) {
+        resultado.push(cursosPorTipo[tipo][i]);
+      }
+    }
   }
-  return array;
+
+  return resultado;
 }
 
 // Obtener la lista completa de cursos en orden aleatorio
-const cursosAleatorios = shuffleArray([...cursos]); // Usa una copia del array original
+const cursosAleatorios = organizarCursosPorTipo(cursos);
 
 ---
 <!-- aqui usar componente de pagina de cursos -->
