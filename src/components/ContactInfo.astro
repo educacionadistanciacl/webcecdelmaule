@@ -1,0 +1,39 @@
+---
+// ContactInfo.astro
+const url_icon = '../public/img/icons'
+---
+
+<div class="info-contacto">
+    <h2>CONTÁCTANOS</h2>
+    <p>Si quieres obtener más información acerca de nuestros cursos, no dudes en escribirnos.</p>
+    <p><strong>Nuestro email</strong>: cecdelpuma@ucm.cl</p>
+    <div class="social-icons">
+      <a href="https://web.facebook.com/p/CEC-del-Maule-100083317331758" target="_blank" aria-label="Facebook"><img src=`${url_icon}/icon-facebook.svg` alt="Facebook" /></a>
+      <a href="https://www.instagram.com/cecdelmaule/" target="_blank" aria-label="Instagram"><img src=`${url_icon}/icon-instagram.svg` alt="Instagram" /></a>
+    </div>
+  </div>
+  
+  <style>
+.info-contacto {
+  width: 40%; /* Ocupa menos espacio, ajusta según tu diseño */
+  padding: 40px; /* Ajusta el padding para un mejor espaciado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el contenido verticalmente */
+  background: linear-gradient(to right, #17417D, #448FCD);
+  color: white;
+  box-sizing: border-box; /* Incluye el padding en el cálculo de width/height */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Espacio entre iconos */
+  margin-top: 20px; /* Espacio superior para los íconos */
+}
+
+.social-icons img {
+  width: 30px; /* Tamaño de los íconos */
+  height: 30px;
+}
+
+  </style>

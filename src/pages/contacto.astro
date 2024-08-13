@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FormContacto from '../components/FormContacto.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+
+---
+
+<BaseLayout title="Contacto">
+    <div class="contact-container">
+      <ContactInfo />
+      <FormContacto />
+    </div>
+  </BaseLayout>
+
+  <style>
+.contact-container {
+  display: flex;
+  height: calc(100vh - 100px);  /* Ocupar toda la altura de la ventana */
+  align-items: stretch; /* Estirar los hijos para que llenen el contenedor */
+}
+  
+    @media (max-width: 800px) {
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
