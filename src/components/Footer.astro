@@ -17,9 +17,12 @@ const footerData = {
     code: 'OC - CEN8799'
   }
 };
+
+// Aquí aceptamos la prop `borde`
+const { borde = false } = Astro.props;
 ---
 
-<footer class="footer-container">
+<footer class={`footer-container ${borde ? 'con-borde' : ''}`}>
   <div class="links-section">
     <h4>ENLACES DE INTERÉS</h4>
     <ul>
@@ -47,6 +50,10 @@ const footerData = {
     color: var(--color-secundario);
     font-size: 14px;
     flex-wrap: wrap; /* Evita que los elementos se envuelvan */
+}
+
+.con-borde {
+    border-top: 20px solid var(--color-tercero); /* Borde amarillo si `borde` es true */
 }
 
 .links-section {
