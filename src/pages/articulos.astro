@@ -4,7 +4,10 @@ import { getFilteredArticles } from "../utils/contentHelpers"
 
 const url_imagen = "/img/articulos"
 
-const articles = await getFilteredArticles();
+let  articles = await getFilteredArticles();
+
+// Ordenar artículos por fecha de creación, del más reciente al más antiguo
+articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 
 <BaseLayout title="Artículos" borde={true}>
