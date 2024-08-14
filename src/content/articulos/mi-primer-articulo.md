@@ -1,7 +1,7 @@
 ---
 title: "Mi Artículo"
 pubDate: "2024-08-14"
-# image: "que es una empresa.webp"
+image: "imagenBase.webp" # debe estar en /public/img/articulos
 draft: false
 ---
 

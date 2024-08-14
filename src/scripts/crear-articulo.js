@@ -18,7 +18,7 @@ const defaultFrontmatter = (title) => `---
 title: "${title}"
 pubDate: "${getFormattedDate()}"
 draft: true # false para poder visualizarlo en producción
-# image: "imagenBase.webp" # debe estar en /public/img/articulos
+image: "imagenBase.webp" # debe estar en /public/img/articulos
 ---
 
 <!-- 

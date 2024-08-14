@@ -6,7 +6,7 @@ const articulosCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     pubDate: z.string().transform((str) => new Date(str)),
-    image: z.string().optional(),
+    image: z.string(),
     draft: z.boolean().optional(), // Propiedad opcional para marcar un artículo como borrador
   }),
 });

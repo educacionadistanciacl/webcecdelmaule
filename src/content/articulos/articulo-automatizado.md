@@ -2,7 +2,7 @@
 title: "Articulo Automatizado"
 pubDate: "2024-08-14"
 draft: true
-# image: "imagenBase.webp" # debe estar en /public/img/articulos
+image: "imagenBase.webp" # debe estar en /public/img/articulos
 ---
 
 <!-- 
