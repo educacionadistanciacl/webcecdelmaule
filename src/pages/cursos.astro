@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ImagenContainer from "../components/ImagenContainer.astro";
 import CursosContainer from "../components/CursoContainer.astro";
 
-const imagenURL = '/public/img/bussines_woman.webp';
+const imagenURL = '/img/bussines_woman.webp';
 
 import cursos from '../../src/data/cursos.json';
 
@@ -45,7 +45,7 @@ const cursosAleatorios = organizarCursosPorTipo(cursos);
 <BaseLayout title="Cursos" borde={true}>
 <ImagenContainer ImagenBackgounrd={imagenURL}>
         <div class="curso-banner">
-          <img src="/public/img/logo_color.svg" alt="Logo de CSC del Maule" />
+          <img src="/img/logo_color.svg" alt="Logo de CSC del Maule" />
           <h1>Nuestros Cursos</h1>
         </div>
 </ImagenContainer>
