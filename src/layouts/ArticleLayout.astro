@@ -3,7 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import { getCollection } from 'astro:content';
 
 const urlImagen = '../public/img/articulos';
-const imagenBase = `${urlImagen}/imagenBase.webp`;
+const imagenBase = "imagenBase.webp";
 
 const { title, date, imagen = imagenBase, slug } = Astro.props;
 
@@ -14,7 +14,7 @@ const recommendedArticles = await getCollection('articulos', ({ slug: currentSlu
 <BaseLayout title={title} borde={true}>
   <article>
     <header>
-      <img src={imagen} alt={title}>
+      <img src={`${urlImagen}/${imagen}`} alt={title}>
     </header>
     <section>
       <div class="header-content">
@@ -24,25 +24,38 @@ const recommendedArticles = await getCollection('articulos', ({ slug: currentSlu
       <div class="content">
         <slot /> <!-- Aquí se insertará el contenido del artículo -->
       </div>
-
-      <!-- Sección de Artículos Recomendados -->
-      <div class="recommended">
-        <h2>Artículos Relacionados</h2>
-        <div class="articles">
-          {recommendedArticles.map(article => (
-            <div class="article-card">
-              <a href={`/articulos/${article.slug}`}>
-                <img src={article.data.image || imagenBase} alt={article.data.title} />
-                <p>{article.data.title}</p>
+    </section>
+          <!-- Sección de Artículos Recomendados -->
+          <div class="recomendados">
+            <div class="articles">
+              {recommendedArticles.map(article => (
+                <div class="article-card">
+                  <a href={`/articulos/${article.slug}`}>
+                    <img src={urlImagen +"/"+ (article.data.image || imagenBase)} alt={article.data.title} />
+                    <div class="article-title">
+                      <p>{article.data.title}</p>
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div class="more-articles">
+              <a href="/articulos">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2031_397)">
+                  <path d="M25.4316 12.5916C25.2457 12.4041 25.0245 12.2554 24.7808 12.1538C24.537 12.0523 24.2756 12 24.0116 12C23.7476 12 23.4862 12.0523 23.2424 12.1538C22.9987 12.2554 22.7775 12.4041 22.5916 12.5916L12.5916 22.5916C12.4041 22.7775 12.2554 22.9987 12.1538 23.2424C12.0523 23.4862 12 23.7476 12 24.0116C12 24.2756 12.0523 24.537 12.1538 24.7808C12.2554 25.0245 12.4041 25.2457 12.5916 25.4316L22.5916 35.4316C22.7775 35.6191 22.9987 35.7678 23.2424 35.8694C23.4862 35.9709 23.7476 36.0232 24.0116 36.0232C24.2756 36.0232 24.537 35.9709 24.7808 35.8694C25.0245 35.7678 25.2457 35.6191 25.4316 35.4316C25.6191 35.2457 25.7678 35.0245 25.8694 34.7808C25.9709 34.537 26.0232 34.2756 26.0232 34.0116C26.0232 33.7476 25.9709 33.4862 25.8694 33.2424C25.7678 32.9987 25.6191 32.7775 25.4316 32.5916L16.8316 24.0116L25.4316 15.4316C25.6191 15.2457 25.7678 15.0245 25.8694 14.7808C25.9709 14.537 26.0232 14.2756 26.0232 14.0116C26.0232 13.7476 25.9709 13.4862 25.8694 13.2424C25.7678 12.9987 25.6191 12.7775 25.4316 12.5916ZM47.4316 22.5916L37.4316 12.5916C37.2451 12.4051 37.0237 12.2572 36.7801 12.1563C36.5365 12.0554 36.2753 12.0034 36.0116 12.0034C35.479 12.0034 34.9682 12.215 34.5916 12.5916C34.4051 12.7781 34.2572 12.9995 34.1563 13.2431C34.0554 13.4867 34.0034 13.7479 34.0034 14.0116C34.0034 14.5442 34.215 15.055 34.5916 15.4316L43.1916 24.0116L34.5916 32.5916C34.4041 32.7775 34.2554 32.9987 34.1538 33.2424C34.0523 33.4862 34 33.7476 34 34.0116C34 34.2756 34.0523 34.537 34.1538 34.7808C34.2554 35.0245 34.4041 35.2457 34.5916 35.4316C34.7775 35.6191 34.9987 35.7678 35.2424 35.8694C35.4862 35.9709 35.7476 36.0232 36.0116 36.0232C36.2756 36.0232 36.537 35.9709 36.7808 35.8694C37.0245 35.7678 37.2457 35.6191 37.4316 35.4316L47.4316 25.4316C47.6191 25.2457 47.7678 25.0245 47.8694 24.7808C47.9709 24.537 48.0232 24.2756 48.0232 24.0116C48.0232 23.7476 47.9709 23.4862 47.8694 23.2424C47.7678 22.9987 47.6191 22.7775 47.4316 22.5916Z" fill="#1E57A4"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2031_397">
+                  <rect width="48" height="48" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+                Lee más artículos
               </a>
             </div>
-          ))}
-        </div>
-        <div class="more-articles">
-          <a href="/articulos">Lee más artículos</a>
-        </div>
-      </div>
-    </section>
+          </div>
   </article>
 </BaseLayout>
 
@@ -90,56 +103,76 @@ const recommendedArticles = await getCollection('articulos', ({ slug: currentSlu
     color: #3F3F3F;
   }
 
-  .recommended {
+  .recomendados {
+    max-width: auto;
+    margin: auto;
+    padding: 2% 15%;
+    line-height: 1.6;
     margin-top: 50px;
   }
 
-  .recommended h2 {
-    font-size: 1.8em;
-    color: var(--color-primario);
-    margin-bottom: 20px;
-  }
 
   .articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
   }
 
   .article-card {
     flex: 1;
-    background: #f0f0f0;
-    padding: 10px;
-    text-align: center;
+    background: var(--color-secundario);
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
+    text-align: center;
+    aspect-ratio: 1.5 / 1; /* Hace que la tarjeta sea siempre cuadrada */
+    max-width: 300px; /* Establece un ancho máximo */
+    
   }
 
   .article-card img {
     width: 100%;
-    height: 150px;
+    height: 100%; /* La imagen ahora ocupará toda la tarjeta cuadrada */
     object-fit: cover;
-    border-radius: 8px;
   }
 
-  .article-card p {
-    margin: 10px 0 0;
+  .article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 0;
+    color: white;
+  }
+
+  .article-title p {
+    margin: 0;
+    margin-right: 5%;
     font-size: 1em;
     font-weight: bold;
+    color: var(--color-secundario);
   }
 
   .more-articles {
-    text-align: center;
-    margin-top: 20px;
-  }
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .more-articles a {
-    font-size: 1.2em;
-    color: var(--color-primario);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--color-primario);
-    border-radius: 8px;
-  }
+.more-articles a {
+  font-size: 1.2em;
+  color: var(--color-primario);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-articles svg {
+  margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+}
+
 </style>
