@@ -3,17 +3,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import { getCollection } from 'astro:content';
 
-const articles = await getCollection('articles'); // Obtén todos los archivos Markdown de la carpeta `src/content/articles`
+const articles = await getCollection('articulos'); // Obtén todos los archivos Markdown de la carpeta `src/content/articles`
 ---
 
 
 <BaseLayout title="Cursos" borde={true}>
   <h1>Todos los Artículos</h1>
-
   <ul>
     {articles.map(article => (
       <li>
-        <a href={`/articles/${article.slug}/`}>{article.data.title}</a> - {article.data.date}
+        <a href={`/articles/${article.slug}`}>{article.data.title}</a> - {article.data.pubDate}
       </li>
     ))}
   </ul>

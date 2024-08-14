@@ -1,24 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { getCollection } from 'astro:content';
 
+// 1. Genera una nueva ruta para cada entrada de colección
 export async function getStaticPaths() {
-  const articles = await getCollection('articles');
-  return articles.map((article) => ({
-    params: { slug: article.slug },
+  const blogEntries = await getCollection('articulos');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
   }));
 }
 
-const { slug } = Astro.params;
-const article = await getCollection('articles').then((articles) => 
-  articles.find((article) => article.slug === slug)
-);
-
-if (!article) {
-  throw new Error(`Artículo no encontrado: ${slug}`);
-}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
 ---
 
-<ArticleLayout title={article.data.title} date={article.data.date} author={article.data.author}>
-  {article.content}
+<ArticleLayout title={entry.data.title} date={entry.data.pubDate}>
+  {entry.content}
 </ArticleLayout>

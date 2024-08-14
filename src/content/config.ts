@@ -1,13 +1,14 @@
+// 1. Importa las utilidades de `astro:content`
 import { defineCollection, z } from 'astro:content';
 
-const articlesCollection = defineCollection({
+const articulosCollection = defineCollection({
+  type: 'content',
   schema: z.object({
     title: z.string(),
-    date: z.string().transform((str) => new Date(str)),
-    author: z.string(),
+    pubDate: z.string().transform((str) => new Date(str)),
   }),
 });
 
 export const collections = {
-  'articles': articlesCollection,
+  articulos: articulosCollection,
 };
