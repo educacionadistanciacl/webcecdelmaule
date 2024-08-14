@@ -4,7 +4,7 @@ import { getFilteredArticles } from "../utils/contentHelpers"
 
 const url_imagen = "/img/articulos"
 
-let  articles = await getFilteredArticles();
+let articles = await getFilteredArticles();
 
 // Ordenar artículos por fecha de creación, del más reciente al más antiguo
 articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
@@ -12,7 +12,7 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
 
 <BaseLayout title="Artículos" borde={true}>
   <h1>ARTÍCULOS</h1>
-  <div class="articles-grid">
+  <div class={`articles-grid ${articles.length === 1 ? 'single' : ''}`}>
     {articles.map((article, index) => (
       <a 
         href={`/articulos/${article.slug}`} 
@@ -41,6 +41,12 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+  }
+
+  .articles-grid.single {
+    display: grid;
+    grid-template-columns: 1fr; /* Coloca una columna para centrar el artículo */
+    justify-items: center; /* Centra el artículo horizontalmente */
   }
 
   .article-card {
@@ -80,6 +86,11 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
     grid-row: span 2;
   }
 
+  /* Si hay un solo artículo, se hace más grande y se centra */
+  .articles-grid.single .article-card {
+    max-width: 600px; /* Ajusta el ancho máximo para centrarlo */
+  }
+
   .featured img {
     height: 100%;
     object-fit: cover;
@@ -89,6 +100,10 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
     .featured {
       grid-column: span 1;
       grid-row: span 1;
+    }
+
+    .articles-grid.single .article-card {
+      max-width: 100%;
     }
   }
 </style>
