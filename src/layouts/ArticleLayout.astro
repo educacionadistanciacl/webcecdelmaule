@@ -6,11 +6,19 @@ const urlImagen = '../public/img/articulos';
 const imagenBase = "imagenBase.webp";
 
 const { title, date, imagen = imagenBase, slug } = Astro.props;
-
+// Depurar slugs
+console.log('Current slug:', slug);
 // Obtener todos los artículos excepto el actual
-const recommendedArticles = await getCollection('articulos', ({ slug: currentSlug }) => currentSlug !== slug);
----
+const allArticles = await getCollection('articulos');
 
+// Filtrar para excluir el artículo actual
+const filteredArticles = allArticles.filter(article => article.slug !== slug);
+
+// Ordenar por fecha de publicación y seleccionar los 3 más recientes
+const recommendedArticles = filteredArticles
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 3);
+---
 <BaseLayout title={title} borde={true}>
   <article>
     <header>
@@ -159,12 +167,10 @@ const recommendedArticles = await getCollection('articulos', ({ slug: currentSlu
 }
 
 .more-articles a {
-  font-size: 1.2em;
-  color: var(--color-primario);
+  color: black;
   text-decoration: none;
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 8px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;

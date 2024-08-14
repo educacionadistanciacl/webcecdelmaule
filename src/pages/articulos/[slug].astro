@@ -22,6 +22,6 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<ArticleLayout title={entry.data.title} date={formatDate(entry.data.pubDate)} imagen={entry.data.image}>
+<ArticleLayout title={entry.data.title} date={formatDate(entry.data.pubDate)} imagen={entry.data.image} slug={entry.slug}>
   <Content />
 </ArticleLayout>
