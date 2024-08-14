@@ -1,5 +1,5 @@
 // 1. Importa las utilidades de `astro:content`
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z, reference } from 'astro:content';
 
 const articulosCollection = defineCollection({
   type: 'content',

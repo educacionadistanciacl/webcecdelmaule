@@ -15,5 +15,5 @@ const { Content } = await entry.render();
 ---
 
 <ArticleLayout title={entry.data.title} date={entry.data.pubDate}>
-  {entry.content}
+  <Content />
 </ArticleLayout>
