@@ -1,27 +1,36 @@
 ---
-import ArticleLayout from '../../layouts/ArticleLayout.astro';
-import { getCollection } from 'astro:content';
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content"; // Importación "solo de tipo"
 
-// 1. Genera una nueva ruta para cada entrada de colección
 export async function getStaticPaths() {
-  const articulosEntries = await getCollection('articulos');
-  return articulosEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+  const articulosEntries = await getCollection("articulos", ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
+
+  return articulosEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
 function formatDate(date: Date) {
-  return new Intl.DateTimeFormat('es-ES', {
-    day: '2-digit',
-    month: '2-digit',
-    year: '2-digit'
+  return new Intl.DateTimeFormat("es-ES", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "2-digit",
   }).format(new Date(date));
 }
 
-const { entry } = Astro.props;
+const { entry } = Astro.props as { entry: CollectionEntry<'articulos'> };
+
 const { Content } = await entry.render();
 ---
 
-<ArticleLayout title={entry.data.title} date={formatDate(entry.data.pubDate)} imagen={entry.data.image} slug={entry.slug}>
+<ArticleLayout 
+  title={entry.data?.title} 
+  date={formatDate(entry.data?.pubDate)} 
+  imagen={entry.data?.image} 
+  slug={entry.slug}>
   <Content />
 </ArticleLayout>

@@ -99,7 +99,7 @@ function ajustarTipoCurso(tipoCurso: string): string {
   document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".curso-card");
 
-    const searchInput = document.getElementById('course-search');
+    const searchInput = document.getElementById('course-search') as HTMLInputElement;
 
     // Evento para limpiar el campo de búsqueda cuando se hace clic fuera de él
     document.addEventListener('click', function(event) {
@@ -130,7 +130,7 @@ function ajustarTipoCurso(tipoCurso: string): string {
   function filterCourses(cards: any, tipoSeleccionado: string) {
     
 
-    cards.forEach((card) => {
+    cards.forEach((card: any) => {
       const tipoCurso = card.getAttribute("data-tipo")?.replace("Curso ", "");
       if (tipoSeleccionado === "Todos" || tipoCurso === tipoSeleccionado) {
         card.style.display = "block";
@@ -142,7 +142,7 @@ function ajustarTipoCurso(tipoCurso: string): string {
 
   function filterCoursesByName(cards: any, query: string) {
 
-    cards.forEach(card => {
+    cards.forEach((card: any) => {
     const nombreCursoElement = card.querySelector('p'); // Selecciona el elemento <p> dentro de la tarjeta
     const nombreCurso = nombreCursoElement ? nombreCursoElement.textContent?.toLowerCase() : '';
       if (nombreCurso?.includes(query)) {

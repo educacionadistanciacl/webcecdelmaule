@@ -1,23 +1,24 @@
 ---
 // Importar el archivo CSS
-import BtnAulaVirtual from './BtnAulaVirtual.astro';
-import CecLogo from './CecLogo.astro';
+import BtnAulaVirtual from "./BtnAulaVirtual.astro";
+import CecLogo from "./CecLogo.astro";
 ---
-<header >
+
+<header>
   <div>
     <a href="/">
       <!-- <img src="/public/img/logo.webp" alt="Logo CSC del Maule" /> -->
-       <CecLogo/>
+      <CecLogo />
     </a>
   </div>
   <div class="menu-icon" id="menuToggle">☰</div>
   <nav>
     <ul>
-      <li><a class="hover" href="/" >Inicio</a></li>
-      <li><a class="hover" href="/nosotros" >Nosotros</a></li>
-      <li><a class="hover" href="/cursos" >Cursos</a></li>
-      <li><a class="hover" href="/articulos" >Artículos</a></li>
-      <li><a class="hover" href="/contacto" >Contacto</a></li>
+      <li><a class="hover" href="/">Inicio</a></li>
+      <li><a class="hover" href="/nosotros">Nosotros</a></li>
+      <li><a class="hover" href="/cursos">Cursos</a></li>
+      <li><a class="hover" href="/articulos">Artículos</a></li>
+      <li><a class="hover" href="/contacto">Contacto</a></li>
     </ul>
     <div id="mobileMenuBtn" class="hidden">
       <BtnAulaVirtual />
@@ -35,13 +36,12 @@ import CecLogo from './CecLogo.astro';
     align-items: center;
     padding: 10px 50px; /* Aumenta el padding para más espacio */
     background-color: var(--color-primario);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     min-height: 60px; /* Ajusta esto según el mínimo necesario */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si no hay suficiente espacio */
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 1000;
-
   }
 
   nav {
@@ -51,9 +51,8 @@ import CecLogo from './CecLogo.astro';
     display: flex;
     justify-content: flex-end; /* Empieza los elementos desde la izquierda */
     margin-right: 5%; /* Incrementa el margen izquierdo para empujarlo a la derecha */
-  }  
+  }
 
-  
   nav ul {
     list-style: none;
     padding: 0;
@@ -61,7 +60,7 @@ import CecLogo from './CecLogo.astro';
     gap: 20px; /* Ajusta el espacio entre los links */
     margin: 0 10px; /* Añade márgenes a los lados para no pegar con los bordes */
   }
-  
+
   nav a {
     text-decoration: none;
     color: var(--color-secundario);
@@ -69,77 +68,77 @@ import CecLogo from './CecLogo.astro';
     text-transform: uppercase;
   }
 
-.menu-icon {
-  display: none; /* Oculta por defecto y se muestra solo en pantallas pequeñas */
-  cursor: pointer;
-  font-size: 24px; /* Tamaño del ícono del menú */
-  padding: 10px;
-}
+  .menu-icon {
+    display: none; /* Oculta por defecto y se muestra solo en pantallas pequeñas */
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del ícono del menú */
+    padding: 10px;
+  }
 
-#mobileMenuBtn {
+  #mobileMenuBtn {
     display: none;
-}
+  }
 
   /* Media query para ajustar la vista en dispositivos hasta 1024px */
-@media (max-width: 1024px) {
-  header {
-    justify-content: center; /* Centra todos los elementos del header */
-    padding: 10px 20px; /* Reduce el padding lateral */
+  @media (max-width: 1024px) {
+    header {
+      justify-content: center; /* Centra todos los elementos del header */
+      padding: 10px 20px; /* Reduce el padding lateral */
+    }
+
+    nav {
+      margin-right: 0; /* Elimina el margen derecho extra */
+      justify-content: center; /* Centra los elementos del nav */
+    }
+
+    nav ul {
+      justify-content: center; /* Asegura que los 'li' estén centrados */
+    }
   }
 
-  nav {
-    margin-right: 0; /* Elimina el margen derecho extra */
-    justify-content: center; /* Centra los elementos del nav */
+  @media (max-width: 912px) {
+    header {
+      justify-content: space-between; /* Mantiene el logo y el botón en los extremos */
+      position: relative; /* Establece la posición relativa para el posicionamiento absoluto del nav */
+    }
+
+    .menu-icon {
+      display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+      font-size: 30px; /* Aumenta el tamaño para una mejor visibilidad */
+      color: white; /* Cambia el color a blanco */
+      padding: 10px 20px; /* Ajusta el padding para mejor acceso y visibilidad */
+      margin: 0 auto; /* Centra el ícono del menú horizontalmente */
+    }
+
+    nav {
+      position: absolute;
+      top: 100%; /* Coloca el menú directamente debajo del header */
+      left: 0;
+      right: 0;
+      background-color: var(--color-primario);
+      flex-direction: column;
+      display: none; /* Oculta el menú por defecto */
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Añade sombra para resaltar el menú */
+      z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+    }
+
+    nav ul {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    nav ul li {
+      text-align: center; /* Centra los enlaces en su contenedor */
+    }
+
+    nav a {
+      display: block; /* Hace que los enlaces llenen todo el ancho del menú */
+      padding: 10px 0; /* Añade padding para aumentar el área de clic */
+    }
   }
 
-  nav ul {
-    justify-content: center; /* Asegura que los 'li' estén centrados */
-  }
-}
-
-@media (max-width: 912px) {
-  header {
-    justify-content: space-between; /* Mantiene el logo y el botón en los extremos */
-    position: relative; /* Establece la posición relativa para el posicionamiento absoluto del nav */
-  }
-
-  .menu-icon {
-    display: block; /* Muestra el ícono del menú en pantallas pequeñas */
-    font-size: 30px; /* Aumenta el tamaño para una mejor visibilidad */
-    color: white; /* Cambia el color a blanco */
-    padding: 10px 20px; /* Ajusta el padding para mejor acceso y visibilidad */
-    margin: 0 auto; /* Centra el ícono del menú horizontalmente */
-  }
-
-  nav {
-    position: absolute;
-    top: 100%; /* Coloca el menú directamente debajo del header */
-    left: 0;
-    right: 0;
-    background-color: var(--color-primario);
-    flex-direction: column;
-    display: none; /* Oculta el menú por defecto */
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Añade sombra para resaltar el menú */
-    z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
-  }
-
-  nav ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  nav ul li {
-    text-align: center; /* Centra los enlaces en su contenedor */
-  }
-
-  nav a {
-    display: block; /* Hace que los enlaces llenen todo el ancho del menú */
-    padding: 10px 0; /* Añade padding para aumentar el área de clic */
-  }
-}
-
-@media (max-width: 590px) {
+  @media (max-width: 590px) {
     #desktopMenuBtn {
       display: none; /* Oculta el botón en el header en pantallas pequeñas */
     }
@@ -150,37 +149,38 @@ import CecLogo from './CecLogo.astro';
       margin-top: 20px;
     }
   }
-  
 </style>
 
-
-<script type="module">
+<script>
   // Manejar responsivamente el menu del header
-  const menuToggle = document.getElementById('menuToggle');
-  const nav = document.querySelector('nav');
+  const menuToggle = document.getElementById("menuToggle");
+  const nav = document.querySelector("nav");
 
   function toggleMenu() {
-    if (nav.style.display === 'flex') {
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = 'flex';
+    if (nav) {
+      if (nav.style.display === "flex") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+      }
     }
   }
 
   function handleResize() {
-    if (window.innerWidth > 912) {
-      nav.style.display = 'flex'; // Muestra el menú en pantallas grandes
-    } else {
-      nav.style.display = 'none'; // Oculta el menú en pantallas pequeñas por defecto
+    if (nav) {
+      if (window.innerWidth > 912) {
+        nav.style.display = "flex"; // Muestra el menú en pantallas grandes
+      } else {
+        nav.style.display = "none"; // Oculta el menú en pantallas pequeñas por defecto
+      }
     }
   }
 
   if (menuToggle) {
-    menuToggle.addEventListener('click', toggleMenu);
-    window.addEventListener('resize', handleResize);
+    menuToggle.addEventListener("click", toggleMenu);
+    window.addEventListener("resize", handleResize);
     handleResize(); // Llama a la función inicialmente para establecer el estado correcto
   } else {
-    console.error('El elemento menuToggle no fue encontrado');
+    console.error("El elemento menuToggle no fue encontrado");
   }
-
 </script>

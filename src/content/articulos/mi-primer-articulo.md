@@ -2,6 +2,7 @@
 title: "Mi Artículo"
 pubDate: "2024-08-14"
 # image: "que es una empresa.webp"
+draft: false
 ---
 
 El pasaje estándar Lorem Ipsum, usado desde el año 1500.

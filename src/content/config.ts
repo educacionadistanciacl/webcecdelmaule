@@ -7,6 +7,7 @@ const articulosCollection = defineCollection({
     title: z.string(),
     pubDate: z.string().transform((str) => new Date(str)),
     image: z.string().optional(),
+    draft: z.boolean().optional(), // Propiedad opcional para marcar un artículo como borrador
   }),
 });
 
