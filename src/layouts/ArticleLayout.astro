@@ -1,29 +1,76 @@
 ---
 
 import BaseLayout from "./BaseLayout.astro";
+const urlImagen = '../public/img/articulos'
+const imagenBase = `${urlImagen}/imagenBase.webp`
 
-const { title, date } = Astro.props;
+const { title, date, imagen = imagenBase } = Astro.props;
 ---
 
 <BaseLayout title={title} borde={true}>
   <article>
     <header>
-      <h1>{title}</h1>
-      <p>Publicado el {date}</p>
+      <img src={imagen} alt={title}>
     </header>
     <section>
-      <slot /> <!-- Aquí se insertará el contenido del artículo -->
+      <div class="header-content">
+        <h1>{title}</h1>
+        <p>{date}</p>
+      </div>
+      <div class="content">
+        <slot /> <!-- Aquí se insertará el contenido del artículo -->
+      </div>
     </section>
   </article>
 </BaseLayout>
 
 <style>
-  article {
+  
+
+img {
+    width: 100%;
+    height: auto; /* Cambiado para que la altura sea proporcional al ancho */
+    max-height: 500px; /* Establecer una altura máxima para la imagen */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  
+  section {
     max-width: 800px;
     margin: auto;
     padding: 20px;
+    line-height: 1.6;
+    color: #333;
   }
-  header {
-    margin-bottom: 40px;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
   }
+
+  h1 {
+    font-size: 2.5em;
+    color: var(--color-primario); /* Color azul para el título */
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #000000;
+    font-size: 0.9em;
+    text-align: right;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .content{
+    color: #3F3F3F;
+  }
+
+
+
 </style>
