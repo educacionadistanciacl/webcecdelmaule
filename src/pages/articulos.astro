@@ -13,8 +13,11 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
 <BaseLayout title="Artículos" borde={true}>
   <h1>ARTÍCULOS</h1>
   <div class="articles-grid">
-    {articles.map(article => (
-      <a href={`/articulos/${article.slug}`} class="article-card">
+    {articles.map((article, index) => (
+      <a 
+        href={`/articulos/${article.slug}`} 
+        class={`article-card ${index === 0 ? 'featured' : ''}`}
+      >
         <img src={`${url_imagen}/${article.data.image}`} alt={article.data.title} />
         <div class="article-info">
           <p>{article.data.title}</p>
@@ -27,7 +30,7 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
 <style>
   h1 {
     text-align: center;
-    color: var(--color-primario); /* Ajusta según tus variables de color */
+    color: var(--color-primario);
     margin-bottom: 20px;
   }
 
@@ -69,5 +72,23 @@ articles = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.get
     text-align: center;
     padding: 10px;
     font-size: 1.2em;
+  }
+
+  /* Estilo para el artículo destacado */
+  .featured {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .featured img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .featured {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
   }
 </style>
