@@ -12,7 +12,7 @@ const articles = await getCollection('articulos'); // Obtén todos los archivos 
   <ul>
     {articles.map(article => (
       <li>
-        <a href={`/articles/${article.slug}`}>{article.data.title}</a>
+        <a href={`/articulos/${article.slug}`}>{article.data.title}</a>
       </li>
     ))}
   </ul>

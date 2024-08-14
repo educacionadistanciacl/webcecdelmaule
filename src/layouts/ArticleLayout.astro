@@ -1,10 +1,14 @@
 ---
-
 import BaseLayout from "./BaseLayout.astro";
-const urlImagen = '../public/img/articulos'
-const imagenBase = `${urlImagen}/imagenBase.webp`
+import { getCollection } from 'astro:content';
 
-const { title, date, imagen = imagenBase } = Astro.props;
+const urlImagen = '../public/img/articulos';
+const imagenBase = `${urlImagen}/imagenBase.webp`;
+
+const { title, date, imagen = imagenBase, slug } = Astro.props;
+
+// Obtener todos los artículos excepto el actual
+const recommendedArticles = await getCollection('articulos', ({ slug: currentSlug }) => currentSlug !== slug);
 ---
 
 <BaseLayout title={title} borde={true}>
@@ -20,23 +24,38 @@ const { title, date, imagen = imagenBase } = Astro.props;
       <div class="content">
         <slot /> <!-- Aquí se insertará el contenido del artículo -->
       </div>
+
+      <!-- Sección de Artículos Recomendados -->
+      <div class="recommended">
+        <h2>Artículos Relacionados</h2>
+        <div class="articles">
+          {recommendedArticles.map(article => (
+            <div class="article-card">
+              <a href={`/articulos/${article.slug}`}>
+                <img src={article.data.image || imagenBase} alt={article.data.title} />
+                <p>{article.data.title}</p>
+              </a>
+            </div>
+          ))}
+        </div>
+        <div class="more-articles">
+          <a href="/articulos">Lee más artículos</a>
+        </div>
+      </div>
     </section>
   </article>
 </BaseLayout>
 
 <style>
-  
-
-img {
+  img {
     width: 100%;
-    height: auto; /* Cambiado para que la altura sea proporcional al ancho */
-    max-height: 500px; /* Establecer una altura máxima para la imagen */
-    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor */
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0 auto;
   }
 
-  
   section {
     max-width: 800px;
     margin: auto;
@@ -54,7 +73,7 @@ img {
 
   h1 {
     font-size: 2.5em;
-    color: var(--color-primario); /* Color azul para el título */
+    color: var(--color-primario);
     margin-bottom: 10px;
   }
 
@@ -67,10 +86,60 @@ img {
     font-weight: bold;
   }
 
-  .content{
+  .content {
     color: #3F3F3F;
   }
 
+  .recommended {
+    margin-top: 50px;
+  }
 
+  .recommended h2 {
+    font-size: 1.8em;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+  }
 
+  .articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .article-card {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .article-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .article-card p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .more-articles {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .more-articles a {
+    font-size: 1.2em;
+    color: var(--color-primario);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+  }
 </style>
