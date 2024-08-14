@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import { getCollection } from "astro:content";
+import { getFilteredArticles } from "../utils/contentHelpers";
 
 const urlImagen = "/img/articulos";
 const imagenBase = "imagenBase.webp";
@@ -8,10 +9,9 @@ const imagenBase = "imagenBase.webp";
 const { title, date, imagen = imagenBase, slug } = Astro.props;
 
 // Obtener todos los artículos excepto el actual
-const allArticles = await getCollection("articulos");
-
+const allArticles = await getFilteredArticles();
 // Filtrar para excluir el artículo actual
-const filteredArticles = allArticles.filter((article) => article.slug !== slug);
+const filteredArticles = allArticles.filter((article: any) => article.slug !== slug);
 
 // Ordenar por fecha de publicación y seleccionar los 3 más recientes
 const recommendedArticles = filteredArticles

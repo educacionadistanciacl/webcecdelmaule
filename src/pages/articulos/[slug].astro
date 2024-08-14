@@ -1,14 +1,13 @@
 ---
 import ArticleLayout from "../../layouts/ArticleLayout.astro";
-import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content"; // Importación "solo de tipo"
+import { getFilteredArticles } from "../../utils/contentHelpers";
+
 
 export async function getStaticPaths() {
-  const articulosEntries = await getCollection("articulos", ({ data }) => {
-    return import.meta.env.PROD ? data.draft !== true : true;
-  });
+  const filteredEntries = await getFilteredArticles();
 
-  return articulosEntries.map((entry) => ({
+  return filteredEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));

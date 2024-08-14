@@ -1,9 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getFilteredArticles } from "../utils/contentHelpers"
 
-import { getCollection } from 'astro:content';
-
-const articles = await getCollection('articulos'); // Obtén todos los archivos Markdown de la carpeta `src/content/articles`
+const articles = await getFilteredArticles();
 ---
 
 
