@@ -1,7 +1,7 @@
 ---
 title: "Otro articulo de prueba"
 pubDate: "2024-08-14"
-draft: true # false para poder visualizarlo en producción
+draft: false # false para poder visualizarlo en producción
 image: "imagenBase.webp" # debe estar en /public/img/articulos
 ---
 
