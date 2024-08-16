@@ -2,7 +2,7 @@
 title: "Segundo articulo"
 pubDate: "2024-08-14"
 image: "sector-agricola.webp"
-draft: true
+draft: false
 ---
 
 El pasaje estándar Lorem Ipsum, usado desde el año 1500.
