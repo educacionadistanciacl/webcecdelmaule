@@ -1,53 +1,95 @@
 ---
 // Simulando la lista de logos como propiedades; reemplaza esto según cómo obtengas tus datos.
-const path_img = '/img/partners'
+const path_img = "/img/partners";
 
 const partners = [
-  { logo: `${path_img}/cosito-verde.svg`, name: '' },
-  { logo: `${path_img}/ucm-logo-vertical.svg`, name: 'UCM' },
-  { logo: `${path_img}/logo-utalca.svg`, name: 'U. de Talca' },
-  { logo: `${path_img}/servimaule.svg`, name: 'SERVIRMAULE' },
-  { logo: `${path_img}/laboratorio-ucm.svg`, name: 'LABORATORIO UCM' },
+  { logo: `${path_img}/cosito-verde.svg`, name: "" },
+  { logo: `${path_img}/ucm-logo-vertical.svg`, name: "UCM" },
+  { logo: `${path_img}/logo-utalca.svg`, name: "U. de Talca" },
+  { logo: `${path_img}/servimaule.svg`, name: "SERVIRMAULE" },
+  { logo: `${path_img}/laboratorio-ucm.svg`, name: "LABORATORIO UCM" },
 ];
+
+// Concatenando la lista de logos duplicada
+const logosDuplicados = partners.concat(partners);
 ---
 
 <div class="partners-container">
   <h2>HAN ELEGIDO TRABAJAR CON CEC del Maule</h2>
-  <div class="logos">
-    {partners.map((partner) => (
-      <img src={partner.logo} alt={`Logo de ${partner.name}`} class="partner-logo" />
-    ))}
+  <div class="slider-container">
+    <div class="logos">
+      {
+        logosDuplicados.map((partner) => (
+          <div class="logo-item">
+            <img
+              src={partner.logo}
+              alt={`Logo de ${partner.name}`}
+              class="partner-logo"
+            />
+          </div>
+        ))
+      }
+    </div>
   </div>
 </div>
 
 <style>
-    .partners-container {
-  width: 100%;
+  .partners-container {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #17417d 0%, #448fcd 100%);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 20px 0;
+  }
 
-  background-image: linear-gradient(to bottom, #17417D 0%, #448FCD 100%); /* Degradado de azul oscuro a azul claro */
-  color: var(--color-secundario);
-  text-align: center;
-  padding: 20px 0;
-}
+  .partners-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 0 20%;
+  }
 
-.partners-container h2 {
-  margin-bottom: 20px; /* Espacio entre el título y los logos */
-  font-size: 24px;
-  padding: 0 20%;
-}
+  .slider-container {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    width: 50vw;
+  }
 
-.logos {
-  display: flex;
-  justify-content: space-around; /* Distribuye los logos equitativamente */
-  align-items: center;
-  flex-wrap: wrap; /* Permite envolver en pantallas más pequeñas */
-  padding: 0 20%; /* Reduce el área utilizada por los logos */
-}
+  .logos {
+    display: flex;
+    -moz-animation: slider 40s linear infinite;
+    -webkit-animation: slider 40s linear infinite;
+    animation: slider 40s linear infinite;
+    width: max-content;
+    justify-content: space-around; /* Distribuye los logos equitativamente */
+    align-items: center;
+    flex-wrap: wrap; /* Permite envolver en pantallas más pequeñas */
+    padding: 0 20%; /* Reduce el área utilizada por los logos */
+  }
 
-.partner-logo {
-  max-width: 120px; /* Limita el tamaño de los logos */
-  height: auto; /* Mantiene la proporción */
-  padding: 10px; /* Espacio alrededor de cada logo para evitar que se toquen */
-}
+  .logo-item {
+    flex: 0 0 auto;
+    padding: 10px 18px;
+  }
 
+  .partner-logo {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* Animación de desplazamiento */
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 </style>
+<script>
+  let slider = document.querySelector(".logos");
+  if (slider) {
+    slider.innerHTML += slider.innerHTML;
+  }
+</script>
