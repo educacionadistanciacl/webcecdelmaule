@@ -37,7 +37,6 @@ const { nombreCurso, tipoCurso, link, backgroundColor } = Astro.props;
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
     flex: 1; /* Asegura que ocupe todo el espacio disponible */
-
   }
 
   .button-container {
@@ -45,5 +44,13 @@ const { nombreCurso, tipoCurso, link, backgroundColor } = Astro.props;
     display: flex;
     justify-content: center; /* Centra el botón dentro del contenedor */
   }
-  
+
+  /* Si quieres transformar todo el texto a minúsculas y solo la primera letra en mayúscula */
+  .curso-card .curso-info p::first-letter {
+    text-transform: uppercase;
+  }
+
+  .curso-card .curso-info p {
+    text-transform: lowercase; /* Convierte el texto a minúsculas */
+  }
 </style>
