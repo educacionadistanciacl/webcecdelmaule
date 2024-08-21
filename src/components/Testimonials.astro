@@ -1,96 +1,111 @@
 ---
 // Importar estilos específicos si es necesario
-import CurvedContainer from '../components/CurvedContainer.astro';
+import CurvedContainer from "../components/CurvedContainer.astro";
 ---
 
 <!-- Componente Testimonials -->
 <CurvedContainer>
-    <div class="testimonials">
-        <img src="/img/young-woman.webp" alt="Testimonio" class="testimonial-image"/>
-        <div class="testimonial-content">
-            <h3>Testimonios</h3>
-            <p>"Fui al curso de IFRS y el profesor estuvo muy pendiente de mí, considerando que fue un curso sincrónico, nada que decir, muy buena la experiencia y el aprendizaje me sirvió muchísimo, totalmente recomendado."</p>
-            <div class="testimonial-logo">
-                <p>CON EL SELLO</p>
-                <img src="/img/ucm.webp" alt="Logo UCM"/>
-            </div>
-        </div>
+  <div class="testimonials">
+    <img
+      src="/img/young-woman.webp"
+      alt="Testimonio"
+      class="testimonial-image"
+    />
+    <div class="testimonial-content">
+      <h3>Testimonios</h3>
+      <p>
+        "Fui al curso de IFRS y el profesor estuvo muy pendiente de mí,
+        considerando que fue un curso sincrónico, nada que decir, muy buena la
+        experiencia y el aprendizaje me sirvió muchísimo, totalmente
+        recomendado."
+      </p>
+      <div class="testimonial-logo">
+        <p>CON EL SELLO</p>
+        <img src="/img/ucm.webp" alt="Logo UCM" />
+      </div>
     </div>
+  </div>
 </CurvedContainer>
 
-
 <style>
-    /* Estilos para el contenedor .Testimonials */
-.testimonials {
+  /* Estilos para el contenedor .Testimonials */
+  .testimonials {
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
     justify-content: flex-end; /* Alinea los elementos al final del contenedor */
     height: 100%; /* Ocupa todo el alto disponible de .content-area */
     margin-top: auto; /* Empuja todo el contenido hacia abajo */
     padding: 0 20px 20px 20px; /* Añade padding excepto en la parte superior */
-}
+  }
 
-/* Ajustes para la imagen del testimonio */
-.testimonial-image {
+  /* Ajustes para la imagen del testimonio */
+  .testimonial-image {
     position: absolute; /* Posicionamiento absoluto dentro del contenedor */
     bottom: 0; /* Alinea la imagen al final del contenedor */
     left: 15%; /* Alinea la imagen a la izquierda */
     max-width: 27%; /* Control del ancho de la imagen */
     height: auto; /* Altura automática para mantener la proporción */
     max-height: 340px; /* Establece un alto máximo */
-}
+  }
 
-
-/* Ajustes para el contenido del testimonio */
-.testimonial-content {
+  /* Ajustes para el contenido del testimonio */
+  .testimonial-content {
     position: absolute;
     left: 60%; /* Posiciona al centro horizontal */
     transform: translateX(-50%); /* Centra exactamente en el medio */
     top: 20%; /* Alinea el contenido en la parte superior */
     width: 50%; /* Controla el ancho del contenido */
-    padding: 4% 3%; /* Reduce el padding lateral para más compactación */
+    padding: 4% 10%; /* Reduce el padding lateral para más compactación */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
     height: 60%; /* Ajusta la altura según necesidad */
     color: var(--color-secundario);
     text-align: center; /* Centra el texto horizontalmente */
-}
+  }
 
-.testimonial-content h3 {
+  .testimonial-content h3 {
     text-transform: uppercase;
-}
+  }
 
-
-.testimonial-logo {
+  .testimonial-logo {
     position: absolute;
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%); /* Asegura centrado preciso */
     bottom: -10%; /* Alinea el logo en la parte inferior */
     width: auto; /* Ancho automático o definido si es necesario */
-}
+  }
 
-
-.testimonial-logo img {
+  .testimonial-logo img {
     width: 50%; /* Reduce el ancho del logo */
     height: auto; /* Mantiene la proporción del logo al cambiar el ancho */
-}
-
-@media (max-width: 912px) {
-  .testimonial-image {
-    display: none; /* Oculta la imagen del testimonio */
   }
 
-  .testimonial-content {
-    left: 50%; /* Asegura que el contenido esté centrado horizontalmente */
-    width: 80%; /* Ajusta el ancho del contenido para que no sea demasiado ancho */
-    transform: translateX(-50%); /* Centra exactamente en el medio */
-    top: 50%; /* Centra verticalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centrar perfectamente */
+  @media (min-width: 1500px) {
+    .testimonial-content {
+      padding: 4% 15%; /* Reduce el padding lateral para más compactación */
+    }
   }
 
-  .testimonial-logo {
-    bottom: 10%; /* Ajusta la posición del logo para estar más cerca del texto */
+  @media (max-width: 912px) {
+    .testimonial-image {
+      display: none; /* Oculta la imagen del testimonio */
+    }
+
+    .testimonial-content {
+      left: 50%; /* Asegura que el contenido esté centrado horizontalmente */
+      width: 80%; /* Ajusta el ancho del contenido para que no sea demasiado ancho */
+      transform: translateX(-50%); /* Centra exactamente en el medio */
+      top: 50%; /* Centra verticalmente */
+      transform: translate(-50%, -50%); /* Ajuste para centrar perfectamente */
+    }
+
+    .testimonial-logo {
+      bottom: 10%; /* Ajusta la posición del logo para estar más cerca del texto */
+    }
   }
-}
 
-
+  @media (max-width: 530px) {
+    .testimonial-logo {
+      bottom: -5%; /* Ajusta la posición del logo para estar más cerca del texto */
+    }
+  }
 </style>
