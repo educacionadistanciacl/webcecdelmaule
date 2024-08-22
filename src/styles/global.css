@@ -23,6 +23,13 @@ html, body {
   body .page-container {
     /* ayuda a fija el header con el atributo position:sticky; */
     overflow: visible; 
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
   }
   
   .hover {
