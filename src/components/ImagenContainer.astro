@@ -1,8 +1,8 @@
 ---
-const {ImagenBackgounrd} = Astro.props;
+const { ImagenBackgounrd, height = 'calc(100vh - 90px)' } = Astro.props;
 ---
 
-<div class="imagenContainer" style={{ backgroundImage: `url(${ImagenBackgounrd})` }}> 
+<div class="imagenContainer" style={{ backgroundImage: `url(${ImagenBackgounrd})`, height: height }}> 
     <slot/>
 </div>
 
@@ -12,8 +12,7 @@ const {ImagenBackgounrd} = Astro.props;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);  /* Ajusta según la altura del header */
-  /* background-image: url('/public/img/hero.svg'); */
+  /* El height ahora se define a través de props */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
