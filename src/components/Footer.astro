@@ -30,7 +30,9 @@ const { borde = false } = Astro.props;
         <li><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
       ))}
     </ul>
-    <CecLogo/>
+    <div class="logo">
+        <CecLogo/>
+    </div>
   </div>
   <div class="certification-section">
     <h4>{footerData.certification.name}</h4>
@@ -104,9 +106,8 @@ const { borde = false } = Astro.props;
     font-size: 10px;
 }
 
-.CecLogo {
-    margin-top: 30px;  /* Aumenta el espacio para bajar el logo */
-    align-self: flex-start; /* Alineación a la izquierda dentro de la sección de enlaces */
+.logo {
+    margin-top: 20px;  /* Aumenta el espacio para bajar el logo */
 }
 
 @media (max-width: 450px) {
