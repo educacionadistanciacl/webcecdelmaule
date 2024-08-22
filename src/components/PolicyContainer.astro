@@ -1,40 +1,118 @@
+---
+const politicas = [
+  "Cumplir los requisitos del sistema de gestión de la calidad, los requisitos legales y de mejorar continuamente la eficacia de este.",
+  "Satisfacer los requerimientos de los usuarios y participantes.",
+  "Generar ingresos que permitan la sostenibilidad del OTEC.",
+];
+---
+
 <!-- Componente Política de Calidad -->
-<div class="policy-container">
-    <h2>Política de Calidad</h2>
-    <h4>La alta dirección de CEC del Maule declara y se compromete a:</h4>
-    <p>Cumplir los requisitos del sistema de gestión de la calidad, los requisitos legales y de mejorar continuamente la eficacia de este.</p>
+<div class="policy-container" data-politicas={JSON.stringify(politicas)}>
+  <h2>Política de Calidad</h2>
+  <h4>La alta dirección de CEC del Maule declara y se compromete a:</h4>
+  <p id="policy-text">{politicas[0]}</p>
+
 </div>
-
 <style>
-.policy-container {
-    position: relative;
-    background-color: var(--color-secundario);
-    padding: 5% 30% 0% 30%;
-    text-align: center;
-    color: #062C5B;
-    font-size: 16px;
-    height: 200px;
-}
-
-h2 {
-    margin: 0 0 10px 0;
-    color: #062C5B;
-}
-
-h4, {
-    margin: 10px 0;
-    line-height: 1.5;
-}
-
-p {
-    margin-top: 30px;
-
-}
-
-@media (max-width: 800px) {
-
     .policy-container {
-        padding: 5% 20%;
+      position: relative;
+      background-color: var(--color-secundario);
+      padding: 5% 35% 0% 35%;
+      text-align: center;
+      color: #062c5b;
+      font-size: 16px;
+      height: 230px;
+      word-wrap: break-word; /* Ajusta el texto para evitar desbordamientos */
     }
-}
-</style>
+
+    h2 {
+      margin: 0 0 10px 0;
+      color: #062c5b;
+    }
+
+    h4 {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      padding: 0% 5%;
+      font-size: 18px;
+    }
+
+    @keyframes fadeOutIn {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .policy-container p {
+      transition: opacity 1s ease-in-out;
+    }
+
+    .fade-out-in {
+      animation: fadeOutIn 2s ease-in-out;
+    }
+
+    @media (max-width: 800px) {
+      .policy-container {
+        padding: 5% 20%;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .policy-container {
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .policy-container {
+        height: 350px;
+      }
+    }
+  </style>
+
+
+<script>
+  // Obtén las políticas del atributo data
+  const container = document.querySelector(".policy-container");
+  let dataPoliticas;
+  let politicas: any;
+  if (container) {
+    dataPoliticas = container.getAttribute("data-politicas");
+  }
+
+  if (dataPoliticas) {
+    politicas = JSON.parse(dataPoliticas);
+  }
+
+  let currentIndex = 0;
+
+  if (politicas) {
+    function changePolicy() {
+      const policyText = document.getElementById("policy-text");
+      if (policyText) {
+        policyText.classList.remove("fade-out-in"); // Remueve la clase antes de agregarla
+        void policyText.offsetWidth; // Fuerza un reflow para reiniciar la animación
+        policyText.classList.add("fade-out-in"); // Añade la clase de animación
+
+        setTimeout(() => {
+          policyText.innerText = politicas[currentIndex];
+        }, 1000); // Cambia el texto cuando la animación esté a mitad (después de 1s)
+
+        currentIndex = (currentIndex + 1) % politicas.length;
+      }
+    }
+
+    setInterval(changePolicy, 5000);
+  }
+</script>
