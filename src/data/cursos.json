@@ -865,6 +865,7 @@
   {
     "NOMBRE": "DIDÁCTICA PARA LA ENSEÑANZA Y EL APRENDIZAJE EFECTIVO EN EL AULA",
     "CODIGO": "1238057321",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar metodologías didácticas efectivas en el aula centradas en la enseñanza y el aprendizaje de estudiantes escolares.",
@@ -889,6 +890,7 @@
   {
     "NOMBRE": "DIVERSIFICACIÓN DE LA EVALUACIÓN PARA LA EQUIDAD DEL APRENDIZAJE",
     "CODIGO": "1238057283",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Aplicar distintos tipos de instrumentos de evaluación de acuerdo con el contexto educativo en que ejerce la docencia para asegurar la equidad del aprendizaje.",
@@ -918,6 +920,7 @@
   {
     "NOMBRE": "HERRAMIENTAS PARA LA EVALUACIÓN DEL DESEMPEÑO LABORAL",
     "CODIGO": "1238039397",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas para la evaluación del desempeño laboral de manera eficaz.",
@@ -942,6 +945,7 @@
   {
     "NOMBRE": "HERRAMIENTAS PARA LA RESOLUCIÓN DE CONFLICTOS DESDE LA MEDIACIÓN",
     "CODIGO": "1238042024",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Ejercer un rol activo en la resolución de conflictos, basándose en la reforma educativa, abordando desde el diálogo, prestando atención a la diversidad, la no discriminación y a la tolerancia de una forma reflexiva a través de la mediación.",
@@ -971,6 +975,7 @@
   {
     "NOMBRE": "HERRAMIENTAS PARA LOGRAR UN LIDERAZGO ASERTIVO",
     "CODIGO": "1238048016",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de liderazgo asertivo que agreguen valor a la organización.",
@@ -995,6 +1000,7 @@
   {
     "NOMBRE": "LENGUA DE SEÑAS CHILENA A1",
     "CODIGO": "1238048855",
+    "AREA":"Idiomas y Comunicación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "30",
     "COMPETENCIA_DESARROLLAR": "Adquirir conocimientos teóricos y prácticos básicos de la Lengua de Señas Chilena, que permitan una comunicación efectiva con personas sordas en distintos contextos tales como laboral, escolar y en el quehacer diario.",
@@ -1014,6 +1020,7 @@
   {
     "NOMBRE": "LENGUA DE SEÑAS CHILENA A2",
     "CODIGO": "1238048856",
+    "AREA":"Idiomas y Comunicación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "30",
     "COMPETENCIA_DESARROLLAR": "Adquirir conocimientos teóricos y prácticos básicos de la Lengua de Señas Chilena nivel A2, que permitan la comunicación efectiva en situaciones comunicativas simples y funcionales.",
@@ -1038,6 +1045,7 @@
   {
     "NOMBRE": "MANEJO Y USO DE PLAGUICIDAS AGRÍCOLAS",
     "CODIGO": "1238050384",
+    "AREA":"Procesos industriales",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "32",
     "COMPETENCIA_DESARROLLAR": "Realizar labores agrícolas de almacenamiento, transporte, mezcla, manejo y uso de plaguicidas agrícolas de acuerdo a las diferentes condiciones prediales y a la normativa vigente.",
@@ -1077,6 +1085,7 @@
   {
     "NOMBRE": "MICROSOFT EXCEL AVANZADO",
     "CODIGO": "1238033985",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel avanzado según criterios de inserción, edición de datos y gráficos en tablas dinámicas.",
@@ -1130,6 +1139,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
     "CODIGO": "1238051103",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de análisis de datos con lenguaje y entorno analítico de R y R-Estudio, respetando métodos de programación y verificación de supuestos estadísticos.",
@@ -1154,6 +1164,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ATENCIÓN Y SERVICIO AL CLIENTE",
     "CODIGO": "1238054037",
+    "AREA":"Servicio a las personas",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención y servicio al cliente considerando protocolos de la empresa en relación a la comunicación y manejo de clientes.",
@@ -1173,6 +1184,7 @@
   {
     "NOMBRE": "TÉCNICAS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
     "CODIGO": "1238061634",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de comunicación y trabajo en equipo según contexto situacional y mecanismos de resolución de conflictos laborales.",
@@ -1197,6 +1209,7 @@
   {
     "NOMBRE": "TÉCNICAS DE FORMACIÓN DE RELATORES",
     "CODIGO": "1238048283",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "16",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas que faciliten el aprendizaje en adultos.",
@@ -1221,6 +1234,7 @@
   {
     "NOMBRE": "TÉCNICAS DE PRIMEROS AUXILIOS",
     "CODIGO": "1238055273",
+    "AREA":"Ciencias y Técnicas Aplicadas",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de primeros auxilios, a fin de dar una pronta respuesta ante un accidente laboral.",
@@ -1245,6 +1259,7 @@
   {
     "NOMBRE": "TÉCNICAS DE TRABAJO EN EQUIPO",
     "CODIGO": "1238054065",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de trabajo en equipo considerando criterios de control de tareas y protocolos comunicacionales.",
@@ -1269,6 +1284,7 @@
   {
     "NOMBRE": "GESTIÓN DE LA CONVIVENCIA EN EQUIPOS DE TRABAJO",
     "CODIGO": "1238063939",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Identificar los principales desafíos y conflictos en la convivencia laboral, a través de técnicas que fomentan un ambiente de trabajo positivo y colaborativo.",
@@ -1293,6 +1309,7 @@
   {
     "NOMBRE": "HERRAMIENTAS PARA LIDERAZGO INCLUSIVO",
     "CODIGO": "1238063599",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de liderazgo inclusivo con foco en el fortalecimiento de la diversidad y la equidad en las organizaciones.",
@@ -1322,6 +1339,7 @@
   {
     "NOMBRE": "MIRADA INCLUSIVA, ESTRATEGIAS DE INCLUSIÓN EN ESTUDIANTES QUE PRESENTAN TEA",
     "CODIGO": "1238063292",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Implementar estrategias para la inclusión efectiva de estudiantes que presentan trastorno del espectro autista en el contexto educativo.",
@@ -1346,6 +1364,7 @@
   {
     "NOMBRE": "NORMATIVA VIGENTE SOBRE ACOSO LABORAL Y/O SEXUAL EN LAS ORGANIZACIONES LEY KARIN",
     "CODIGO": "1238066581",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Reconocer la normativa vigente respecto al acoso laboral/sexual y maltrato laboral dentro de las organizaciones.",
@@ -1365,6 +1384,7 @@
   {
     "NOMBRE": "SENSIBILIZACIÓN DE INCLUSIÓN LABORAL",
     "CODIGO": "1238062783",
+    "AREA":"Administración",
     "TIPO": "Curso Presencial",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Sensibilizar sobre las disposiciones de la legislación vigente (Ley 21.015) en cuanto a discapacidad e inclusión laboral en el contexto de la organización.",
@@ -1389,6 +1409,7 @@
   {
     "NOMBRE": "BUSINESS ENGLISH 2",
     "CODIGO": "1238038009",
+    "AREA":"Idiomas y Comunicación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "100",
     "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación de negocios en inglés nivel de usuario B1+ respetando estructuras gramaticales.",
@@ -1418,6 +1439,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE MICROSOFT TEAMS",
     "CODIGO": "1238021385",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Teams respetando criterios de configuración, navegación y administración en reuniones virtuales.",
@@ -1442,6 +1464,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE GESTIÓN ACADÉMICA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
     "CODIGO": "1238056022",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "70",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión académica de derechos humanos, tomando en cuenta los derechos centrados en la perspectiva de género en la Educación Superior.",
@@ -1471,6 +1494,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE GESTIÓN ADMINISTRATIVA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
     "CODIGO": "1238056012",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "70",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión administrativa de derechos humanos, considerando discriminación y violencia de género en la Educación Superior.",
@@ -1500,6 +1524,7 @@
   {
     "NOMBRE": "INGLÉS COMUNICACIONAL - A1 (ENGLISH AT HOME 2)",
     "CODIGO": "1238031257",
+    "AREA":"Idiomas y Comunicación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "100",
     "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación laboral en inglés nivel A1 básico-medio respetando estructuras gramaticales.",
@@ -1529,6 +1554,7 @@
   {
     "NOMBRE": "INGLÉS COMUNICACIONAL - A1 (ENGLISH AT HOME 1)",
     "CODIGO": "1238031249",
+    "AREA":"Idiomas y Comunicación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "100",
     "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación laboral en inglés nivel A1 básico respetando estructuras gramaticales.",
@@ -1558,6 +1584,7 @@
   {
     "NOMBRE": "MICROSOFT EXCEL NIVEL AVANZADO",
     "CODIGO": "1238014583",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar Microsoft Excel 365 nivel avanzado respetando procedimientos de utilización de sus herramientas y funciones.",
@@ -1587,6 +1614,7 @@
   {
     "NOMBRE": "MICROSOFT EXCEL NIVEL INTERMEDIO",
     "CODIGO": "1238021138",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar Microsoft Excel 365 nivel intermedio respetando procedimientos de utilización de sus herramientas y funciones.",
@@ -1616,6 +1644,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN Y ORGANIZACIÓN DEL TIEMPO LABORAL",
     "CODIGO": "1238021384",
+    "AREA":"Administración",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración y organización del tiempo laboral respetando criterios de planificación y priorización de actividades en los equipos de trabajo.",
@@ -1645,6 +1674,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ALIMENTACIÓN SALUDABLE",
     "CODIGO": "1238027199",
+    "AREA":"Alimentación, Gastronomía y Turismo",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de alimentación saludable de acuerdo con los requerimientos nutricionales de cada dieta.",
@@ -1674,6 +1704,7 @@
   {
     "NOMBRE": "TÉCNICAS DE AUTOCUIDADO Y SALUD OCUPACIONAL EN EL PUESTO DE TRABAJO",
     "CODIGO": "1238031025",
+    "AREA":"Ciencias y Técnicas Aplicadas",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "75",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de autocuidado y salud ocupacional, utilizando metodologías de identificación de riesgos profesionales con el fin de aportar a procesos de mejoramiento continuo en seguridad y salud en el trabajo.",
@@ -1698,6 +1729,7 @@
   {
     "NOMBRE": "TÉCNICAS DE NEGOCIACIÓN Y MEDIACIÓN DE CONFLICTOS",
     "CODIGO": "1238024139",
+    "AREA":"Administración",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de negociación y mediación de conflictos respetando mecanismo de abordaje comunicacional y contexto situacional.",
@@ -1722,6 +1754,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ATENCIÓN AL CLIENTE",
     "CODIGO": "1238015089",
+    "AREA":"Servicio a las personas",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención al cliente respetando protocolos comunicacionales y gestión de quejas de los distintos tipos de clientes.",
@@ -1746,6 +1779,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ELABORACIÓN DE PREPARACIONES DE ALIMENTACIÓN SALUDABLE",
     "CODIGO": "1238027346",
+    "AREA":"Alimentación, Gastronomía y Turismo",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Interpretar técnicas de elaboración de preparaciones de alimentación saludable tomando en cuenta aspectos de nutrición y la normativa vigente.",
@@ -1775,6 +1809,7 @@
   {
     "NOMBRE": "TÉCNICAS DE PRIMEROS AUXILIOS PSICOLÓGICOS (PAP)",
     "CODIGO": "1238030670",
+    "AREA":"Ciencias y Técnicas Aplicadas",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "75",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de primeros auxilios psicológicos (PAP) a personas en situaciones de crisis respetando protocolos comunicacionales y herramientas de prevención de secuelas postraumáticas.",
@@ -1799,6 +1834,7 @@
   {
     "NOMBRE": "TÉCNICAS DE REDACCIÓN",
     "CODIGO": "1238028390",
+    "AREA":"Administración",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de redacción respetando reglas ortográficas y gramaticales en la elaboración de documentos.",
@@ -1823,6 +1859,7 @@
   {
     "NOMBRE": "BUSINESS ENGLISH 1",
     "CODIGO": "1238038273",
+    "AREA":"Idiomas y Comunicación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "100",
     "COMPETENCIA_DESARROLLAR": "Aplicar modos verbales en diálogos y comunicación de negocios en inglés nivel de usuario B1 respetando estructuras gramaticales.",
@@ -1852,6 +1889,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE GESTIÓN ACADÉMICA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
     "CODIGO": "1238056022",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión académica de derechos humanos, tomando en cuenta los derechos centrados en la perspectiva de género en la Educación Superior.",
@@ -1881,6 +1919,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE GESTIÓN ADMINISTRATIVA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
     "CODIGO": "1238056012",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión administrativa de derechos humanos, considerando discriminación y violencia de género en la Educación Superior.",
@@ -1910,6 +1949,7 @@
   {
     "NOMBRE": "HERRAMIENTAS OFIMÁTICAS DE MICROSOFT EXCEL 365 NIVEL BÁSICO",
     "CODIGO": "1238054271",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas ofimáticas de Microsoft Excel 365 nivel básico de acuerdo con procedimientos de utilización de sus funciones.",
@@ -1939,6 +1979,7 @@
   {
     "NOMBRE": "TÉCNICAS DE PRESENTACIONES EFECTIVAS EN LA EDUCACIÓN VIRTUAL",
     "CODIGO": "1238025345",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de presentaciones efectivas en la educación virtual tomando en cuenta estrategias didácticas de educación virtual y mecanismos de creación de contenido digital.",
@@ -1963,6 +2004,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGA Y CONTROL DE INVENTARIO",
     "CODIGO": "1238049768",
+    "AREA":"Administración",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración de bodegas y control de inventarios respetando criterios de recepción, almacenamiento y entrega de productos.",
@@ -1982,6 +2024,7 @@
   {
     "NOMBRE": "TÉCNICAS DE PREVENCIÓN DEL SÍNDROME DE DESGASTE PROFESIONAL",
     "CODIGO": "1238031027",
+    "AREA":"Ciencias y Técnicas Aplicadas",
     "TIPO": "Curso Asincrónico",
     "HORAS_CRONOLOGICAS": "60",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de prevención del síndrome de desgaste profesional tomando en cuenta los factores intervinientes en las situaciones de desgaste y buenas prácticas laborales.",
