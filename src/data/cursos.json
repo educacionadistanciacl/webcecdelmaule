@@ -3,6 +3,7 @@
     "NOMBRE": "APLICACIÓN DE HERRAMIENTAS DE OFIMÁTICA (WINDOWS 10)",
     "CODIGO": "1238036927",
     "TIPO": "Curso Sincrónico",
+    "AREA": "Computación e Informática",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Al finalizar la actividad el participante será capaz de aplicar herramientas de ofimática (Windows, Word, Excel, PowerPoint) de acuerdo a las especificaciones técnicas establecidas por el software, logrando optimizar sus tareas.",
     "MODULO": [
@@ -37,6 +38,7 @@
     "NOMBRE": "APLICACIÓN DE LAS NORMAS INTERNACIONALES DE INFORMACION FINANCIERA EN TRATAMIENTOS CONTABLES ESPECIFICOS",
     "CODIGO": "1238035626",
     "TIPO": "Curso Sincrónico",
+    "AREA": "Administración",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar las normas internacionales de información financiera en tratamientos contables específicos respetando el proceso de convergencia y de evaluación de cuentas de activo y pasivo.",
     "MODULO": [
@@ -61,6 +63,7 @@
     "NOMBRE": "APLICACIÓN DE NORMATIVA DE DERECHOS FUNDAMENTALES Y ENFOQUE EN EQUIDAD DE GÉNERO EN EL ÁMBITO LABORAL",
     "CODIGO": "1238033591",
     "TIPO": "Curso Sincrónico",
+    "AREA": "Administración",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar normativa de derechos fundamentales y enfoque en equidad de género en el ámbito laboral según métodos de abordaje, gestión del clima y de buenas prácticas laborales.",
     "MODULO": [
@@ -80,6 +83,7 @@
     "NOMBRE": "APLICACIÓN DE PROCEDIMIENTOS DE CONTRATACIÓN DE EXTRANJEROS EN CHILE",
     "CODIGO": "1238014535",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar procedimientos de contratación de extranjeros en Chile respetando procedimientos administrativos y estatutos establecidos en la normativa laboral vigente.",
     "MODULO": [
@@ -104,6 +108,7 @@
     "NOMBRE": "ESTRATEGIAS DE LIDERAZGO EN ESCENARIOS DE INCERTIDUMBRE",
     "CODIGO": "1238034377",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de liderazgo en escenarios de  incertidumbre según mecanismos interaccionales y de manejo de conflictos.",
     "MODULO": [
@@ -128,6 +133,7 @@
     "NOMBRE": "FUNDAMENTOS DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GENERO EN LA EDUCACIÓN SUPERIOR",
     "CODIGO": "1238036928",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Educación y Capacitación",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Identificar conocimientos teórico-prácticos generales de normativa nacional e internacional, sobre derechos humanos, discriminación y violencia de género, en base a la normativa legal vigente.",
     "MODULO": [
@@ -152,6 +158,7 @@
     "NOMBRE": "HERRAMIENTA DE POWER BI EN LA GESTIÓN DE DATOS",
     "CODIGO": "1238049605",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Computación e Informática",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Power Bi respetando métodos de creación y administración de datos, para realizar análisis de datos de forma rápida y eficiente.",
     "MODULO": [
@@ -181,6 +188,7 @@
     "NOMBRE": "HERRAMIENTAS COLABORATIVAS PARA EL TRABAJO EN EQUIPO",
     "CODIGO": "1238035631",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas colaborativas para el trabajo en equipo, respetando componentes de comunicación y contexto situacional.",
     "MODULO": [
@@ -205,6 +213,7 @@
     "NOMBRE": "HERRAMIENTAS DE ADMINISTRACIÓN DE PROYECTOS",
     "CODIGO": "1238012286",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de administración de proyectos respetando criterios de planificación y control.",
     "MODULO": [
@@ -239,6 +248,7 @@
     "NOMBRE": "HERRAMIENTAS DE RESPONSABILIDAD SOCIAL UNIVERSITARIA",
     "CODIGO": "1238029413",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Educación y Capacitación",
     "HORAS_CRONOLOGICAS": "16",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión de responsabilidad social en contextos universitarios a través de las funciones sustantivas como gestión, investigación, vinculación y docencia.",
     "MODULO": [
@@ -258,6 +268,7 @@
     "NOMBRE": "HERRAMIENTAS DE SHAREPOINT PARA USUARIOS FUNCIONALES",
     "CODIGO": "1238037941",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Computación e Informática",
     "HORAS_CRONOLOGICAS": "22",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de SharePoint intermedio según métodos de creación, automatización y administración de datos de documentales y bibliotecas.",
     "MODULO": [
@@ -307,6 +318,7 @@
     "NOMBRE": "HERRAMIENTAS DE ACCESIBILIDAD UNIVERSAL",
     "CODIGO": "1238054919",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "28",
     "COMPETENCIA_DESARROLLAR": "Comprender la normativa, teoría y los fundamentos actuales entorno a la accesibilidad universal presente en el país.",
     "MODULO": [
@@ -331,6 +343,7 @@
     "NOMBRE": "HERRAMIENTAS DE GESTIÓN DE RIESGOS EN PROYECTOS Y CONTRATO",
     "CODIGO": "1238025160",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión de riesgos en proyectos y contratos respetando mecanismos de planificación, monitoreo y control de eventualidades.",
     "MODULO": [
@@ -354,6 +367,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACION DE NEGOCIOS",
     "CODIGO": "1238035627",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de las Normas Internacionales de Información Financiera en estados financieros consolidados y la combinación de negocios tomando en cuenta la moneda funcional y las diferencias de cambio.",
@@ -373,6 +387,7 @@
   {
     "NOMBRE": "HERRAMIENTAS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
     "CODIGO": "1238035629",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "40",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de las Normas Internacionales de Información Financiera en la realización de informes financieros respetando criterios de evaluación, tratado y presentación de estados de cuentas de activos y pasivos.",
@@ -398,6 +413,7 @@
     "NOMBRE": "HERRAMIENTAS DE LEGISLACIÓN LABORAL",
     "CODIGO": "1238050083",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Administración",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Identificar herramientas de Legislación Laboral respetando criterios de protección e indemnización al trabajador.",
     "MODULO": [
@@ -417,6 +433,7 @@
     "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
     "CODIGO": "1238034374",
     "TIPO": "Curso Sincrónico",
+    "AREA":"Computación e Informática",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas fundamentales de Power Bi, respetando métodos de creación y administración de datos.",
     "MODULO": [
@@ -440,6 +457,7 @@
   {
     "NOMBRE": "HERRAMIENTAS PARA LIDERAZGO INCLUSIVO",
     "CODIGO": "1238063618",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "15",
     "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de liderazgo inclusivo con foco en el fortalecimiento de la diversidad y la equidad en las organizaciones.",
@@ -474,6 +492,7 @@
   {
     "NOMBRE": "HERRAMIENTAS PARA UN LIDERAZGO ASERTIVO",
     "CODIGO": "1238066126",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de liderazgo asertivo que agreguen valor a la organización.",
@@ -497,7 +516,8 @@
   },
   {
     "NOMBRE": "LIQUIDACIÓN Y CÁLCULO DE REMUNERACIONES",
-    "CODIGO": "1238061591",
+    "CODIGO": "128061591",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar las herramientas necesarias en los procesos de liquidación y cálculo de remuneraciones salariales para cumplir los diversos reportes y requerimientos en una organización.",
@@ -517,6 +537,7 @@
   {
     "NOMBRE": "MICROSOFT EXCEL AVANZADO",
     "CODIGO": "1238033983",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel avanzado según criterios de manejo de Power Query, inserción, edición de datos y gráficos en tablas dinámicas.",
@@ -546,6 +567,7 @@
   {
     "NOMBRE": "MICROSOFT EXCEL INTERMEDIO",
     "CODIGO": "1238033982",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel intermedio según mecanismos de creación, automatización y administración de datos.",
@@ -570,6 +592,7 @@
   {
     "NOMBRE": "NORMATIVA VIGENTE SOBRE ACOSO LABORAL Y/O SEXUAL EN LAS ORGANIZACIONES",
     "CODIGO": "1238058374",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Reconocer la normativa vigente respecto al acoso laboral/sexual y maltrato laboral dentro de las organizaciones.",
@@ -589,6 +612,7 @@
   {
     "NOMBRE": "NORMATIVAS VIGENTES LEY DE SUBCONTRATACIÓN, ASPECTOS LEGALES, SEGURIDAD E HIGIENE",
     "CODIGO": "1238038772",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Al término de la actividad los participantes serán capaces de aplicar normativas vigentes de la ley de subcontratación de acuerdo con sus aspectos legales de seguridad e higiene.",
@@ -613,6 +637,7 @@
   {
     "NOMBRE": "TÉCNICAS DE CONTABILIDAD BÁSICA",
     "CODIGO": "1238033981",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de contabilidad básica según métodos de control financiero y confección de informes contables.",
@@ -632,6 +657,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGAS Y CONTROL DE INVENTARIOS",
     "CODIGO": "1238034378",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "12",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración de bodegas y control de inventarios respetando criterios de logística y abastecimiento.",
@@ -656,6 +682,7 @@
   {
     "NOMBRE": "TÉCNICAS DE ANÁLISIS DE DATOS CON LENGUAJE Y ENTORNO ANALÍTICO DE R Y R-ESTUDIO",
     "CODIGO": "1238028980",
+    "AREA":"Computación e Informática",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "24",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de análisis de datos con lenguaje y entorno analítico de R y R-Estudio, respetando métodos de programación y verificación de supuestos estadísticos.",
@@ -699,6 +726,7 @@
   {
     "NOMBRE": "TÉCNICAS DE GESTIÓN DE CONFLICTO Y NEGOCIACIÓN LABORAL",
     "CODIGO": "1238019509",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "16",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión de conflicto y negociación laboral según métodos de relacionamiento laboral y gestión de cambios organizacionales.",
@@ -747,6 +775,7 @@
   {
     "NOMBRE": "TÉCNICAS DE GESTIÓN DE RECURSOS Y BÚSQUEDA DE INFORMACIÓN",
     "CODIGO": "1238022237",
+    "AREA":"Educación y Capacitación",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "33",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión de recursos y búsqueda de información según mecanismos de manejo de fuentes e indicadores bibliográficos.",
@@ -771,6 +800,7 @@
   {
     "NOMBRE": "TÉCNICAS DE INTERPRETACIÓN DE PROTOCOLOS DE REANIMACIÓN CARDIOPULMONAR BÁSICA Y USO DE DESFIBRILADOR EXTERNO AUTOMÁTICO",
     "CODIGO": "1238024662",
+    "AREA": "Salud, nutrición y dietética",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Interpretar protocolos de reanimación cardiopulmonar básica y uso de desfibrilador externo automático respetando métodos de asistencia y control del estado del afectado.",
@@ -790,6 +820,7 @@
   {
     "NOMBRE": "TÉCNICAS DE TOMA DE DECISIONES",
     "CODIGO": "1238024184",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de toma de decisiones respetando mecanismos de análisis de opciones.",
@@ -806,10 +837,10 @@
       }
     ]
   },
-
   {
     "NOMBRE": "TECNICAS DE TRABAJO EN EQUIPO",
     "CODIGO": "1238019262",
+    "AREA":"Administración",
     "TIPO": "Curso Sincrónico",
     "HORAS_CRONOLOGICAS": "08",
     "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de trabajo en equipo según enfoque interaccional y de resolución de conflictos laborales.",
