@@ -700,30 +700,6 @@
     ]
   },
   {
-    "NOMBRE": "TÉCNICAS DE CALIDAD DE SERVICIO AL CLIENTE",
-    "CODIGO": "1238011613",
-    "TIPO": "Curso Sincrónico",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de servicio al cliente respetando parámetros de calidad y mecanismos de enfrentamiento de situaciones difíciles.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "TIPOS DE CLIENTES",
-        "DESCRIPCION": "Identificar los tipos de clientes según estilos personales, características y necesidades."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "CALIDAD DE SERVICIO",
-        "DESCRIPCION": "Describir la importancia de la calidad de servicio al cliente tomando en cuenta los elementos a evitar en el proceso de atención."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "TÉCNICAS DE SERVICIO AL CLIENTE",
-        "DESCRIPCION": "Aplicar técnicas de servicio al cliente respetando mecanismos de enfrentamiento de situaciones difíciles."
-      }
-    ]
-  },
-  {
     "NOMBRE": "TÉCNICAS DE GESTIÓN DE CONFLICTO Y NEGOCIACIÓN LABORAL",
     "CODIGO": "1238019509",
     "AREA":"Administración",
@@ -745,30 +721,6 @@
         "NUMERO": "3",
         "NOMBRE": "NEGOCIACIÓN LABORAL SEGÚN MECANISMOS DE COMUNICACIÓN",
         "DESCRIPCION": "Negociación laboral según mecanismos de comunicación."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "TÉCNICAS DE GESTIÓN DE DATOS EN LA PLATAFORMA QLIK SENSE",
-    "CODIGO": "1238011483",
-    "TIPO": "Curso Sincrónico",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión de datos en la plataforma Qlik Sense de acuerdo con los mecanismos de inserción, análisis y administración de información.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "LOS PRINCIPALES COMPONENTES DE QLIK SENSE",
-        "DESCRIPCION": "Identificar los principales componentes de la plataforma Qlik Sense de acuerdo con sus características e importancia de la gestión de reportes."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANIPULACIÓN DE CUENTA QLIK SENSE",
-        "DESCRIPCION": "Utilizar herramientas de creación y manipulación de cuenta Qlik Sense de acuerdo con el tipo de conexión y protocolos de manejo de datos."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "TÉCNICAS DE GESTIÓN DE DATOS EN LA PLATAFORMA QLIK SENSE",
-        "DESCRIPCION": "Aplicar técnicas de gestión de datos en la plataforma Qlik Sense según criterios de análisis, diseño y modelamiento de información."
       }
     ]
   },
@@ -859,6 +811,56 @@
         "NUMERO": "3",
         "NOMBRE": "TÉCNICAS DE TRABAJO EN EQUIPO",
         "DESCRIPCION": "Aplicar técnicas de trabajo en equipo según métodos colaborativos de planificación y manejo de conflictos."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS DE SHAREPOINT INTERMEDIO",
+    "CODIGO": "1238034375",
+    "TIPO": "Curso Presencial",
+    "AREA": "Computación e Informática",
+    "HORAS_CRONOLOGICAS": "16",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de SharePoint Intermedio según métodos de creación, automatización y administración de datos documentales y bibliotecas.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS DE SHAREPOINT",
+        "DESCRIPCION": "Identificar las principales características de SharePoint de acuerdo al nivel intermedio, funciones y elementos Microsoft."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ELEMENTOS BASES DE SEGURIDAD EN SITIOS SHAREPOINT",
+        "DESCRIPCION": "Describir elementos bases de seguridad en sitios SharePoint de acuerdo a sus valores y grupos de datos."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE SHAREPOINT INTERMEDIO",
+        "DESCRIPCION": "Aplicar herramientas de SharePoint Intermedio según mecanismos de confección, y manejo de registros documentales de bibliotecas."
+      }
+    ]
+  },  
+  {
+    "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
+    "CODIGO": "1238034376",
+    "AREA":"Computación e Informática",
+    "TIPO": "Curso Presencial",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas fundamentales de Power Bi respetando métodos de creación y administración de datos.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ASPECTOS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientras fundamentales de power bi respetando métodos de creación, y administración de datos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PRINCIPALES ELEMENTOS DE VISUALIZACIÓN DE INFORMACIÓN",
+        "DESCRIPCION": "Describir los principales elementos de visualización de información de acuerdo a los tipos de gráficos y filtros requeridos en Power Bi."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientas fundamentales de Power Bi según fórmulas y criterios de gestión de datos."
       }
     ]
   },
@@ -1407,6 +1409,66 @@
     ]
   },
   {
+    "NOMBRE": "HERRAMIENTAS BÁSICAS DE ALFABETIZACIÓN DIGITAL",
+    "CODIGO": "1238053818",
+    "TIPO": "Curso Presencial",
+    "AREA": "Computación e Informática",
+    "HORAS_CRONOLOGICAS": "16",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de alfabetización digital de ofimática e internet de acuerdo con los requerimientos de la empresa.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "PARTES FUNDAMENTALES Y FUNCIONAMIENTO DE UNA COMPUTADORA",
+        "DESCRIPCION": "Identificar las partes fundamentales y el funcionamiento de una computadora."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "INTERNET PARA LA BÚSQUEDA DE INFORMACIÓN",
+        "DESCRIPCION": "Aplicar las herramientas de internet para la búsqueda de información."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "HERRAMIENTAS DE OFIMÁTICA",
+        "DESCRIPCION": "Aplicar herramientas básicas de ofimática para la preparación de documentos."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "CORREO ELECTRÓNICO",
+        "DESCRIPCION": "Aplicar herramientas necesarias para la creación y envío de una casilla de correo electrónico."
+      }
+    ]
+  }, 
+  {
+    "NOMBRE": "HERRAMIENTA DE POWER BI EN LA GESTIÓN DE DATOS",
+    "CODIGO": "1238049014",
+    "TIPO": "Curso Presencial",
+    "AREA": "Computación e Informática",
+    "HORAS_CRONOLOGICAS": "24",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Power BI respetando métodos de creación y administración de datos, para realizar análisis de datos de forma rápida y eficiente.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "ASPECTOS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientas de Power BI respetando métodos de creación y administración de datos."
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PREPARACIÓN Y LIMPIEZA DE DATOS",
+        "DESCRIPCION": "Describir los principales elementos de visualización de información de acuerdo a los tipos de gráficos y filtros requeridos en Power BI."
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "PRINCIPALES ELEMENTOS DE VISUALIZACIÓN DE INFORMACIÓN",
+        "DESCRIPCION": "Describir los principales elementos de visualización de información de acuerdo a los tipos de gráficos y filtros requeridos en Power BI."
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "HERRAMIENTAS FUNDAMENTALES DE POWER BI",
+        "DESCRIPCION": "Aplicar herramientas de Power BI según fórmulas y criterios de gestión de datos."
+      }
+    ]
+  },   
+  {
     "NOMBRE": "BUSINESS ENGLISH 2",
     "CODIGO": "1238038009",
     "AREA":"Idiomas y Comunicación",
@@ -1917,36 +1979,6 @@
     ]
   },
   {
-    "NOMBRE": "HERRAMIENTAS DE GESTIÓN ADMINISTRATIVA DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
-    "CODIGO": "1238056012",
-    "AREA":"Educación y Capacitación",
-    "TIPO": "Curso Asincrónico",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de gestión administrativa de derechos humanos, considerando discriminación y violencia de género en la Educación Superior.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
-        "DESCRIPCION": "Identificar conceptualización de los derechos humanos, de acuerdo con sus características."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
-        "DESCRIPCION": "Reconocer implicancias de los derechos humanos, considerando el concepto de género."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "DERECHOS HUMANOS Y VIOLENCIA DE GÉNERO",
-        "DESCRIPCION": "Emplear herramientas contra la violencia de género, teniendo en cuenta los derechos humanos."
-      },
-      {
-        "NUMERO": "4",
-        "NOMBRE": "LEY 21.369 SOBRE ACOSO SEXUAL, VIOLENCIA Y DISCRIMINACIÓN DE GÉNERO EN LA EDUCACIÓN SUPERIOR",
-        "DESCRIPCION": "Aplicar normativa vigente asociada al acoso sexual, violencia y discriminación de género, teniendo en cuenta el contexto educacional."
-      }
-    ]
-  },
-  {
     "NOMBRE": "HERRAMIENTAS OFIMÁTICAS DE MICROSOFT EXCEL 365 NIVEL BÁSICO",
     "CODIGO": "1238054271",
     "AREA":"Computación e Informática",
@@ -2002,7 +2034,7 @@
     ]
   },
   {
-    "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGA Y CONTROL DE INVENTARIO",
+    "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DE BODEGA Y CONTROL DE INVENTARIOS",
     "CODIGO": "1238049768",
     "AREA":"Administración",
     "TIPO": "Curso Asincrónico",
