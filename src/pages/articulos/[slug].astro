@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import ArticleLayout from "../../layouts/ArticleLayout.astro";
 import type { CollectionEntry } from "astro:content"; // Importación "solo de tipo"
 import { getFilteredArticles } from "../../utils/contentHelpers";
@@ -6,6 +8,7 @@ import { getFilteredArticles } from "../../utils/contentHelpers";
 
 export async function getStaticPaths() {
   const filteredEntries = await getFilteredArticles();
+
 
   return filteredEntries.map((entry) => ({
     params: { slug: entry.slug },
@@ -23,7 +26,15 @@ function formatDate(date: Date) {
 
 const { entry } = Astro.props as { entry: CollectionEntry<'articulos'> };
 
+if (!entry) {
+  throw new Error("No se pudo encontrar el artículo.");
+}
+
 const { Content } = await entry.render();
+
+if (!Content) {
+  throw new Error("El contenido no pudo ser renderizado.");
+}
 ---
 
 <ArticleLayout 
