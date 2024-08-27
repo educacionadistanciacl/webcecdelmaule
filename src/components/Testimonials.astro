@@ -1,6 +1,29 @@
 ---
 // Importar estilos específicos si es necesario
 import CurvedContainer from "../components/CurvedContainer.astro";
+
+const testimonios = [
+  {
+    cliente: "Sugal Chile",
+    testimonio:
+      "Muy buena experiencia de capacitación. El equipo de CEC es atento, receptivo a comprender las necesidades de formación, y ofrece un acompañamiento amable para el diseño y desarrollo de programas rigurosos, con relatores de primer nivel.",
+  },
+  {
+    cliente: "Rukan Service",
+    testimonio:
+      "Muy buena experiencia con CEC del Maule, acompañan en todo el proceso, los cursos son impartidos por profesionales altamente calificados. Excelente servicio.",
+  },
+  {
+    cliente: "Constructora Malpo",
+    testimonio:
+      "Muy buena experiencia en capacitaciones. Excelente gestión y apoyo.",
+    "Clínica UCM":
+      "Los profesionales muy agradables, orientan todos los procesos. Curso de muy buen nivel.",
+  },
+];
+
+// Serializa el objeto testimonios a JSON para poder usarlo en el script del frontend
+const testimoniosJSON = JSON.stringify(testimonios);
 ---
 
 <!-- Componente Testimonials -->
@@ -11,14 +34,10 @@ import CurvedContainer from "../components/CurvedContainer.astro";
       alt="Testimonio"
       class="testimonial-image"
     />
-    <div class="testimonial-content">
+    <div class="testimonial-content" data-testimonios={JSON.stringify(testimonios)}>
       <h3>Testimonios</h3>
-      <p>
-        "Fui al curso de IFRS y el profesor estuvo muy pendiente de mí,
-        considerando que fue un curso sincrónico, nada que decir, muy buena la
-        experiencia y el aprendizaje me sirvió muchísimo, totalmente
-        recomendado."
-      </p>
+      <p id="testimonial-text">{testimonios[0].testimonio}</p>
+      <p id="testimonial-cliente">{testimonios[0].cliente}</p>
       <div class="testimonial-logo">
         <p>CON EL SELLO</p>
         <img src="/img/ucm.webp" alt="Logo UCM" />
@@ -79,6 +98,26 @@ import CurvedContainer from "../components/CurvedContainer.astro";
     height: auto; /* Mantiene la proporción del logo al cambiar el ancho */
   }
 
+  @keyframes fadeOutIn {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .testimonial-content p {
+      transition: opacity 1s ease-in-out;
+    }
+
+    .fade-out-in {
+      animation: fadeOutIn 2s ease-in-out;
+    }
+
   @media (min-width: 1500px) {
     .testimonial-content {
       padding: 4% 15%; /* Reduce el padding lateral para más compactación */
@@ -109,3 +148,44 @@ import CurvedContainer from "../components/CurvedContainer.astro";
     }
   }
 </style>
+<script>
+  // Obtén las políticas del atributo data
+  const container = document.querySelector(".testimonial-content");
+  let dataPoliticas;
+  let testimonios: any;
+  if (container) {
+    dataPoliticas = container.getAttribute("data-testimonios");
+  }
+
+  if (dataPoliticas) {
+    testimonios = JSON.parse(dataPoliticas);
+  }
+
+  let currentIndex = 0;
+
+  if (testimonios) {
+    function changePolicy() {
+      const testimonialText = document.getElementById("testimonial-text");
+      const testimonialCliente = document.getElementById("testimonial-cliente");
+      if (testimonialText && testimonialCliente) {
+
+        testimonialText.classList.remove("fade-out-in"); // Remueve la clase antes de agregarla
+        void testimonialText.offsetWidth; // Fuerza un reflow para reiniciar la animación
+        testimonialText.classList.add("fade-out-in"); // Añade la clase de animación
+
+        testimonialCliente.classList.remove("fade-out-in"); // Remueve la clase antes de agregarla
+        void testimonialCliente.offsetWidth; // Fuerza un reflow para reiniciar la animación
+        testimonialCliente.classList.add("fade-out-in"); // Añade la clase de animación
+
+        setTimeout(() => {
+          testimonialText.innerText = testimonios[currentIndex].testimonio;
+          testimonialCliente.innerText = testimonios[currentIndex].cliente;
+        }, 1000); // Cambia el texto cuando la animación esté a mitad (después de 1s)
+
+        currentIndex = (currentIndex + 1) % testimonios.length;
+      }
+    }
+
+    setInterval(changePolicy, 5000);
+  }
+</script>
