@@ -6,25 +6,11 @@ import Search from "./Search.astro";
 
 import { slugReplace } from "../func/slugURL";
 import { prepararCursos } from "../func/prepararCursos";
-
-type TipoCursoKey = "Sincrónico" | "Asincrónico" | "Presencial" | "Todos";
-
-const tipoCursoColores = {
-  Sincrónico: "#FDC115", // color dorado
-  Asincrónico: "#FF4500", // color rojo anaranjado
-  Presencial: "#DB1A5D", // color azul violeta
-  Todos: "#643090", // color púrpura
-};
+import { tipoCursoColores, ajustarTipoCurso } from "../func/AsignarColorTipoCursos";
 
 const datosCursos = Astro.props.cursos;
 
 const cursos = prepararCursos(datosCursos).cursos;
-
-// Función para extraer y ajustar el tipo de curso para coincidir con las claves en tipoCursoColores
-function ajustarTipoCurso(tipoCurso: string): string {
-  const tipo = tipoCurso.replace("Curso ", "") as TipoCursoKey;
-  return tipoCursoColores[tipo] ?? "#FFFFFF"; // Utiliza el operador Nullish coalescing para manejar claves no definidas
-}
 ---
 
 <div class="cursos-container">

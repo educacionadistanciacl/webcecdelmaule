@@ -1,43 +1,40 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ImagenContainer from "../components/ImagenContainer.astro";
-import CursosContainer from "../components/CursoContainer.astro";
+import AreasContainer from "../components/AreasContainer.astro";
 
 const imagenURL = '/img/bussines_woman.webp';
 
 import cursos from '../../src/data/cursos.json';
 
-// Función para agrupar cursos por tipo y organizarlos de manera cíclica
-function organizarCursosPorTipo(cursos: any[]): any[] {
-  // Agrupar cursos por tipo
-  const cursosPorTipo: { [key: string]: any[] } = cursos.reduce((acc, curso) => {
-    if (!acc[curso.TIPO]) {
-      acc[curso.TIPO] = [];
-    }
-    acc[curso.TIPO].push(curso);
-    return acc;
-  }, {});
+// Función para obtener las áreas únicas de los cursos
+function obtenerAreasConTipos(cursos: any[]): { [area: string]: string[] } {
+  const areasConTipos: { [area: string]: Set<string> } = {};
 
-  // Obtener todos los tipos de curso
-  const tipos = Object.keys(cursosPorTipo);
-
-  // Crear el array resultante con cursos intercalados
-  const resultado: any[] = [];
-  let maxCursosPorTipo = Math.max(...tipos.map(tipo => cursosPorTipo[tipo].length));
-
-  for (let i = 0; i < maxCursosPorTipo; i++) {
-    for (const tipo of tipos) {
-      if (cursosPorTipo[tipo][i]) {
-        resultado.push(cursosPorTipo[tipo][i]);
+  cursos.forEach((curso) => {
+    if (curso.AREA && curso.TIPO) {
+      // Si el área no existe en el objeto, se crea con un nuevo Set
+      if (!areasConTipos[curso.AREA]) {
+        areasConTipos[curso.AREA] = new Set<string>();
       }
+      // Agregar el tipo de curso al Set correspondiente al área
+      areasConTipos[curso.AREA].add(curso.TIPO);
     }
+  });
+
+  // Convertir los Sets a arrays para el resultado final
+  const resultado: { [area: string]: string[] } = {};
+  for (const area in areasConTipos) {
+    resultado[area] = Array.from(areasConTipos[area]);
   }
 
   return resultado;
 }
 
-// Obtener la lista completa de cursos en orden aleatorio
-const cursosAleatorios = organizarCursosPorTipo(cursos);
+
+// Obtener las áreas únicas de los cursos
+const cursosPorArea = obtenerAreasConTipos(cursos);
+
 
 ---
 <!-- aqui usar componente de pagina de cursos -->
@@ -50,7 +47,7 @@ const cursosAleatorios = organizarCursosPorTipo(cursos);
         </div>
 </ImagenContainer>
 
-<CursosContainer cursos={cursosAleatorios} />
+<AreasContainer areas={cursosPorArea}/>
 </BaseLayout>
 
 

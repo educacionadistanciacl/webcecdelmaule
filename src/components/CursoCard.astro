@@ -2,7 +2,7 @@
 // CursoCard.astro
 import Btn from "./Btn.astro";
 
-const { nombreCurso, tipoCurso, link, backgroundColor } = Astro.props;
+const { nombreCurso, tipoCurso='', link='#', backgroundColor} = Astro.props;
 ---
 
 <div class="curso-card" data-tipo={tipoCurso}>
