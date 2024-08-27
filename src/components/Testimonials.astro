@@ -36,8 +36,10 @@ const testimoniosJSON = JSON.stringify(testimonios);
     />
     <div class="testimonial-content" data-testimonios={JSON.stringify(testimonios)}>
       <h3>Testimonios</h3>
-      <p id="testimonial-text">{testimonios[0].testimonio}</p>
-      <p id="testimonial-cliente">{testimonios[0].cliente}</p>
+      <div class="testimonial-dinamicos">
+        <p id="testimonial-text">{testimonios[0].testimonio}</p>
+        <p id="testimonial-cliente">{testimonios[0].cliente}</p>
+      </div>
       <div class="testimonial-logo">
         <p>CON EL SELLO</p>
         <img src="/img/ucm.webp" alt="Logo UCM" />
@@ -70,6 +72,7 @@ const testimoniosJSON = JSON.stringify(testimonios);
   /* Ajustes para el contenido del testimonio */
   .testimonial-content {
     position: absolute;
+    justify-content: center; /* Centra el contenido verticalmente */
     left: 60%; /* Posiciona al centro horizontal */
     transform: translateX(-50%); /* Centra exactamente en el medio */
     top: 20%; /* Alinea el contenido en la parte superior */
@@ -85,11 +88,15 @@ const testimoniosJSON = JSON.stringify(testimonios);
     text-transform: uppercase;
   }
 
+  #testimonial-cliente{
+    font-weight: bold;
+  }
+
   .testimonial-logo {
     position: absolute;
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%); /* Asegura centrado preciso */
-    bottom: -10%; /* Alinea el logo en la parte inferior */
+    bottom: -25%; /* Alinea el logo en la parte inferior */
     width: auto; /* Ancho automático o definido si es necesario */
   }
 
@@ -138,14 +145,12 @@ const testimoniosJSON = JSON.stringify(testimonios);
     }
 
     .testimonial-logo {
-      bottom: 10%; /* Ajusta la posición del logo para estar más cerca del texto */
+      bottom: -20%; /* Ajusta la posición del logo para estar más cerca del texto */
     }
   }
 
   @media (max-width: 530px) {
-    .testimonial-logo {
-      bottom: -5%; /* Ajusta la posición del logo para estar más cerca del texto */
-    }
+
   }
 </style>
 <script>
