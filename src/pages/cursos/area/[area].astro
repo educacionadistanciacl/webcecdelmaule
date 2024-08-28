@@ -1,0 +1,90 @@
+---
+// Importa los datos de los cursos
+import cursos from '../../../data/cursos.json';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CursosContainer from '../../../components/CursoContainer.astro'
+import ImagenContainer from "../../../components/ImagenContainer.astro";
+import { slugReplace } from '../../../func/slugURL';
+
+const imagenURL = '/img/bussines_woman.webp';
+
+// Obtener el slug desde los parámetros de la URL
+const { area } = Astro.params;
+
+// Filtrar los cursos que pertenecen al área correspondiente al slug
+const cursosFiltrados = cursos.filter(curso => 
+  slugReplace(curso.AREA) === area
+);
+
+// Redirigir a la página de 404 si no se encuentran cursos
+if (cursosFiltrados.length === 0) {
+  return Astro.redirect('/404');
+}
+
+// Función para obtener los tipos de cursos dentro de un área
+function obtenerTiposDeCursos(cursos: any[]): { [area: string]: string[] } {
+  const tiposDeCursos = {};
+
+  cursos.forEach((curso) => {
+    if (curso.AREA && curso.TIPO) {
+      if (!tiposDeCursos[curso.AREA]) {
+        tiposDeCursos[curso.AREA] = new Set<string>();
+      }
+      tiposDeCursos[curso.AREA].add(curso.TIPO);
+    }
+  });
+
+  const resultado: { [area: string]: string[] } = {};
+  for (const area in tiposDeCursos) {
+    resultado[area] = Array.from(tiposDeCursos[area]);
+  }
+
+  return resultado;
+}
+
+// Obtener los tipos de curso del área filtrada
+const cursosPorTipo = obtenerTiposDeCursos(cursosFiltrados);
+---
+
+<BaseLayout title={`Cursos en ${cursosFiltrados[0].AREA}`} borde={true}>
+<ImagenContainer ImagenBackgounrd={imagenURL}>
+        <div class="curso-banner">
+          <img src="/img/logo_color.svg" alt="Logo de CSC del Maule" />
+          <h1>{`Cursos en ${cursosFiltrados[0].AREA}`}</h1>
+        </div>
+</ImagenContainer>
+
+<!-- Aquí usas CursosContainer para mostrar los cursos filtrados -->
+<CursosContainer cursos={cursosFiltrados} />
+</BaseLayout>
+
+<style>
+    .curso-banner {
+    text-align: center;
+    position: absolute;  /* Usa posicionamiento absoluto para controlar la ubicación exacta */
+    top: 15%;  /* Inicia en el centro */
+    left: 50%;  /* Centrado horizontalmente */
+    width: auto;  /* Asegura que el contenido no se desborde */
+    }
+
+.curso-banner h1 {
+    font-size: 50px;
+    color: #062C5B;
+    margin: 0;
+    padding: 0 20%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .curso-banner {
+        top: 20%;  /* Aumenta si necesitas más espacio en la parte superior */
+        left: 10%; /* Ajusta para una alineación más a la izquierda */
+        width: 80%; /* Da más espacio para el texto */
+    }
+
+    .curso-banner h1 {
+        font-size: 24px; /* Reduce el tamaño del texto para adaptarse a pantallas más pequeñas */
+        padding: 0 10%; /* Reduce el padding para evitar desbordamiento */
+    }
+}
+</style>

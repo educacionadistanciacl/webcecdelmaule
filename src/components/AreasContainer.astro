@@ -13,7 +13,6 @@ import {
 
 const areas = Astro.props.areas; // Se espera que se le pase un array de áreas (cursosPorArea)
 
-console.log(areas);
 ---
 
 <div class="areas-container">
@@ -38,7 +37,8 @@ console.log(areas);
     {Object.entries(areas).map(([area, tipos]) => (
       <CursoCard
         nombreCurso={area}
-        tipoCurso={tipos}  // Convertir 'tipos' a un array de strings y unirlos con comas
+        tipoCurso={tipos}
+        link={`/cursos/area/${slugReplace(area)}`}
       />
     ))}
   </div>

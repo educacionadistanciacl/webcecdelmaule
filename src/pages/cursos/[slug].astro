@@ -12,13 +12,13 @@
 import cursos from '../../data/cursos.json';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CursoTemplate from '../../components/CursoTemplate.astro';
+import { slugReplace } from '../../func/slugURL';
 
+// Función para generar rutas estáticas
 export async function getStaticPaths() {
   return cursos.map(curso => {
-    const slug = curso.NOMBRE
-    .replace(/[^a-zA-Z0-9]+/g, '-')  // Reemplaza cualquier carácter no alfanumérico por guiones
-    .replace(/-+/g, '-')             // Reemplaza múltiples guiones consecutivos por un solo guion
-  .toLowerCase();           // Convierte a minúsculasminúsculas
+    const slug = slugReplace(curso.NOMBRE);  // Utiliza slugReplace para generar el slug
+
     return {
       params: {
         slug
@@ -30,16 +30,15 @@ export async function getStaticPaths() {
   });
 }
 
-// Accede a los props pasados por getStaticPaths
+// Obtener el slug desde los parámetros de la URL
 const { slug } = Astro.params;
+
+// Buscar el curso que coincida con el slug generado
 const curso = cursos.find(c => 
-  c.NOMBRE
-  .replace(/[^a-zA-Z0-9]+/g, '-')  // Reemplaza cualquier carácter no alfanumérico por guiones
-  .replace(/-+/g, '-')             // Reemplaza múltiples guiones consecutivos por un solo guion
-    .toLowerCase() === slug   // Compara con el slug generado
+  slugReplace(c.NOMBRE) === slug  // Utiliza slugReplace para comparar el slug con el nombre del curso
 );
 
-
+// Redirigir a la página de 404 si no se encuentra el curso
 if (!curso) {
   return Astro.redirect('/404');
 }
