@@ -60,7 +60,7 @@ console.log(areas);
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 0 15% 5% 15%;
   }
@@ -114,6 +114,14 @@ console.log(areas);
 
   // Filtra los cursos en función del tipo seleccionado
   function filterCourses(cards: any, tipoSeleccionado: string) {
+
+    const btnTipo = document.getElementById(tipoSeleccionado);
+    if (btnTipo) {
+      const backgroundColor = btnTipo.style.backgroundColor; // Obtiene el background-color del estilo en línea
+      console.log(backgroundColor); // Verifica el valor en la consola
+
+    }
+
   cards.forEach((card: any) => {
     const tipoCurso = card.getAttribute("data-tipo") || "";
 
