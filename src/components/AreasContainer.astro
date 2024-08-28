@@ -6,16 +6,19 @@ import Search from "./Search.astro";
 
 import { slugReplace } from "../func/slugURL";
 import { prepararCursos } from "../func/prepararCursos";
-import { tipoCursoColores, ajustarTipoCurso} from "../func/AsignarColorTipoCursos";
+import {
+  tipoCursoColores,
+  ajustarTipoCurso,
+} from "../func/AsignarColorTipoCursos";
 
+const areas = Astro.props.areas; // Se espera que se le pase un array de áreas (cursosPorArea)
 
-const areas = Astro.props.areas;  // Se espera que se le pase un array de áreas (cursosPorArea)
-
+console.log(areas);
 ---
 
 <div class="areas-container">
   <div class="search-container">
-    <Search id="area-search"/>
+    <Search id="area-search" />
   </div>
 
   <div class="buttons-container">
@@ -32,14 +35,12 @@ const areas = Astro.props.areas;  // Se espera que se le pase un array de áreas
   </div>
 
   <div class="card-container">
-    {
-      Object.keys(areas).map((area) => (
-        <CursoCard
-          nombreCurso={area}
-        />
-      ))
-    }
-      
+    {Object.entries(areas).map(([area, tipos]) => (
+      <CursoCard
+        nombreCurso={area}
+        tipoCurso={tipos}  // Convertir 'tipos' a un array de strings y unirlos con comas
+      />
+    ))}
   </div>
 </div>
 
@@ -62,7 +63,6 @@ const areas = Astro.props.areas;  // Se espera que se le pase un array de áreas
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 20px;
     padding: 0 15% 5% 15%;
-    
   }
 
   .search-container {
@@ -72,8 +72,8 @@ const areas = Astro.props.areas;  // Se espera que se le pase un array de áreas
   }
 
   .area-card {
-    background-color: #FFF;
-    color: #062C5B;
+    background-color: #fff;
+    color: #062c5b;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -90,30 +90,52 @@ const areas = Astro.props.areas;  // Se espera que se le pase un array de áreas
   document.addEventListener("DOMContentLoaded", function () {
     const areaCards = document.querySelectorAll(".curso-card");
 
-    const searchInput = document.getElementById('area-search') as HTMLInputElement;
+    const searchInput = document.getElementById(
+      "area-search"
+    ) as HTMLInputElement;
 
-    // Evento para limpiar el campo de búsqueda cuando se hace clic fuera de él
-    // document.addEventListener('click', function(event) {
-    //   if (event.target !== searchInput) {
-    //     searchInput.value = '';
-    //   }
-    // });
-
-    searchInput?.addEventListener('input', function() {
+    searchInput?.addEventListener("input", function () {
       const query = this.value.toLowerCase();
       filterAreasByName(areaCards, query);
     });
 
-    // Filtra las áreas en función del nombre
-    function filterAreasByName(areaCards: any, query: string) {
-      areaCards.forEach((card: any) => {
-        const nombreArea = card.querySelector('p')?.textContent?.toLowerCase();
-        if (nombreArea?.includes(query)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+    // Selecciona todos los botones basados en el id dinámico que estás usando
+    const tipos = ["Sincrónico", "Asincrónico", "Presencial", "Todos"];
+
+    tipos.forEach((tipo) => {
+      const button = document.getElementById(tipo);
+      if (button) {
+        button.addEventListener("click", function () {
+          filterCourses(areaCards, tipo);
+        });
+      }
+    });
+  });
+
+  // Filtra los cursos en función del tipo seleccionado
+  function filterCourses(cards: any, tipoSeleccionado: string) {
+  cards.forEach((card: any) => {
+    const tipoCurso = card.getAttribute("data-tipo") || "";
+
+    // Verificar si el tipoCurso contiene alguno de los valores de data tipo
+    if (tipoCurso.includes(tipoSeleccionado) || tipoSeleccionado === "Todos") {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
     }
   });
+}
+
+
+  // Filtra las áreas en función del nombre
+  function filterAreasByName(areaCards: any, query: string) {
+    areaCards.forEach((card: any) => {
+      const nombreArea = card.querySelector("p")?.textContent?.toLowerCase();
+      if (nombreArea?.includes(query)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
 </script>
