@@ -13,8 +13,9 @@ const { area } = Astro.params;
 
 // Filtrar los cursos que pertenecen al área correspondiente al slug
 const cursosFiltrados = cursos.filter(curso => 
-  slugReplace(curso.AREA) === area
+  curso.AREA && slugReplace(curso.AREA) === area
 );
+
 
 // Redirigir a la página de 404 si no se encuentran cursos
 if (cursosFiltrados.length === 0) {
@@ -23,17 +24,20 @@ if (cursosFiltrados.length === 0) {
 
 // Función para obtener los tipos de cursos dentro de un área
 function obtenerTiposDeCursos(cursos: any[]): { [area: string]: string[] } {
-  const tiposDeCursos = {};
+  // Definir tiposDeCursos como un objeto donde las claves son strings y los valores son Set<string>
+  const tiposDeCursos: { [area: string]: Set<string> } = {};
 
   cursos.forEach((curso) => {
     if (curso.AREA && curso.TIPO) {
+      // Inicializar un Set<string> si el área aún no existe en tiposDeCursos
       if (!tiposDeCursos[curso.AREA]) {
         tiposDeCursos[curso.AREA] = new Set<string>();
       }
-      tiposDeCursos[curso.AREA].add(curso.TIPO);
+      tiposDeCursos[curso.AREA].add(curso.TIPO); // Agregar el tipo al Set
     }
   });
 
+  // Convertir los Sets a arrays para el resultado final
   const resultado: { [area: string]: string[] } = {};
   for (const area in tiposDeCursos) {
     resultado[area] = Array.from(tiposDeCursos[area]);
@@ -43,7 +47,7 @@ function obtenerTiposDeCursos(cursos: any[]): { [area: string]: string[] } {
 }
 
 // Obtener los tipos de curso del área filtrada
-const cursosPorTipo = obtenerTiposDeCursos(cursosFiltrados);
+// const cursosPorTipo = obtenerTiposDeCursos(cursosFiltrados);
 ---
 
 <BaseLayout title={`Cursos en ${cursosFiltrados[0].AREA}`} borde={true}>
