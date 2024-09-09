@@ -11,6 +11,7 @@ import cursos from '../../src/data/cursos.json';
 function obtenerAreasConTipos(cursos: any[]): { [area: string]: string[] } {
   const areasConTipos: { [area: string]: Set<string> } = {};
 
+  // Agrupamos los cursos por área y tipo
   cursos.forEach((curso) => {
     if (curso.AREA && curso.TIPO) {
       // Si el área no existe en el objeto, se crea con un nuevo Set
@@ -22,14 +23,18 @@ function obtenerAreasConTipos(cursos: any[]): { [area: string]: string[] } {
     }
   });
 
-  // Convertir los Sets a arrays para el resultado final
+  // Crear un array con las áreas y ordenarlas alfabéticamente
+  const areasOrdenadas = Object.keys(areasConTipos).sort();
+
+  // Convertir los Sets a arrays, ordenar los tipos y devolver el resultado ordenado por área
   const resultado: { [area: string]: string[] } = {};
-  for (const area in areasConTipos) {
-    resultado[area] = Array.from(areasConTipos[area]);
-  }
+  areasOrdenadas.forEach((area) => {
+    resultado[area] = Array.from(areasConTipos[area]).sort();
+  });
 
   return resultado;
 }
+
 
 
 // Obtener las áreas únicas de los cursos
