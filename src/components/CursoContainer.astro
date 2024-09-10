@@ -31,6 +31,14 @@ const cursos = prepararCursos(datosCursos).cursos;
     }
   </div>
 
+<div class="volver">
+  <Btn
+  text={'Volver'}
+  url={'/cursos#areas'}
+
+/>
+</div>
+
 
   <div class="card-container">
     {
@@ -44,13 +52,21 @@ const cursos = prepararCursos(datosCursos).cursos;
       ))
     }
   </div>
+
+  <div class="volver">
+    <Btn
+    text={'Volver'}
+    url={'/cursos#areas'}
+  
+  />
+  </div>
 </div>
 
 <style>
   .cursos-container {
     background-color: #062c5b;
     padding-top: 4%;
-    padding: 40px;
+    padding: 20px;
   }
 
   .buttons-container {
@@ -72,6 +88,12 @@ const cursos = prepararCursos(datosCursos).cursos;
     justify-content: center;
     margin-bottom: 2%;
   }
+
+  .volver {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  margin: 40px 0; /* Espacio arriba y abajo */
+}
 
 
   @media (max-width: 800px) {
