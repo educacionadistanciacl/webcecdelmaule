@@ -125,7 +125,7 @@ const areas = Astro.props.areas; // Se espera que se le pase un array de áreas 
 
     // Verificar si el tipoCurso contiene alguno de los valores de data tipo
     if (tipoCurso.includes(tipoSeleccionado) || tipoSeleccionado === "Todos") {
-      card.style.display = "block";
+      card.style.display = "flex";
     } else {
       card.style.display = "none";
     }
@@ -138,7 +138,7 @@ const areas = Astro.props.areas; // Se espera que se le pase un array de áreas 
     areaCards.forEach((card: any) => {
       const nombreArea = card.querySelector("p")?.textContent?.toLowerCase();
       if (nombreArea?.includes(query)) {
-        card.style.display = "block";
+        card.style.display = "flex";
       } else {
         card.style.display = "none";
       }

@@ -147,7 +147,7 @@ const cursos = prepararCursos(datosCursos).cursos;
     cards.forEach((card: any) => {
       const tipoCurso = card.getAttribute("data-tipo")?.replace("Curso ", "");
       if (tipoSeleccionado === "Todos" || tipoCurso === tipoSeleccionado) {
-        card.style.display = "block";
+        card.style.display = "flex";
       } else {
         card.style.display = "none";
       }
@@ -160,7 +160,7 @@ const cursos = prepararCursos(datosCursos).cursos;
     const nombreCursoElement = card.querySelector('p'); // Selecciona el elemento <p> dentro de la tarjeta
     const nombreCurso = nombreCursoElement ? nombreCursoElement.textContent?.toLowerCase() : '';
       if (nombreCurso?.includes(query)) {
-        card.style.display = 'block';
+        card.style.display = 'flex';
       } else {
         card.style.display = 'none';
       }
