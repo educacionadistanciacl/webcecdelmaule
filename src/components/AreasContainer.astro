@@ -36,7 +36,7 @@ const areas = Astro.props.areas; // Se espera que se le pase un array de áreas 
       <CursoCard
         nombreCurso={area}
         tipoCurso={tipos}
-        link={`/cursos/area/${slugReplace(area)}`}
+        link={`/cursos/area/${slugReplace(area)}#cursos`}
       />
     ))}
   </div>
