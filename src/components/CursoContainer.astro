@@ -53,7 +53,7 @@ const cursos = prepararCursos(datosCursos).cursos;
     }
   </div>
 
-  <div class="volver">
+  <div class="volver abajo">
     <Btn
     text={'Volver'}
     url={'/cursos#areas'}
@@ -89,11 +89,17 @@ const cursos = prepararCursos(datosCursos).cursos;
     margin-bottom: 2%;
   }
 
+  .volver.abajo {
+  margin-top: 0px; /* Espacio arriba y abajo */
+}
+
   .volver {
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
   margin: 40px 0; /* Espacio arriba y abajo */
 }
+
+
 
 
   @media (max-width: 800px) {
