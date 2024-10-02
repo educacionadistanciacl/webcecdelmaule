@@ -23,28 +23,28 @@ if (cursosFiltrados.length === 0) {
 }
 
 // Función para obtener los tipos de cursos dentro de un área
-function obtenerTiposDeCursos(cursos: any[]): { [area: string]: string[] } {
-  // Definir tiposDeCursos como un objeto donde las claves son strings y los valores son Set<string>
-  const tiposDeCursos: { [area: string]: Set<string> } = {};
+// function obtenerTiposDeCursos(cursos: any[]): { [area: string]: string[] } {
+//   // Definir tiposDeCursos como un objeto donde las claves son strings y los valores son Set<string>
+//   const tiposDeCursos: { [area: string]: Set<string> } = {};
 
-  cursos.forEach((curso) => {
-    if (curso.AREA && curso.TIPO) {
-      // Inicializar un Set<string> si el área aún no existe en tiposDeCursos
-      if (!tiposDeCursos[curso.AREA]) {
-        tiposDeCursos[curso.AREA] = new Set<string>();
-      }
-      tiposDeCursos[curso.AREA].add(curso.TIPO); // Agregar el tipo al Set
-    }
-  });
+//   cursos.forEach((curso) => {
+//     if (curso.AREA && curso.TIPO) {
+//       // Inicializar un Set<string> si el área aún no existe en tiposDeCursos
+//       if (!tiposDeCursos[curso.AREA]) {
+//         tiposDeCursos[curso.AREA] = new Set<string>();
+//       }
+//       tiposDeCursos[curso.AREA].add(curso.TIPO); // Agregar el tipo al Set
+//     }
+//   });
 
-  // Convertir los Sets a arrays para el resultado final
-  const resultado: { [area: string]: string[] } = {};
-  for (const area in tiposDeCursos) {
-    resultado[area] = Array.from(tiposDeCursos[area]);
-  }
+//   // Convertir los Sets a arrays para el resultado final
+//   const resultado: { [area: string]: string[] } = {};
+//   for (const area in tiposDeCursos) {
+//     resultado[area] = Array.from(tiposDeCursos[area]);
+//   }
 
-  return resultado;
-}
+//   return resultado;
+// }
 
 // Obtener los tipos de curso del área filtrada
 // const cursosPorTipo = obtenerTiposDeCursos(cursosFiltrados);
