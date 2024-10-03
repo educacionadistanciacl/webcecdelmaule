@@ -8,8 +8,23 @@ import { slugReplace } from '../../../func/slugURL';
 
 const imagenURL = '/img/bussines_woman.webp';
 
+// Función para obtener las áreas únicas de los cursos
+export async function getStaticPaths() {
+  const areasUnicas = [...new Set(cursos.map(curso => curso.AREA).filter(Boolean))];
+  
+  // Devuelve un array con las rutas correctamente
+  return areasUnicas.map((area: any) => ({
+    params: { area: area.replace(/\s+/g, '-').toLowerCase() }  // Convierte el área en un slug
+  }));
+}
+
+
+
+
+
 // Obtener el slug desde los parámetros de la URL
 const { area } = Astro.params;
+
 
 // Filtrar los cursos que pertenecen al área correspondiente al slug
 const cursosFiltrados = cursos.filter(curso => 
