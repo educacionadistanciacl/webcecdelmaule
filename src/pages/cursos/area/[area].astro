@@ -14,7 +14,7 @@ export async function getStaticPaths() {
   
   // Devuelve un array con las rutas correctamente
   return areasUnicas.map((area: any) => ({
-    params: { area: area.replace(/\s+/g, '-').toLowerCase() }  // Convierte el área en un slug
+    params: { area: slugReplace(area) }  // Convierte el área en un slug
   }));
 }
 
