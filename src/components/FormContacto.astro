@@ -8,7 +8,7 @@ import Btn from "./Btn.astro";
 <div class="form-banner">
   <div class="form-container">
     <h1>Formulario de contacto</h1>
-    <form action={url_email} method="POST">
+    <form id="contactForm" action={url_email} method="POST">
       <div class="nombre-container">
         <span>Nombre/Empresa (Requerido)</span>
         <input type="text" name="user_name" required />
@@ -31,34 +31,33 @@ import Btn from "./Btn.astro";
         />
       </div>
     </form>
+    <div id="notification" class="notification" style="display: none;"></div>
   </div>
 </div>
 
 <style>
+  /* Tus estilos CSS permanecen sin cambios */
   .form-banner {
-    justify-content: center; /* Centrar el contenido verticalmente */
-    width: 55%; /* Ocupa menos espacio, ajusta según tu diseño */
+    justify-content: center;
+    width: 55%;
     background-color: #1e57a4;
     color: var(--color-secundario);
-    box-sizing: border-box; /* Incluye el padding en el cálculo de width/height */
+    box-sizing: border-box;
   }
-
   .form-container {
     display: flex;
     flex-direction: column;
     margin: 10% 10% 15% 10%;
     box-sizing: border-box;
   }
-
   form {
-    width: 100%; /* Ajusta esto para cambiar el ancho máximo del formulario */
-    max-width: 500px; /* O usa max-width para limitar el ancho máximo */
+    width: 100%;
+    max-width: 500px;
   }
-
   input,
   textarea {
-    width: 100%; /* Hace que los inputs y textarea tomen todo el ancho disponible */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho para evitar desbordes */
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 15px;
     margin-top: 10px;
     padding: 10px;
@@ -68,22 +67,81 @@ import Btn from "./Btn.astro";
     outline: none;
     transition: border-color 0.3s;
     color: var(--color-primario);
-    font-family: "Montserrat"; /* Ejemplo de fuente, ajusta a tu diseño */
+    font-family: "Montserrat";
   }
-
   input:focus,
   textarea:focus {
     border: 3px solid var(--color-tercero);
   }
-
   .btn-container {
     display: flex;
     justify-content: flex-end;
   }
-
+  .notification {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    display: none;
+  }
+  .notification.success {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  .notification.error {
+    background-color: #f44336;
+    color: #ffffff;
+  }
   @media (max-width: 800px) {
     .form-banner {
       width: auto;
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+    const notification = document.getElementById('notification');
+
+    if (form && notification) {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+
+        // Recopila los datos del formulario
+        const formData = new FormData(form);
+
+        try {
+          // Envía los datos del formulario usando fetch
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            showNotification('Formulario enviado exitosamente', 'success');
+            form.reset(); // Limpia los campos del formulario
+          } else {
+            showNotification('Hubo un problema al enviar el formulario. Inténtalo nuevamente.', 'error');
+          }
+        } catch (error) {
+          showNotification('Ocurrió un error al enviar el formulario. Inténtalo más tarde.', 'error');
+        }
+      });
+    }
+
+    function showNotification(message, type) {
+      if (notification) {
+        notification.textContent = message;
+        notification.className = `notification ${type}`;
+        notification.style.display = 'block';
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 5000);
+      }
+    }
+  });
+</script>
