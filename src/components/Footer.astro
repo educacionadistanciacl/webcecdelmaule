@@ -1,6 +1,7 @@
 ---
 // Importa cualquier otro componente si es necesario
 import CecLogo from './CecLogo.astro';
+import SocialIcons from './SocialIcons.astro';
 
 
 const path_img = '/img'
@@ -34,6 +35,7 @@ const { borde = false } = Astro.props;
         <CecLogo/>
     </div>
   </div>
+  <SocialIcons />
   <div class="certification-section">
     <h4>{footerData.certification.name}</h4>
     <img src={footerData.certification.logo} alt="Certificado Logo" />

@@ -1,0 +1,36 @@
+---
+const url_icon = '/img/icons';
+---
+
+<div class="contact-info">
+  <h3>Nuestro email</h3>
+  <span>cecdelmaule@ucm.cl</span>
+  <div class="social-icons">
+    <a href="https://web.facebook.com/p/CEC-del-Maule-100083317331758" target="_blank" aria-label="Facebook">
+      <img src={`${url_icon}/icon-facebook.svg`} alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/cecdelmaule/" target="_blank" aria-label="Instagram">
+      <img src={`${url_icon}/icon-instagram.svg`} alt="Instagram" />
+    </a>
+  </div>
+</div>
+
+<style>
+  .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    gap: 20px; /* Espacio entre iconos */
+    margin-top: 20px; /* Espacio superior para los íconos */
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+    margin: 5px;
+  }
+</style>
