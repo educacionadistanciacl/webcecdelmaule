@@ -101,7 +101,7 @@ import Btn from "./Btn.astro";
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contactForm');
+    const form = document.getElementById('contactForm')as HTMLFormElement;
     const notification = document.getElementById('notification');
 
     if (form && notification) {
@@ -133,7 +133,7 @@ import Btn from "./Btn.astro";
       });
     }
 
-    function showNotification(message, type) {
+    function showNotification(message: any, type: any) {
       if (notification) {
         notification.textContent = message;
         notification.className = `notification ${type}`;
