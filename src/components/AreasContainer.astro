@@ -78,10 +78,12 @@ const areas = Astro.props.areas; // Se espera que se le pase un array de áreas 
   }
 
   @media (max-width: 800px) {
-    .buttons-container {
-      display: none;
-    }
+  .buttons-container {
+    flex-direction: column; /* Alinea los botones en una columna */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Ajusta el espacio entre los botones */
   }
+}
 </style>
 
 <script>

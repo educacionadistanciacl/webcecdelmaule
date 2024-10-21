@@ -100,13 +100,13 @@ const cursos = prepararCursos(datosCursos).cursos;
 }
 
 
-
-
-  @media (max-width: 800px) {
-    .buttons-container {
-      display: none;
-    }
+@media (max-width: 800px) {
+  .buttons-container {
+    flex-direction: column; /* Alinea los botones en una columna */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Ajusta el espacio entre los botones */
   }
+}
 </style>
 
 <script>
