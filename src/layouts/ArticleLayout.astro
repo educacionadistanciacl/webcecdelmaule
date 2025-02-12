@@ -28,9 +28,11 @@ const recommendedArticles = filteredArticles
       <img src={`${urlImagen}/${imagen}`} alt={title} />
     </header>
     <section>
-      <div class="header-content">
+      <div style="margin-bottom: 0;">
+        <p style="text-align: left;">{date}</p>
+      </div>
+      <div class="header-content" style="margin-top: 0;">
         <h1>{title}</h1>
-        <p>{date}</p>
       </div>
       <div class="content">
         <slot />
