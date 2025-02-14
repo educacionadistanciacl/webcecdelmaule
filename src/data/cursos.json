@@ -80,31 +80,6 @@
     ]
   },
   {
-    "NOMBRE": "APLICACIÓN DE PROCEDIMIENTOS DE CONTRATACIÓN DE EXTRANJEROS EN CHILE",
-    "CODIGO": "1238014535",
-    "TIPO": "Curso Sincrónico",
-    "AREA":"Administración",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Aplicar procedimientos de contratación de extranjeros en Chile respetando procedimientos administrativos y estatutos establecidos en la normativa laboral vigente.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS DE LA CONTRATACIÓN DE EXTRANJEROS EN CHILE",
-        "DESCRIPCION": "Identificar los fundamentos de la contratación de extranjeros en Chile según su composición y efectos en diversos escenarios."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "MARCO JURÍDICO APLICABLE EN LA CONTRATACIÓN DE EXTRANJEROS",
-        "DESCRIPCION": "Describir el marco jurídico aplicable en la contratación de extranjeros de acuerdo con los límites y formas especiales de contratos laborales."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "PROCEDIMIENTOS DE CONTRATACIÓN DE EXTRANJEROS EN CHILE",
-        "DESCRIPCION": "Aplicar procedimientos de contratación de extranjeros en Chile, respetando las medidas administrativas."
-      }
-    ]
-  },
-  {
     "NOMBRE": "ESTRATEGIAS DE LIDERAZGO EN ESCENARIOS DE INCERTIDUMBRE",
     "CODIGO": "1238034377",
     "TIPO": "Curso Sincrónico",
@@ -206,41 +181,6 @@
         "NUMERO": "3",
         "NOMBRE": "GESTIÓN PARA EL TRABAJO COLABORATIVO A TRAVÉS DE LAS 5C JUNTO A MI EQUIPO Y LA ORGANIZACIÓN",
         "DESCRIPCION": "Aplicar herramientas colaborativas para el logro de resultados y mejora del clima laboral."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "HERRAMIENTAS DE ADMINISTRACIÓN DE PROYECTOS",
-    "CODIGO": "1238012286",
-    "TIPO": "Curso Sincrónico",
-    "AREA":"Administración",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de administración de proyectos respetando criterios de planificación y control.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS SOBRE ADMINISTRACIÓN DE PROYECTOS",
-        "DESCRIPCION": "Identificar los fundamentos sobre administración de proyectos según sus características."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "HERRAMIENTAS DE PLANIFICACIÓN DE PROYECTOS",
-        "DESCRIPCION": "Aplicar herramientas de planificación de proyectos respetando los criterios de definición de costos y rutas críticas."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "HERRAMIENTAS DE GESTIÓN DE COMUNICACIÓN DEL PROYECTO",
-        "DESCRIPCION": "Utilizar herramientas de gestión de comunicación del proyecto respetando mecanismos de monitoreo y manejo de grupos de interés."
-      },
-      {
-        "NUMERO": "4",
-        "NOMBRE": "HERRAMIENTAS DE SEGUIMIENTO DE PROYECTOS",
-        "DESCRIPCION": "Emplear herramientas de seguimiento de proyectos respetando las líneas base y métodos de control por valor ganado."
-      },
-      {
-        "NUMERO": "5",
-        "NOMBRE": "HERRAMIENTAS DE REPORTERÍA DE PROYECTOS",
-        "DESCRIPCION": "Aplicar herramientas de reportería de proyectos según el estudio de tecnologías de información y programaciones del cronograma."
       }
     ]
   },
@@ -361,51 +301,6 @@
         "NUMERO": "3",
         "NOMBRE": "HERRAMIENTAS DE GESTIÓN DE RIESGOS EN PROYECTOS Y CONTRATOS",
         "DESCRIPCION": "Aplicar herramientas de gestión de riesgos en proyectos y contratos respetando métodos de valoración y monitoreo de eventualidades."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "HERRAMIENTAS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACION DE NEGOCIOS",
-    "CODIGO": "1238035627",
-    "AREA":"Administración",
-    "TIPO": "Curso Sincrónico",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de las Normas Internacionales de Información Financiera en estados financieros consolidados y la combinación de negocios tomando en cuenta la moneda funcional y las diferencias de cambio.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS SOBRE NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACIÓN DE NEGOCIOS",
-        "DESCRIPCION": "Identificar los fundamentos sobre normas internacionales de información financiera en estados financieros consolidados y la combinación de negocios según sus características e importancia."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN ESTADOS FINANCIEROS CONSOLIDADOS Y LA COMBINACIÓN DE NEGOCIOS",
-        "DESCRIPCION": "Aplicar herramientas de las normas internacionales de información financiera en estados financieros consolidados y la combinación de negocios respetando marcos administrativos contables."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "HERRAMIENTAS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
-    "CODIGO": "1238035629",
-    "AREA":"Administración",
-    "TIPO": "Curso Sincrónico",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de las Normas Internacionales de Información Financiera en la realización de informes financieros respetando criterios de evaluación, tratado y presentación de estados de cuentas de activos y pasivos.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
-        "DESCRIPCION": "Identificar los principios de las normas internacionales de información financiera en la realización de informes financieros según sus características e importancia."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "LOS PRINCIPALES ASPECTOS DE LOS TRATAMIENTOS CONTABLES ESPECÍFICOS",
-        "DESCRIPCION": "Aplicar herramientas de las normas internacionales de información financiera en estados financieros consolidados y la combinación de negocios respetando marcos administrativos contables."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "PRINCIPIOS DE LAS NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA EN LA REALIZACIÓN DE INFORMES FINANCIEROS",
-        "DESCRIPCION": "Aplicar herramientas de las normas internacionales de información financiera en la realización de informes financieros respetando el tipo tratamiento contable específico."
       }
     ]
   },
@@ -531,36 +426,6 @@
         "NUMERO": "2",
         "NOMBRE": "PLANILLAS DE COTIZACIONES, IMPUESTOS Y OTROS DESCUENTOS",
         "DESCRIPCION": "Manejar las planillas de cotizaciones, impuestos y otros descuentos, de acuerdo con la normativa vigente."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "MICROSOFT EXCEL AVANZADO",
-    "CODIGO": "1238033983",
-    "AREA":"Computación e Informática",
-    "TIPO": "Curso Sincrónico",
-    "HORAS_CRONOLOGICAS": "24",
-    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de Microsoft Excel avanzado según criterios de manejo de Power Query, inserción, edición de datos y gráficos en tablas dinámicas.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "PRINCIPALES CARACTERÍSTICAS DE MICROSOFT EXCEL AVANZADO",
-        "DESCRIPCION": "Identificar las principales características de Microsoft Excel avanzado de acuerdo a sus entornos e interfaces."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "FUNCIONES EN PLANILLAS ELECTRÓNICAS DE EXCEL",
-        "DESCRIPCION": "Utilizar funciones en planillas electrónicas de Excel según el trabajo que se desea realizar."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "HERRAMIENTAS DE CREACIÓN Y MANEJO DE TABLAS DINÁMICAS EN MICROSOFT EXCEL",
-        "DESCRIPCION": "Emplear herramientas de creación y manejo de tablas dinámicas en Microsoft Excel según criterios de diseño, edición de campos, validación de datos y gráficos."
-      },
-      {
-        "NUMERO": "4",
-        "NOMBRE": "HERRAMIENTAS DE POWER QUERY EN MICROSOFT EXCEL",
-        "DESCRIPCION": "Aplicar herramientas de Power Query en Microsoft Excel según mecanismos de carga, intercambio de filas, inserción de gráficos y manejo de bases de datos."
       }
     ]
   },
@@ -786,31 +651,6 @@
         "NUMERO": "2",
         "NOMBRE": "TÉCNICAS DE TOMA DE DECISIONES",
         "DESCRIPCION": "Aplicar técnicas de toma de decisiones según método de análisis de opciones y oportunidades."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "TECNICAS DE TRABAJO EN EQUIPO",
-    "CODIGO": "1238019262",
-    "AREA":"Administración",
-    "TIPO": "Curso Sincrónico",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de trabajo en equipo según enfoque interaccional y de resolución de conflictos laborales.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS SOBRE TRABAJO EN EQUIPO",
-        "DESCRIPCION": "Identificar los fundamentos sobre trabajo en equipo de acuerdo a sus características e importancia en el contexto laboral."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "LOS PRINCIPIOS BÁSICOS DEL TRABAJO EN EQUIPO",
-        "DESCRIPCION": "Reconocer los principios básicos del trabajo en equipo de acuerdo a sus funciones e importancia de la sinergia y control de avance de tareas."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "TÉCNICAS DE TRABAJO EN EQUIPO",
-        "DESCRIPCION": "Aplicar técnicas de trabajo en equipo según métodos colaborativos de planificación y manejo de conflictos."
       }
     ]
   },
@@ -1160,51 +1000,6 @@
         "NUMERO": "3",
         "NOMBRE": "INTRODUCCIÓN AL SISTEMA GRÁFICO (GGPLOT2)",
         "DESCRIPCION": "Reconocer las múltiples funciones diseñadas para la representación gráfica de datos."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "TÉCNICAS DE ATENCIÓN Y SERVICIO AL CLIENTE",
-    "CODIGO": "1238054037",
-    "AREA":"Servicio a las personas",
-    "TIPO": "Curso Presencial",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención y servicio al cliente considerando protocolos de la empresa en relación a la comunicación y manejo de clientes.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS DE ATENCIÓN Y SERVICIO AL CLIENTE",
-        "DESCRIPCION": "Identificar los fundamentos de atención y servicio al cliente de acuerdo a sus características."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "TÉCNICAS DE ATENCIÓN Y SERVICIO AL CLIENTE",
-        "DESCRIPCION": "Aplicar técnicas de atención y servicio al cliente respetando protocolos comunicacionales promotores de aptitudes positivas."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "TÉCNICAS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
-    "CODIGO": "1238061634",
-    "AREA":"Administración",
-    "TIPO": "Curso Presencial",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de comunicación y trabajo en equipo según contexto situacional y mecanismos de resolución de conflictos laborales.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
-        "DESCRIPCION": "Identificar los fundamentos de comunicación y trabajo en equipo según su importancia y factores que le afectan."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "ESTRATEGIAS DE RESOLUCIÓN DE CONFLICTOS",
-        "DESCRIPCION": "Emplear estrategias de resolución de conflictos según mecanismos de motivación y mediación laboral."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "TÉCNICAS DE COMUNICACIÓN Y TRABAJO EN EQUIPO",
-        "DESCRIPCION": "Aplicar técnicas de comunicación y trabajo en equipo de acuerdo con el contexto situacional."
       }
     ]
   },
@@ -1704,36 +1499,6 @@
     ]
   },
   {
-    "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN Y ORGANIZACIÓN DEL TIEMPO LABORAL",
-    "CODIGO": "1238021384",
-    "AREA":"Administración",
-    "TIPO": "Curso Asincrónico",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de administración y organización del tiempo laboral respetando criterios de planificación y priorización de actividades en los equipos de trabajo.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS DE ADMINISTRACIÓN Y ORGANIZACIÓN DEL TIEMPO LABORAL",
-        "DESCRIPCION": "Identificar los fundamentos de administración y organización del tiempo laboral de acuerdo con sus características."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "ELEMENTOS CLAVES PARA REALIZAR MATRIZ DE PRIORIDADES",
-        "DESCRIPCION": "Reconocer los elementos claves de la matriz de prioridades respetando parámetros de administración del tiempo."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "MECANISMOS DE ORGANIZACIÓN EFICIENTE DEL TIEMPO",
-        "DESCRIPCION": "Emplear mecanismos de organización del tiempo según criterios distribución y priorización de actividades laborales."
-      },
-      {
-        "NUMERO": "4",
-        "NOMBRE": "TÉCNICAS DE ADMINISTRACIÓN DEL TIEMPO LABORAL",
-        "DESCRIPCION": "Aplicar técnicas de administración del tiempo laboral respetando protocolos de trabajo."
-      }
-    ]
-  },
-  {
     "NOMBRE": "TÉCNICAS DE ALIMENTACIÓN SALUDABLE",
     "CODIGO": "1238027199",
     "AREA":"Alimentación, Gastronomía y Turismo",
@@ -1814,31 +1579,6 @@
     ]
   },
   {
-    "NOMBRE": "TÉCNICAS DE ATENCIÓN AL CLIENTE",
-    "CODIGO": "1238015089",
-    "AREA":"Servicio a las personas",
-    "TIPO": "Curso Asincrónico",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención al cliente respetando protocolos comunicacionales y gestión de quejas de los distintos tipos de clientes.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "FUNDAMENTOS DE LA ATENCIÓN AL CLIENTE",
-        "DESCRIPCION": "Identificar los fundamentos de la atención al cliente de acuerdo con sus características."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "GESTIÓN DE QUEJAS Y RECLAMOS",
-        "DESCRIPCION": "Describir la importancia de gestión de quejas y reclamos de acuerdo con el tipo de cliente."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "TÉCNICAS DE COMUNICACIÓN CON CLIENTES",
-        "DESCRIPCION": "Aplicar técnicas de atención al cliente respetando protocolos de comunicación y abordaje de los distintos tipos de clientes."
-      }
-    ]
-  },
-  {
     "NOMBRE": "TÉCNICAS DE ELABORACIÓN DE PREPARACIONES DE ALIMENTACIÓN SALUDABLE",
     "CODIGO": "1238027346",
     "AREA":"Alimentación, Gastronomía y Turismo",
@@ -1890,31 +1630,6 @@
         "NUMERO": "3",
         "NOMBRE": "TÉCNICAS DE PRIMEROS AUXILIOS (PAP)",
         "DESCRIPCION": "Aplicar técnicas de primeros auxilios psicológicos (PAP) respetando protocolos de trabajo."
-      }
-    ]
-  },
-  {
-    "NOMBRE": "TÉCNICAS DE REDACCIÓN",
-    "CODIGO": "1238028390",
-    "AREA":"Administración",
-    "TIPO": "Curso Asincrónico",
-    "HORAS_CRONOLOGICAS": "40",
-    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de redacción respetando reglas ortográficas y gramaticales en la elaboración de documentos.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "REGLAS ORTOGRÁFICAS Y GRAMATICALES",
-        "DESCRIPCION": "Identificar importancia de los signos de puntuación tomando en cuenta la estructura gramatical."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "TIPOS Y CLASIFICACIÓN DE LAS COMUNICACIONES",
-        "DESCRIPCION": "Reconocer los tipos de comunicación escrita de acuerdo con el contexto situacional."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "TÉCNICAS DE REDACCIÓN DE DOCUMENTOS",
-        "DESCRIPCION": "Aplicar técnicas de redacción de documentos respetando normas gramaticales."
       }
     ]
   },
@@ -2070,6 +1785,356 @@
         "NUMERO": "2",
         "NOMBRE": "TÉCNICAS DE PREVENCIÓN DEL SÍNDROME DE DESGASTE PROFESIONAL",
         "DESCRIPCION": "Aplicar técnicas de prevención del síndrome de desgaste profesional respetando el contexto situacional y buenas prácticas laborales."
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE VENTAS",
+    "CODIGO": "1238069800",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas psicológicas de ventas, considerando el cierre efectivo de negociaciones y el fortalecimiento de relaciones a largo plazo con los clientes.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "CÓMO ATRAER EN LUGAR DE PERSEGUIR",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "VENDIENDO TU PRODUCTO O SERVICIO PARA INGRESOS INMEDIATOS I",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "VENDIENDO TU PRODUCTO O SERVICIO PARA INGRESOS INMEDIATOS II",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "ESTRATEGIAS DE INCLUSIÓN PARA ESTUDIANTES DENTRO DEL ESPECTRO AUTISTA (PREESCOLAR, BÁSICA, MEDIA)",
+    "CODIGO": "1238069355",
+    "TIPO": "Curso Presencial",
+    "AREA": "Educación Y Capacitación",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Al término de la actividad los profesores, auxiliares de aula y psicopedagogos, serán capaces de aplicar estrategias de inclusión para estudiantes dentro del Espectro Autista, en el marco de la Ley 21.545, garantizando la inclusión y el apoyo adecuado a estudiantes TEA en el entorno escolar.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "INTRODUCCIÓN",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "CARACTERÍSTICAS DEL TRASTORNO DEL ESPECTRO AUTISTA (TEA)",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ESTRATEGIAS EDUCATIVAS INCLUSIVAS",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "ESTRATEGIAS DE GESTIÓN DE LAS EMOCIONES EN EL ENTORNO LABORAL",
+    "CODIGO": "1238069807",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "60",
+    "COMPETENCIA_DESARROLLAR": "Aplicar estrategias de gestión emocional de manera efectiva en el ámbito laboral, considerando sus características en la mejora de la comunicación y las relaciones interpersonales en el entorno profesional.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "DEFINICIÓN DE LAS EMOCIONES, CARACTERÍSTICAS Y FUNCIONALIDAD",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "EMOCIONES EN EL MUNDO LABORAL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "AGILIDAD EMOCIONAL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TRIÁNGULO DRAMÁTICO DE STEPHEN KARPMAN",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "ADMINISTRACIÓN DEL TIEMPO LABORAL",
+    "CODIGO": "1238069808",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de gestión del tiempo laboral con el fin de mejorar la productividad y eficiencia en actividades diarias, teniendo en cuenta del uso de herramientas y metodologías específicas como la técnica Pomodoro, la matriz de Eisenhower y otras.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "GESTIÓN DEL TIEMPO LABORAL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "DEFINICIONES DE MODALIDADES DE TRABAJO",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ENFRENTAR EL MULTITASKING Y LA PROCRASTINACIÓN LABORAL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "TÉCNICAS DE GESTIÓN DEL TIEMPO LABORAL",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE LIDERAZGO",
+    "CODIGO": "1238069809",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas avanzadas de liderazgo de equipos, promoviendo un ambiente colaborativo que facilite el logro de objetivos organizacionales y el desarrollo profesional de cada miembro.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "¿UN LÍDER NACE O SE HACE?",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LIDERA COMO EN LAS GRANDES LIGAS",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "ENTRENANDO A MI EQUIPO",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "LIDERAZGO SITUACIONAL Y NIVELES DE DESARROLLO",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "PREVENCIÓN, INVESTIGACIÓN Y SANCIÓN DEL ACOSO LABORAL, SEXUAL O DE VIOLENCIA EN EL TRABAJO, LEY KARIN",
+    "CODIGO": "1238069811",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "30",
+    "COMPETENCIA_DESARROLLAR": "Planificar estrategias de prevención del acoso laboral tomando en cuenta la Ley Karin.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS Y ALCANCES DE LA LEY KARIN",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "PROTOCOLOS DE PREVENCIÓN DE ACOSO LABORAL, DENUNCIA Y SANCIONES",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "COMUNICACIÓN EFECTIVA",
+    "CODIGO": "1238070066",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "70",
+    "COMPETENCIA_DESARROLLAR": "Aplicar herramientas de comunicación efectiva verbal y no verbal, considerando sus principales componentes en el ámbito laboral.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "COMPONENTES DE LA COMUNICACIÓN EFECTIVA",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "LA COMUNICACIÓN EFECTIVA",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "LA COMUNICACIÓN PERSUASIVA",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "LOS ESTILOS DE COMUNICACIÓN SEGÚN MÉTODO DISC",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "LA PNL Y LA COMUNICACIÓN",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "6",
+        "NOMBRE": "LA COMUNICACIÓN NO VERBAL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "7",
+        "NOMBRE": "EL LENGUAJE Y SU IMPACTO",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE RESOLUCIÓN DE CONFLICTOS Y NEGOCIACIÓN LABORAL",
+    "CODIGO": "1238070122",
+    "TIPO": "Curso Presencial",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "08",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de resolución conflictos y negociación laboral considerando protocolos comunicacionales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DEL CONFLICTOS Y LAS TECNICAS DE RESOLUCION EFECTIVA",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "ELEMENTOS CLAVES",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE RESOLUCION DE CONFLICTOS Y NEGOCIACIÓN LABORAL",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "INTRODUCCIÓN A LA GESTIÓN DE CALIDAD DE PROCESOS SEGÚN NORMA ISO90012015",
+    "CODIGO": "1238070481",
+    "TIPO": "Curso Sincrónico",
+    "AREA": "Ciencias y Técnicas Aplicadas",
+    "HORAS_CRONOLOGICAS": "12",
+    "COMPETENCIA_DESARROLLAR": "Comprender la estructura de la norma ISO 9001:2015, así como los requisitos incluidos en ella y su aplicación a los sistemas de gestión de calidad basados en esta norma.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "CONCEPTOS Y FUNDAMENTOS DE LA GESTIÓN DE LA CALIDAD SEGÚN LAS NORMAS ISO 9000",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "CARACTERÍSTICAS DE LOS PROCESOS",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "INFORMACIÓN REQUERIDA PARA EL SISTEMA DE GESTIÓN DE LA CALIDAD",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "REQUISITOS DE LOS SISTEMAS DE GESTIÓN DE LA CALIDAD SEGÚN NORMA ISO 9001",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "HERRAMIENTAS OFIMÁTICAS DE MICROSOFT EXCEL 365 NIVEL AVANZADO",
+    "CODIGO": "1238070703",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Computación e Informática",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar Microsoft Excel 365 nivel avanzado respetando procedimientos de utilización de sus herramientas y funciones.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "TABLAS DINÁMICAS EN EXCEL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "SEGURIDAD EN EXCEL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "FUNCIONES FINANCIERAS EN EXCEL",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "POWER QUERY EN EXCEL",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE ATENCIÓN AL CLIENTE",
+    "CODIGO": "1238071100",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar técnicas de atención al cliente respetando protocolos comunicacionales y gestión de quejas de los distintos tipos de clientes.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DE LA ATENCIÓN AL CLIENTE",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "GESTIÓN DE QUEJAS Y RECLAMOS",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "TÉCNICAS DE COMUNICACIÓN CON CLIENTES",
+        "DESCRIPCION": " "
+      }
+    ]
+  },
+  {
+    "NOMBRE": "TÉCNICAS DE TRABAJO EN EQUIPO",
+    "CODIGO": "1238072556",
+    "TIPO": "Curso Asincrónico",
+    "AREA": "Administración",
+    "HORAS_CRONOLOGICAS": "40",
+    "COMPETENCIA_DESARROLLAR": "Aplicar estrategias y acciones que promuevan el trabajo en equipo, considerando factores como el trabajo colaborativo, la comunicación, la coordinación, la resolución de conflictos y las relaciones interpersonales.",
+    "MODULO": [
+      {
+        "NUMERO": "1",
+        "NOMBRE": "FUNDAMENTOS DEL TRABAJO EN EQUIPO",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "2",
+        "NOMBRE": "COMUNICACIÓN Y COLABORACIÓN EN LOS EQUIPOS DE TRABAJO",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "3",
+        "NOMBRE": "RESOLUCIÓN DE CONFLICTOS EN EQUIPOS DE TRABAJO",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "4",
+        "NOMBRE": "EVALUACIÓN Y MEJORA CONTINUA DEL TRABAJO EN EQUIPO",
+        "DESCRIPCION": " "
+      },
+      {
+        "NUMERO": "5",
+        "NOMBRE": "RELACIONES INTRAPERSONALES EN EL MUNDO LABORAL",
+        "DESCRIPCION": " "
       }
     ]
   }
