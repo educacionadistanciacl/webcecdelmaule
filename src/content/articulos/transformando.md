@@ -1,7 +1,7 @@
 ---
 title: "Transformando vidas a través de una beca laboral"
 pubDate: "2025-01-28"
-draft: true # false para poder visualizarlo en producción
+draft: false # false para poder visualizarlo en producción
 image: "Transformando-vidas.jpeg" # debe estar en /public/img/articulos
 ---
 
