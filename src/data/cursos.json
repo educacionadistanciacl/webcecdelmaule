@@ -105,31 +105,6 @@
     ]
   },
   {
-    "NOMBRE": "FUNDAMENTOS DE DERECHOS HUMANOS, DISCRIMINACIÓN Y VIOLENCIA DE GENERO EN LA EDUCACIÓN SUPERIOR",
-    "CODIGO": "1238036928",
-    "TIPO": "Curso Sincrónico",
-    "AREA":"Educación y Capacitación",
-    "HORAS_CRONOLOGICAS": "08",
-    "COMPETENCIA_DESARROLLAR": "Identificar conocimientos teórico-prácticos generales de normativa nacional e internacional, sobre derechos humanos, discriminación y violencia de género, en base a la normativa legal vigente.",
-    "MODULO": [
-      {
-        "NUMERO": "1",
-        "NOMBRE": "TEORÍA DE LOS DERECHOS HUMANOS",
-        "DESCRIPCION": "Identificar aspectos fundamentales sobre los derechos humanos."
-      },
-      {
-        "NUMERO": "2",
-        "NOMBRE": "DERECHOS HUMANOS Y GÉNERO",
-        "DESCRIPCION": "Analizar los principales conceptos sobre derechos humanos, género y perspectiva de género."
-      },
-      {
-        "NUMERO": "3",
-        "NOMBRE": "OBLIGACIONES EN MATERIA EN DERECHOS HUMANOS Y GÉNERO EN EL ÁMBITO DE LA EDUCACIÓN",
-        "DESCRIPCION": "Aplicar obligaciones en materia de derechos humanos y género en el ámbito de la educación superior."
-      }
-    ]
-  },
-  {
     "NOMBRE": "HERRAMIENTA DE POWER BI EN LA GESTIÓN DE DATOS",
     "CODIGO": "1238049605",
     "TIPO": "Curso Sincrónico",
