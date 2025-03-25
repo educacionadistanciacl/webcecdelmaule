@@ -25,7 +25,7 @@ const { borde = false } = Astro.props;
 
 <footer class={`footer-container ${borde ? 'con-borde' : ''}`}>
   <div class="links-section">
-    <h4>ENLACES DE INTERÉS</h4>
+    <h4 style="color:white;">ENLACES DE INTERÉS</h4>
     <ul>
       {footerData.links.map(link => (
         <li><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
@@ -37,7 +37,7 @@ const { borde = false } = Astro.props;
   </div>
   <SocialIcons />
   <div class="certification-section">
-    <h4>{footerData.certification.name}</h4>
+    <h4 style="color:white;">{footerData.certification.name}</h4>
     <img src={footerData.certification.logo} alt="Certificado Logo" />
     <p>{footerData.certification.code}</p>
   </div>
